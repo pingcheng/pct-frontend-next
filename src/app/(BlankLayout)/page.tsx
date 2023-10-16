@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { profile, socialUrls } from "@/data/profile";
 import styles from "./style.module.scss";
 import { FiGithub, FiSmile } from "react-icons/fi";
 import Link from "next/link";
+import { Avatar } from "@/components/Avatar";
 
 export default function Home() {
   return (
@@ -13,17 +13,7 @@ export default function Home() {
       }}
     >
       {/* Avatar */}
-      <div className="w-48 h-48 max-w-full">
-        <Image
-          src="https://avatars0.githubusercontent.com/u/8447539"
-          alt="Ping Cheng Avatar"
-          width={480}
-          height={480}
-          style={{
-            borderRadius: "50%",
-          }}
-        />
-      </div>
+      <Avatar width={192} height={192} />
 
       {/* Description */}
       <div className={styles.description}>
