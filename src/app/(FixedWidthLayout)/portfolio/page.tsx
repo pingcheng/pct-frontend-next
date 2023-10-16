@@ -1,7 +1,9 @@
+import { Heading } from "@/components/Heading";
+
 export default function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <Heading text="Portfolio" align="center" />
     </div>
   );
 }
