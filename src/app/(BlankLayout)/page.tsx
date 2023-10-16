@@ -6,9 +6,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 max-w-lg">
+    <main
+      className="h-screen flex flex-col items-center justify-center mx-auto gap-8 max-w-lg"
+      style={{
+        maxWidth: "90%",
+      }}
+    >
       {/* Avatar */}
-      <div className="w-48 h-48">
+      <div className="w-48 h-48 max-w-full">
         <Image
           src="https://avatars0.githubusercontent.com/u/8447539"
           alt="Ping Cheng Avatar"
