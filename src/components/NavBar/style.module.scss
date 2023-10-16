@@ -6,3 +6,9 @@
         @apply bg-gray-900 text-white;
     }
 }
+
+@screen md {
+    .nav-item {
+        @apply inline-block;
+    }
+}
