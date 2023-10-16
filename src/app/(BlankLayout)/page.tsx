@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { profile, socialUrls } from "@/data/profile";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 import { FiGithub, FiSmile } from "react-icons/fi";
 import Link from "next/link";
 

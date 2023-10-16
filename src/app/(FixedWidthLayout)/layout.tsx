@@ -9,7 +9,7 @@ export default function FixedWidthLayout({
   return (
     <>
       <NavBar />
-      {children}
+      <div className="fixed-container pt-2">{children}</div>
     </>
   );
 }

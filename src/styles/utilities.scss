@@ -1,0 +1,10 @@
+@layer utilities {
+  .smooth {
+    transition: all 0.3s;
+  }
+
+  .fixed-container {
+    @apply container mx-auto px-2;
+    max-width: 1200px;
+  }
+}

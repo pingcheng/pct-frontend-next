@@ -1,10 +1,10 @@
 .socialLink {
-    @apply cursor-pointer text-gray-400 mr-4 p-2;
+    @apply cursor-pointer text-gray-400 mr-4 p-2 smooth;
     @apply hover:text-black;
-}
 
-.socialLink svg {
-    @apply inline-block;
+    svg {
+        @apply inline-block;
+    }
 }
 
 .description {
