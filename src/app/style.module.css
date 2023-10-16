@@ -1,0 +1,12 @@
+.socialLink {
+    @apply cursor-pointer text-gray-400 mr-4 p-2;
+    @apply hover:text-black;
+}
+
+.socialLink svg {
+    @apply inline-block;
+}
+
+.description {
+    @apply flex flex-col gap-8 font-code text-gray-400;
+}
