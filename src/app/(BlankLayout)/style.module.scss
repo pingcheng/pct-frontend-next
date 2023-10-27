@@ -1,5 +1,5 @@
 .socialLink {
-    @apply cursor-pointer text-gray-400 mr-4 p-2 smooth;
+    @apply cursor-pointer text-gray-400 mr-4 p-2 transition duration-300;
     @apply hover:text-black;
 
     svg {
