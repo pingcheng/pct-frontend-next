@@ -3,8 +3,10 @@ import { Avatar } from "@/components/Avatar";
 import { profile, socialUrls } from "@/data/profile";
 import { DataRow } from "@/components/DataRow";
 import { GrCode } from "react-icons/gr";
-import { backendStack, frontendStack } from "@/data/skills";
+import { backendStack, devOpsStack, frontendStack } from "@/data/skills";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaCloud } from "react-icons/fa6";
+import { workExperiences } from "@/data/work-experience";
 
 export default function About() {
   const links = [
@@ -47,6 +49,43 @@ export default function About() {
               ))}
             </div>
           </div>
+
+          <div className="mb-2">
+            <FaCloud /> Cloud & DevOps
+            <div className="text-gray-400 text-xs">
+              {devOpsStack.map((text) => (
+                <div key={text}>{text}</div>
+              ))}
+            </div>
+          </div>
+        </DataRow>
+
+        <DataRow label="work">
+          {workExperiences.map((item, index) => {
+            return (
+              <div key={index} className="mb-2">
+                <div>{item.company}</div>
+                <div className="text-xs">
+                  <div>
+                    <span>{item.position}</span>
+                    <span className="text-gray-400">
+                      {" "}
+                      / {item.startDate} - {item.endDate}
+                    </span>
+                  </div>
+                  <div className="text-gray-400">
+                    {item.description.map((line, index) => {
+                      if (line === ":line-break:") {
+                        return <br key={index} />;
+                      }
+
+                      return <div key={index}>{line}</div>;
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </DataRow>
       </div>
     </div>
