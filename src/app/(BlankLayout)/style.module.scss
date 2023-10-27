@@ -3,7 +3,8 @@
     @apply hover:text-black;
 
     svg {
-        @apply inline-block;
+        @apply inline-block relative;
+        top: -2px;
     }
 }
 

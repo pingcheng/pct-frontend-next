@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import { FiGithub, FiSmile } from "react-icons/fi";
 import Link from "next/link";
 import { Avatar } from "@/components/Avatar";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -43,6 +44,13 @@ export default function Home() {
           target="_blank"
         >
           <FiGithub /> Github
+        </a>
+        <a
+          className={styles.socialLink}
+          href={socialUrls.linkedin}
+          target="_blank"
+        >
+          <IoLogoLinkedin /> LinkedIn
         </a>
         <Link className={styles.socialLink} href="/about">
           <FiSmile /> About
