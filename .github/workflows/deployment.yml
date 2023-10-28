@@ -1,0 +1,67 @@
+name: Build PCT frontend
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install the dependencies
+        run: npm ci
+
+      - name: Audit packages
+        run: npm audit
+
+      - name: Lint codes
+        run: npm run lint
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build files
+        run: npm run build
+
+      - name: Zip built files
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r out.zip out
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-web-files
+          path: out.zip
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: static-web-files
+
+      - name: Unzip artifact
+        uses: montudor/action-zip@v1
+        with:
+          args: unzip -qq out.zip -d out
+
+      - name: List files
+        run: ls -al
