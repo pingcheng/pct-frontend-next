@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { DataRow } from "@/components/DataRow/DataRow";
+import { DataRow } from "@/components/DataRow";
 
 describe("test <DataRow />", () => {
   const defaultLabel = "test label";
