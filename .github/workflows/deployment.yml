@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -30,7 +30,9 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -41,7 +43,6 @@ jobs:
 
       - name: Update release branch
         run: |
-          git fetch origin main
           git fetch origin release
           git checkout release
           git merge main
