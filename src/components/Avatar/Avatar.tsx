@@ -17,7 +17,7 @@ export function Avatar({ width, height }: AvatarProps) {
     >
       <Image
         src={profile.avatarUrl}
-        alt="Ping Cheng Avatar"
+        alt={profile.fullName}
         width={width}
         height={height}
         style={{

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <DataRow /> should match snapshot 1`] = `
+<div>
+  <div
+    class="flex mb-4"
+  >
+    <div
+      class="text-gray-400 w-1/4 min-w-fit text-right pr-2"
+    >
+      TEST LABEL
+    </div>
+    <div
+      class="flex-1 pl-2"
+    >
+      This is default value
+    </div>
+  </div>
+</div>
+`;
