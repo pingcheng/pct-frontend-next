@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_TITLE,
   description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
+  keywords: "ping,cheng,software,developer,high,passionate",
 };
 
 export default function RootLayout({

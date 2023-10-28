@@ -23,7 +23,7 @@ export default function About() {
       <div>
         {links.map((link) => (
           <DataRow key={link.label} label={link.label}>
-            <a href={link.url} target="_blank">
+            <a href={link.url} target="_blank" rel="noopener">
               {link.text ?? link.url}
             </a>
           </DataRow>

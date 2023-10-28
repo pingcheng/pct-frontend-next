@@ -18,9 +18,9 @@ export default function Home() {
 
       {/* Description */}
       <div className={styles.description}>
-        <p>
+        <h1>
           Hi! It is <span className="text-black">{profile.fullName}</span> here.
-        </p>
+        </h1>
         <p>
           I am a high passionate{" "}
           <span className="text-black">software engineer</span>, enjoy the
@@ -42,6 +42,7 @@ export default function Home() {
           className={styles.socialLink}
           href={socialUrls.github}
           target="_blank"
+          rel="noopener"
         >
           <FiGithub /> Github
         </a>
@@ -49,6 +50,7 @@ export default function Home() {
           className={styles.socialLink}
           href={socialUrls.linkedin}
           target="_blank"
+          rel="noopener"
         >
           <IoLogoLinkedin /> LinkedIn
         </a>
