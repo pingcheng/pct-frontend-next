@@ -64,4 +64,4 @@ jobs:
           args: unzip -qq out.zip -d out
 
       - name: List files
-        run: ls -al
+        run: ls -al && ls out
