@@ -41,6 +41,7 @@ jobs:
 
       - name: Update release branch
         run: |
+          git fetch origin main
           git fetch origin release
           git checkout release
           git merge main
