@@ -35,13 +35,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Setup git user
-        run: |
-          git config user.name "release-bot"
-
-      - name: Update release branch
-        run: |
-          git fetch origin release
-          git checkout release
-          git merge main
-          git push
+      - name: Deploy on Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: '--prod'
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          vercel-version: 32.5.0
