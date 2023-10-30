@@ -16,10 +16,10 @@ const menuItems: MenuItem[] = [
     label: "Home",
     path: "/",
   },
-  // {
-  //   label: "Portfolio",
-  //   path: "/portfolio",
-  // },
+  {
+    label: "Portfolio",
+    path: "/portfolio",
+  },
   {
     label: "About me",
     path: "/about",
