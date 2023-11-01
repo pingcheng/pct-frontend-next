@@ -6,7 +6,7 @@ exports[`test <DataRow /> should match snapshot 1`] = `
     class="flex mb-4"
   >
     <div
-      class="text-gray-400 w-1/4 min-w-fit text-right pr-2"
+      class="text-gray-400 w-1/4 text-right pr-2"
     >
       TEST LABEL
     </div>
