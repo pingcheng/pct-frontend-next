@@ -9,6 +9,7 @@ import { useState } from "react";
 type MenuItem = {
   label: string;
   path: string;
+  activePattern?: RegExp;
 };
 
 const menuItems: MenuItem[] = [
@@ -19,6 +20,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Portfolio",
     path: "/portfolio",
+    activePattern: /\/portfolio.*/,
   },
   {
     label: "About me",
@@ -94,13 +96,12 @@ export function NavBar() {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   {menuItems.map((item) => {
-                    const isActive = pathName === item.path;
                     return (
                       <Link
                         key={item.path}
                         href={item.path}
                         className={`${styles.navItem} ${
-                          isActive ? styles["active"] : ""
+                          isActive(item, pathName) ? styles["active"] : ""
                         }`}
                       >
                         {item.label}
@@ -120,13 +121,12 @@ export function NavBar() {
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => {
-              const isActive = pathName === item.path;
               return (
                 <Link
                   key={item.path}
                   href={item.path}
                   className={`${styles.navItem} ${
-                    isActive ? styles["active"] : ""
+                    isActive(item, pathName) ? styles["active"] : ""
                   }`}
                 >
                   {item.label}
@@ -138,4 +138,11 @@ export function NavBar() {
       </nav>
     </>
   );
+}
+
+function isActive(item: MenuItem, pathName: string): boolean {
+  if (item.activePattern) {
+    return item.activePattern.test(pathName);
+  }
+  return pathName === item.path;
 }
