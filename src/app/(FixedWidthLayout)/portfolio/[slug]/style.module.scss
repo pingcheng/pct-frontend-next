@@ -1,0 +1,19 @@
+.portfolioScreenshots {
+  column-count: 2;
+  column-gap: 15px;
+
+  img {
+    @apply rounded w-full transition cursor-pointer shadow-xl;
+    margin-bottom: 15px;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+@screen md {
+  .portfolioScreenshots {
+    column-count: 3;
+  }
+}

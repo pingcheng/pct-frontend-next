@@ -32,7 +32,7 @@ export const Portfolios = [
     shortDescription:
       "PTEPLUS provides a user friendly UI and accurate machine scoring for PTE test taker",
     coverImage: "https://i.ibb.co/8dHnNs9/pteplus.jpg",
-    url: "https://pteplus.com.au",
+    url: null,
     longDescription:
       "PTEPLUS is the first of its' kind 'smart platform' for English language practice in Australia. Its' Natural Language Processing technology provides PTE applicants with automated machine grading in alignment with the PTE Academic official score guide, such that PTE Academic future Test takers may practise for the Test, and also easily gauge their current standards and Test-readiness.",
     workplace: "Eduplus 2016 - 2019",
