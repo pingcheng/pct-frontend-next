@@ -29,11 +29,11 @@ export default function Page({ params }: PageProps) {
 
       <Heading text={portfolio.name} align="center" />
 
-      <div className="flex mt-4">
-        <div className="w-1/2 flex justify-center items-center">
+      <div className="flex mt-4 flex-wrap">
+        <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
           <PortfolioCard portfolio={portfolio} />
         </div>
-        <div className="w-1/2 flex flex-col text-sm">
+        <div className="w-full md:w-1/2 flex flex-col text-sm">
           <DataRow label="project">{portfolio.name}</DataRow>
           <DataRow label="url">
             {portfolio.url ? (
