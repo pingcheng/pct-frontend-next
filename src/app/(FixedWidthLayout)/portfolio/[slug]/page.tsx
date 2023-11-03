@@ -5,6 +5,7 @@ import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import { DataRow } from "@/components/DataRow";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 import styles from "./style.module.scss";
+import Link from "next/link";
 
 type PageProps = {
   params: {
@@ -22,6 +23,10 @@ export default function Page({ params }: PageProps) {
 
   return (
     <div className="py-4">
+      <Link href="/portfolio" className="text-gray-500">
+        &lt; Back
+      </Link>
+
       <Heading text={portfolio.name} align="center" />
 
       <div className="flex mt-4">
