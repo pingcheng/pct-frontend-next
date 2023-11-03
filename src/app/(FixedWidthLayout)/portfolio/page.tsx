@@ -1,6 +1,7 @@
 import { Heading } from "@/components/Heading";
 import { Portfolios } from "@/data/portfolios";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
+import Link from "next/link";
 
 export default function Portfolio() {
   return (
@@ -11,7 +12,9 @@ export default function Portfolio() {
         {Portfolios.map((portfolio) => {
           return (
             <div key={portfolio.slug}>
-              <PortfolioCard portfolio={portfolio} />
+              <Link href={`/portfolio/${portfolio.slug}`}>
+                <PortfolioCard portfolio={portfolio} />
+              </Link>
             </div>
           );
         })}
