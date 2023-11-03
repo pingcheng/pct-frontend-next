@@ -4,6 +4,7 @@ import { FiGithub, FiSmile } from "react-icons/fi";
 import Link from "next/link";
 import { Avatar } from "@/components/Avatar";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { BsCollectionFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -54,6 +55,9 @@ export default function Home() {
         >
           <IoLogoLinkedin /> LinkedIn
         </a>
+        <Link className={styles.socialLink} href="/portfolio">
+          <BsCollectionFill /> Portfolio
+        </Link>
         <Link className={styles.socialLink} href="/about">
           <FiSmile /> About
         </Link>
