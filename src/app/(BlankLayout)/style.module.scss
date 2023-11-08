@@ -1,13 +1,13 @@
 .socialLink {
-    @apply cursor-pointer text-gray-400 mr-4 p-2 transition duration-300;
-    @apply hover:text-black;
+  @apply cursor-pointer text-gray-400 mr-4 p-2 transition duration-300;
+  @apply hover:text-black;
 
-    svg {
-        @apply inline-block relative;
-        top: -2px;
-    }
+  svg {
+    @apply inline-block relative;
+    top: -2px;
+  }
 }
 
 .description {
-    @apply flex flex-col gap-8 font-code text-gray-400;
+  @apply flex flex-col gap-8 font-code text-gray-400;
 }
