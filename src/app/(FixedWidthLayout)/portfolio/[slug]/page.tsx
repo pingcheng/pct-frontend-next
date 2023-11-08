@@ -6,6 +6,7 @@ import { DataRow } from "@/components/DataRow";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 import styles from "./style.module.scss";
 import Link from "next/link";
+import { Metadata } from "next";
 
 type PageProps = {
   params: {
@@ -13,9 +14,22 @@ type PageProps = {
   };
 };
 
+function getPortfolio(slug: string): Portfolio | undefined {
+  return Portfolios.find((item) => item.slug === slug);
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const slug = params.slug;
+  const portfolio = getPortfolio(slug);
+
+  return {
+    title: `Portfolio - ${portfolio?.name}`,
+  };
+}
+
 export default function Page({ params }: PageProps) {
   const slug = params.slug;
-  const portfolio = Portfolios.find((item) => item.slug === slug);
+  const portfolio = getPortfolio(slug);
 
   if (!portfolio) {
     return notFound();

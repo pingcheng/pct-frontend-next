@@ -8,6 +8,10 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaCloud } from "react-icons/fa6";
 import { workExperiences } from "@/data/work-experience";
 
+export const metadata = {
+  title: "About me",
+};
+
 export default function About() {
   const links = [
     { label: "github", url: socialUrls.github },

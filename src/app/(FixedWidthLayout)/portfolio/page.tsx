@@ -3,6 +3,10 @@ import { Portfolios } from "@/data/portfolios";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Portfolio",
+};
+
 export default function Portfolio() {
   return (
     <div className="py-4">
