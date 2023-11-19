@@ -85,10 +85,18 @@ export default function Page({ params }: PageProps) {
 type ScreenshotSectionProps = {
   portfolio: Portfolio;
 };
+
 function ScreenshotSection({ portfolio }: ScreenshotSectionProps) {
-  if (!portfolio) {
+  if (!portfolio.hasScreenshots) {
     return <></>;
   }
+
+  const columns: string[][] = [[], [], []];
+  const length = columns.length;
+  portfolio.screenshots.forEach((image, index) => {
+    const columnIndex = index % length;
+    columns[columnIndex].push(image);
+  });
 
   return (
     <div className="w-full bg-gray-100 p-8 px-8 rounded-2xl mt-8 bg-opacity-50">
@@ -96,10 +104,16 @@ function ScreenshotSection({ portfolio }: ScreenshotSectionProps) {
         <Heading text="Screenshots" align="center" />
       </div>
       <div className={styles.portfolioScreenshots}>
-        {portfolio.screenshots.map((image) => {
+        {columns.map((column, index) => {
           return (
-            <div key={image} className={styles.screenshot}>
-              <Image src={image} alt="screenshot" fill />
+            <div key={index}>
+              {column.map((image) => {
+                return (
+                  <div key={image} className={styles.screenshot}>
+                    <Image src={image} alt="Screenshot" fill />
+                  </div>
+                );
+              })}
             </div>
           );
         })}
