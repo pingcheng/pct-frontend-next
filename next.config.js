@@ -4,7 +4,6 @@ const nextConfig = {
     domains: [
       "avatars0.githubusercontent.com",
       "pct-frontend-assets.s3.ap-southeast-2.amazonaws.com",
-      "i.ibb.co",
     ],
   },
 };
