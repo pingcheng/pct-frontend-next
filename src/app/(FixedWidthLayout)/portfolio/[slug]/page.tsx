@@ -7,6 +7,7 @@ import { Portfolio } from "@/models/Portfolio/Portfolio";
 import styles from "./style.module.scss";
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
 type PageProps = {
   params: {
@@ -96,8 +97,11 @@ function ScreenshotSection({ portfolio }: ScreenshotSectionProps) {
       </div>
       <div className={styles.portfolioScreenshots}>
         {portfolio.screenshots.map((image) => {
-          // eslint-disable-next-line @next/next/no-img-element
-          return <img key={image} src={image} alt="screenshot" />;
+          return (
+            <div key={image} className={styles.screenshot}>
+              <Image src={image} alt="screenshot" fill />
+            </div>
+          );
         })}
       </div>
     </div>

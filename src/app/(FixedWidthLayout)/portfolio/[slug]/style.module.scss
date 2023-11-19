@@ -12,6 +12,14 @@
   }
 }
 
+.screenshot {
+  @apply relative w-full;
+
+  img {
+    position: relative !important;
+  }
+}
+
 @screen md {
   .portfolioScreenshots {
     column-count: 3;
