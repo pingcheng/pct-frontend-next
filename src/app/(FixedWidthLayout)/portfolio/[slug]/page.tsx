@@ -4,10 +4,9 @@ import { notFound } from "next/navigation";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import { DataRow } from "@/components/DataRow";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
-import styles from "./style.module.scss";
 import Link from "next/link";
 import { Metadata } from "next";
-import Image from "next/image";
+import { ScreenshotSection } from "@/app/(FixedWidthLayout)/portfolio/[slug]/ScreenshotSection";
 
 type PageProps = {
   params: {
@@ -76,47 +75,7 @@ export default function Page({ params }: PageProps) {
       </div>
 
       <div className="flex mt-4">
-        <ScreenshotSection portfolio={portfolio} />
-      </div>
-    </div>
-  );
-}
-
-type ScreenshotSectionProps = {
-  portfolio: Portfolio;
-};
-
-function ScreenshotSection({ portfolio }: ScreenshotSectionProps) {
-  if (!portfolio.hasScreenshots) {
-    return <></>;
-  }
-
-  const columns: string[][] = [[], [], []];
-  const length = columns.length;
-  portfolio.screenshots.forEach((image, index) => {
-    const columnIndex = index % length;
-    columns[columnIndex].push(image);
-  });
-
-  return (
-    <div className="w-full bg-gray-100 p-8 px-8 rounded-2xl mt-8 bg-opacity-50">
-      <div className="mb-8">
-        <Heading text="Screenshots" align="center" />
-      </div>
-      <div className={styles.portfolioScreenshots}>
-        {columns.map((column, index) => {
-          return (
-            <div key={index}>
-              {column.map((image) => {
-                return (
-                  <div key={image} className={styles.screenshot}>
-                    <Image src={image} alt="Screenshot" fill />
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+        <ScreenshotSection images={portfolio.screenshots} />
       </div>
     </div>
   );
