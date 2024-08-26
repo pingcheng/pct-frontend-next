@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "avatars0.githubusercontent.com",
-      "pct-frontend-assets.s3.ap-southeast-2.amazonaws.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars0.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pct-frontend-assets.s3.ap-southeast-2.amazonaws.com",
+      },
     ],
   },
 };
