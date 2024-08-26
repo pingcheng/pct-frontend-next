@@ -9,9 +9,16 @@ export type WorkExperience = {
 export const workExperiences: WorkExperience[] = [
   {
     company: "REA Group - PropTrack",
+    position: "Lead Developer",
+    startDate: "Aug 2024",
+    endDate: "Present",
+    description: [],
+  },
+  {
+    company: "REA Group - PropTrack",
     position: "Senior Developer",
     startDate: "Jul 2022",
-    endDate: "Present",
+    endDate: "Aug 2024",
     description: [
       "Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.",
       ":line-break:",
