@@ -9,16 +9,17 @@ import { Metadata } from "next";
 import { ScreenshotSection } from "@/app/(FixedWidthLayout)/portfolio/[slug]/ScreenshotSection";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 function getPortfolio(slug: string): Portfolio | undefined {
   return Portfolios.find((item) => item.slug === slug);
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
   const slug = params.slug;
   const portfolio = getPortfolio(slug);
 
@@ -27,7 +28,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page(props: PageProps) {
+  const params = await props.params;
   const slug = params.slug;
   const portfolio = getPortfolio(slug);
 
