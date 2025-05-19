@@ -3,7 +3,7 @@
 import { profile } from "@/data/profile";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./style.module.scss";
+import styles from "./style.module.css";
 import { useState } from "react";
 
 type MenuItem = {

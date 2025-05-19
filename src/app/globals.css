@@ -2,21 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "../styles/utilities";
+@layer utilities {
+  .fixed-container {
+    @apply container mx-auto px-2;
+    max-width: 1200px;
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
-
-//@media (prefers-color-scheme: dark) {
-//  :root {
-//    --foreground-rgb: 255, 255, 255;
-//    --background-start-rgb: 50, 50, 50;
-//    --background-end-rgb: 50, 50, 50;
-//  }
-//}
 
 body {
   color: rgb(var(--foreground-rgb));
