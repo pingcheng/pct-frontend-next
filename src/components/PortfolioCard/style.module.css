@@ -1,5 +1,7 @@
+@reference "../../app/globals.css";
+
 .portfolioCard {
-  @apply shadow cursor-pointer transition ease-out relative rounded;
+  @apply shadow-sm cursor-pointer transition ease-out relative rounded;
   width: 300px;
   height: 400px;
 

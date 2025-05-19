@@ -1,5 +1,5 @@
 import { Heading } from "@/components/Heading";
-import styles from "@/app/(FixedWidthLayout)/portfolio/[slug]/style.module.scss";
+import styles from "./style.module.css";
 import Image from "next/image";
 
 type ScreenshotSectionProps = {

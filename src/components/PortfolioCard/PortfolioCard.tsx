@@ -1,5 +1,5 @@
 import { Portfolio } from "@/models/Portfolio/Portfolio";
-import styles from "./style.module.scss";
+import styles from "./style.module.css";
 
 type PortfolioCardProps = {
   portfolio: Portfolio;
