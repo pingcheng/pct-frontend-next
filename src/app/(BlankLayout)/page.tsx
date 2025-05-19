@@ -5,6 +5,33 @@ import Link from "next/link";
 import { Avatar } from "@/components/Avatar";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { BsCollectionFill } from "react-icons/bs";
+import {
+  SocialLink,
+  SocialLinkProps,
+} from "@/components/SocialLink/SocialLink";
+
+const links: SocialLinkProps[] = [
+  {
+    href: socialUrls.github,
+    label: "Github",
+    icon: <FiGithub />,
+  },
+  {
+    href: socialUrls.linkedin,
+    label: "LinkedIn",
+    icon: <IoLogoLinkedin />,
+  },
+  {
+    href: "/portfolio",
+    label: "Portfolio",
+    icon: <BsCollectionFill />,
+  },
+  {
+    href: "/about",
+    label: "About",
+    icon: <FiSmile />,
+  },
+];
 
 export default function Home() {
   return (
@@ -38,29 +65,9 @@ export default function Home() {
 
       {/* Social links */}
       <div className="flex flex-wrap content-around text-lg justify-center">
-        <a
-          // className="social-link mr-4 p-2"
-          className={styles.socialLink}
-          href={socialUrls.github}
-          target="_blank"
-          rel="noopener"
-        >
-          <FiGithub /> Github
-        </a>
-        <a
-          className={styles.socialLink}
-          href={socialUrls.linkedin}
-          target="_blank"
-          rel="noopener"
-        >
-          <IoLogoLinkedin /> LinkedIn
-        </a>
-        <Link className={styles.socialLink} href="/portfolio">
-          <BsCollectionFill /> Portfolio
-        </Link>
-        <Link className={styles.socialLink} href="/about">
-          <FiSmile /> About
-        </Link>
+        {links.map(({ href, label, icon }) => (
+          <SocialLink key={label} href={href} label={label} icon={icon} />
+        ))}
       </div>
     </main>
   );
