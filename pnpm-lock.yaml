@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@vercel/analytics':
-        specifier: ^1.1.1
+        specifier: ^1.5.0
         version: 1.5.0(next@15.3.2(@babel/core@7.27.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@vercel/speed-insights':
         specifier: ^1.2.0
@@ -24,7 +24,7 @@ importers:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
       react-icons:
-        specifier: ^4.11.0
+        specifier: ^4.12.0
         version: 4.12.0(react@19.1.0)
     devDependencies:
       '@tailwindcss/postcss':
@@ -55,7 +55,7 @@ importers:
         specifier: 15.3.2
         version: 15.3.2(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-config-prettier:
-        specifier: ^9.0.0
+        specifier: ^9.1.0
         version: 9.1.0(eslint@9.27.0(jiti@2.4.2))
       jest:
         specifier: ^29.7.0
@@ -64,7 +64,7 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       postcss:
-        specifier: ^8
+        specifier: ^8.5.3
         version: 8.5.3
       prettier:
         specifier: ^3.5.3
@@ -73,7 +73,7 @@ importers:
         specifier: ^4.1.7
         version: 4.1.7
       typescript:
-        specifier: ^5
+        specifier: ^5.8.3
         version: 5.8.3
 
 packages:
