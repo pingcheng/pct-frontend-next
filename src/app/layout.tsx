@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import React from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Gtag from "@/components/Gtag/Gtag";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         {children}
         <Gtag />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
