@@ -10,30 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: 18
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
 
       - name: Install the dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Audit packages
-        run: npm audit
+        run: pnpm audit
 
       - name: Lint codes
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Unit tests
-        run: npm run test
+        run: pnpm run test
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
 
       - name: Deploy on Vercel
         uses: amondnet/vercel-action@v25
