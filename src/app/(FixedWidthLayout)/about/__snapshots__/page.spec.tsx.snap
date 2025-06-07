@@ -3,440 +3,480 @@
 exports[`test about page ensures snapshot is correct 1`] = `
 <div>
   <div
-    class="flex flex-col items-center gap-4 pt-4"
+    class="min-h-screen bg-transparent flex flex-col items-center justify-center"
   >
-    <h1
-      class="heading1 center"
-    >
-      About me
-    </h1>
     <div
-      class="max-w-full"
-      style="width: 128px; height: 128px;"
+      class="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4"
     >
-      <img
-        alt="Ping Cheng"
-        data-nimg="1"
-        decoding="async"
-        height="128"
-        loading="lazy"
-        src="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75"
-        srcset="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75 2x"
-        style="color: transparent; border-radius: 50%;"
-        width="128"
-      />
-    </div>
-    <div>
+      <h1
+        class="heading1 center"
+      >
+        About me
+      </h1>
       <div
-        class="flex mb-4"
+        class="flex flex-col items-center gap-4 mt-4 mb-6"
       >
         <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          GITHUB
-        </div>
-        <div
-          class="flex-1 pl-2"
-        >
-          <a
-            href="https://github.com/pingcheng"
-            rel="noopener"
-            target="_blank"
-          >
-            https://github.com/pingcheng
-          </a>
-        </div>
-      </div>
-      <div
-        class="flex mb-4"
-      >
-        <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          LINKEDIN
-        </div>
-        <div
-          class="flex-1 pl-2"
-        >
-          <a
-            href="https://www.linkedin.com/in/ping-cheng-5a47b484"
-            rel="noopener"
-            target="_blank"
-          >
-            https://www.linkedin.com/in/ping-cheng-5a47b484
-          </a>
-        </div>
-      </div>
-      <div
-        class="flex mb-4"
-      >
-        <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          EMAIL
-        </div>
-        <div
-          class="flex-1 pl-2"
-        >
-          <a
-            href="mailto:ping.che@hotmail.com"
-            rel="noopener"
-            target="_blank"
-          >
-            ping.che@hotmail.com
-          </a>
-        </div>
-      </div>
-      <div
-        class="flex mb-4"
-      >
-        <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          BIO
-        </div>
-        <div
-          class="flex-1 pl-2"
-        >
-          I am a pure Chinese, currently live in Australia with my wife and son
-          ;) Enjoy coding and bring ideas into real life. After a few years on
-          development and tech works, I might decide to put more my focus on
-          DevOps.
-        </div>
-      </div>
-      <div
-        class="flex mb-4"
-      >
-        <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          SKILLS
-        </div>
-        <div
-          class="flex-1 pl-2"
+          class="shadow-lg"
+          style="border-radius: 50%;"
         >
           <div
-            class="mb-2"
+            class="max-w-full"
+            style="width: 128px; height: 128px;"
           >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9,22 L15,2 M17,17 L22,12 L17,7 M7,17 L2,12 L7,7"
-                fill="none"
-                stroke-width="2"
-              />
-            </svg>
-             Backend
-            <div
-              class="text-gray-400 text-xs"
-            >
-              <div>
-                Node, TypeScript, JavaScript
-              </div>
-              <div>
-                Java, ColdFusion
-              </div>
-              <div>
-                PHP, Laravel, Moodle
-              </div>
-              <div>
-                MySQL, MSSQL, Redis
-              </div>
-              <div>
-                Server management, Message Queue
-              </div>
-              <div>
-                Payment Integration
-              </div>
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 512 512"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z"
-              />
-            </svg>
-             Frontend
-            <div
-              class="text-gray-400 text-xs"
-            >
-              <div>
-                HTML
-              </div>
-              <div>
-                JavaScript, Vue, React, jQuery
-              </div>
-              <div>
-                CSS, SASS, TailwindCSS, Styled Components, Bootstrap
-              </div>
-              <div>
-                Webpack
-              </div>
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 640 512"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"
-              />
-            </svg>
-             Cloud & DevOps
-            <div
-              class="text-gray-400 text-xs"
-            >
-              <div>
-                AWS
-              </div>
-              <div>
-                Infrastructure planning and implementing
-              </div>
-              <div>
-                Horizontal scaling
-              </div>
-              <div>
-                Serverless, Docker, ECS
-              </div>
-              <div>
-                CI/CD, GitlabCI, CircleCI
-              </div>
-            </div>
+            <img
+              alt="Ping Cheng"
+              data-nimg="1"
+              decoding="async"
+              height="128"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75 2x"
+              style="color: transparent; border-radius: 50%;"
+              width="128"
+            />
           </div>
         </div>
       </div>
       <div
-        class="flex mb-4"
+        class="w-full"
       >
         <div
-          class="text-gray-400 w-1/4 text-right pr-2"
-        >
-          WORK
-        </div>
-        <div
-          class="flex-1 pl-2"
+          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
         >
           <div
-            class="mb-2"
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
           >
-            <div>
-              REA Group - PropTrack
-            </div>
-            <div
-              class="text-xs"
+            github
+          </div>
+          <div
+            class="flex-1 pl-0 sm:pl-2 w-full"
+          >
+            <a
+              href="https://github.com/pingcheng"
+              rel="noopener"
+              target="_blank"
             >
-              <div>
-                <span>
-                  Lead Developer
+              https://github.com/pingcheng
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+        >
+          <div
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+          >
+            linkedin
+          </div>
+          <div
+            class="flex-1 pl-0 sm:pl-2 w-full"
+          >
+            <a
+              href="https://www.linkedin.com/in/ping-cheng-5a47b484"
+              rel="noopener"
+              target="_blank"
+            >
+              https://www.linkedin.com/in/ping-cheng-5a47b484
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+        >
+          <div
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+          >
+            email
+          </div>
+          <div
+            class="flex-1 pl-0 sm:pl-2 w-full"
+          >
+            <a
+              href="mailto:ping.che@hotmail.com"
+              rel="noopener"
+              target="_blank"
+            >
+              ping.che@hotmail.com
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+        >
+          <div
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+          >
+            skills
+          </div>
+          <div
+            class="flex-1 pl-0 sm:pl-2 w-full"
+          >
+            <div
+              class="mb-4 pb-2 last:mb-0 last:pb-0"
+            >
+              <span
+                class="inline-flex items-center gap-2 font-semibold text-accent"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9,22 L15,2 M17,17 L22,12 L17,7 M7,17 L2,12 L7,7"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                </svg>
+                 Backend
+              </span>
+              <div
+                class="flex flex-wrap gap-2 mt-1"
+              >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Node, TypeScript, JavaScript
                 </span>
                 <span
-                  class="text-gray-400"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                   
-                  / 
-                  Aug 2024
-                   - 
-                  Present
-                </span>
-              </div>
-              <div
-                class="text-gray-400"
-              />
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div>
-              REA Group - PropTrack
-            </div>
-            <div
-              class="text-xs"
-            >
-              <div>
-                <span>
-                  Senior Developer
+                  Java, ColdFusion
                 </span>
                 <span
-                  class="text-gray-400"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                   
-                  / 
-                  Jul 2022
-                   - 
-                  Aug 2024
+                  PHP, Laravel, Moodle
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  MySQL, MSSQL, Redis
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Server management, Message Queue
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Payment Integration
                 </span>
               </div>
+            </div>
+            <div
+              class="mb-4 pb-2 last:mb-0 last:pb-0"
+            >
+              <span
+                class="inline-flex items-center gap-2 font-semibold text-accent"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z"
+                  />
+                </svg>
+                 Frontend
+              </span>
               <div
-                class="text-gray-400"
+                class="flex flex-wrap gap-2 mt-1"
+              >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  HTML
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  JavaScript, Vue, React, jQuery
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  CSS, SASS, TailwindCSS, Styled Components, Bootstrap
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Webpack
+                </span>
+              </div>
+            </div>
+            <div
+              class="mb-2"
+            >
+              <span
+                class="inline-flex items-center gap-2 font-semibold text-accent"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 640 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"
+                  />
+                </svg>
+                 Cloud & DevOps
+              </span>
+              <div
+                class="flex flex-wrap gap-2 mt-1"
+              >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  AWS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Infrastructure planning and implementing
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Horizontal scaling
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Serverless, Docker, ECS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  CI/CD, GitlabCI, CircleCI
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+        >
+          <div
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+          >
+            work
+          </div>
+          <div
+            class="flex-1 pl-0 sm:pl-2 w-full"
+          >
+            <div
+              class="mb-2"
+            >
+              <div>
+                REA Group - PropTrack
+              </div>
+              <div
+                class="text-xs"
               >
                 <div>
-                  Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
+                  <span>
+                    Lead Developer
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Aug 2024
+                     - 
+                    Present
+                  </span>
                 </div>
-                <br />
-                <div>
-                  Key Responsibilities:
-                </div>
-                <div>
-                  - Collaborate closely with the lead developer to design system solutions.
-                </div>
-                <div>
-                  - Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
-                </div>
-                <div>
-                  - Take the lead in developing feature slices and efficiently allocate work within the team.
-                </div>
-                <div>
-                  - Provide mentorship to less experienced developers within the team.
-                </div>
+                <div
+                  class="text-gray-400"
+                />
               </div>
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div>
-              REA Group - PropTrack
             </div>
             <div
-              class="text-xs"
+              class="mb-2"
             >
               <div>
-                <span>
-                  Developer
-                </span>
-                <span
-                  class="text-gray-400"
-                >
-                   
-                  / 
-                  Aug 2019
-                   - 
-                  Jun 2022
-                </span>
+                REA Group - PropTrack
               </div>
               <div
-                class="text-gray-400"
-              />
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div>
-              AroFlo
-            </div>
-            <div
-              class="text-xs"
-            >
-              <div>
-                <span>
-                  Web Developer
-                </span>
-                <span
-                  class="text-gray-400"
-                >
-                   
-                  / 
-                  Aug 2019
-                   - 
-                  Sept 2021
-                </span>
-              </div>
-              <div
-                class="text-gray-400"
+                class="text-xs"
               >
                 <div>
-                  Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
+                  <span>
+                    Senior Developer
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Jul 2022
+                     - 
+                    Aug 2024
+                  </span>
+                </div>
+                <div
+                  class="text-gray-400"
+                >
+                  <div>
+                    Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
+                  </div>
+                  <br />
+                  <div>
+                    Key Responsibilities:
+                  </div>
+                  <div>
+                    - Collaborate closely with the lead developer to design system solutions.
+                  </div>
+                  <div>
+                    - Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
+                  </div>
+                  <div>
+                    - Take the lead in developing feature slices and efficiently allocate work within the team.
+                  </div>
+                  <div>
+                    - Provide mentorship to less experienced developers within the team.
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div>
-              PTEPLUS
-            </div>
             <div
-              class="text-xs"
+              class="mb-2"
             >
               <div>
-                <span>
-                  Development Lead
-                </span>
-                <span
-                  class="text-gray-400"
-                >
-                   
-                  / 
-                  Jan 2018
-                   - 
-                  May 2019
-                </span>
+                REA Group - PropTrack
               </div>
               <div
-                class="text-gray-400"
+                class="text-xs"
               >
                 <div>
-                  Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
+                  <span>
+                    Developer
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Aug 2019
+                     - 
+                    Jun 2022
+                  </span>
+                </div>
+                <div
+                  class="text-gray-400"
+                />
+              </div>
+            </div>
+            <div
+              class="mb-2"
+            >
+              <div>
+                AroFlo
+              </div>
+              <div
+                class="text-xs"
+              >
+                <div>
+                  <span>
+                    Web Developer
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Aug 2019
+                     - 
+                    Sept 2021
+                  </span>
+                </div>
+                <div
+                  class="text-gray-400"
+                >
+                  <div>
+                    Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div>
-              PTEPLUS
-            </div>
             <div
-              class="text-xs"
+              class="mb-2"
             >
               <div>
-                <span>
-                  Full Stack Developer
-                </span>
-                <span
-                  class="text-gray-400"
-                >
-                   
-                  / 
-                  Oct 2016
-                   - 
-                  Jan 2018
-                </span>
+                PTEPLUS
               </div>
               <div
-                class="text-gray-400"
+                class="text-xs"
               >
                 <div>
-                  One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers’ setup.
+                  <span>
+                    Development Lead
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Jan 2018
+                     - 
+                    May 2019
+                  </span>
+                </div>
+                <div
+                  class="text-gray-400"
+                >
+                  <div>
+                    Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mb-2"
+            >
+              <div>
+                PTEPLUS
+              </div>
+              <div
+                class="text-xs"
+              >
+                <div>
+                  <span>
+                    Full Stack Developer
+                  </span>
+                  <span
+                    class="text-gray-400"
+                  >
+                     
+                    / 
+                    Oct 2016
+                     - 
+                    Jan 2018
+                  </span>
+                </div>
+                <div
+                  class="text-gray-400"
+                >
+                  <div>
+                    One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers’ setup.
+                  </div>
                 </div>
               </div>
             </div>

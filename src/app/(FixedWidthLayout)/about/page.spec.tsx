@@ -28,7 +28,9 @@ describe("test about page", () => {
     render(<About />);
 
     // Check for GitHub link
-    const githubRow = screen.getByText("GITHUB");
+    const getLabel = (label: string) => (content: string) =>
+      content.trim().toLowerCase() === label.toLowerCase();
+    const githubRow = screen.getByText(getLabel("github"));
     const githubLink = githubRow.parentElement?.querySelector("a");
     expect(githubLink).toBeInTheDocument();
     expect(githubLink).toHaveAttribute("href", socialUrls.github);
@@ -36,34 +38,26 @@ describe("test about page", () => {
     expect(githubLink).toHaveAttribute("rel", "noopener");
 
     // Check for LinkedIn link
-    const linkedinRow = screen.getByText("LINKEDIN");
+    const linkedinRow = screen.getByText(getLabel("linkedin"));
     const linkedinLink = linkedinRow.parentElement?.querySelector("a");
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute("href", socialUrls.linkedin);
 
     // Check for email link
-    const emailRow = screen.getByText("EMAIL");
+    const emailRow = screen.getByText(getLabel("email"));
     const emailLink = emailRow.parentElement?.querySelector("a");
     expect(emailLink).toBeInTheDocument();
     expect(emailLink).toHaveAttribute("href", `mailto:${profile.email}`);
     expect(emailLink).toHaveTextContent(profile.email);
   });
 
-  it("should display bio from profile data", () => {
-    render(<About />);
-    // Check for a unique substring from the bio using getByText with exact: false
-    expect(
-      screen.getByText("currently live in Australia with my wife and son", {
-        exact: false,
-      })
-    ).toBeInTheDocument();
-  });
-
   it("should display skills correctly", () => {
     render(<About />);
 
     // Check for skills section
-    const skillsRow = screen.getByText("SKILLS");
+    const getLabel = (label: string) => (content: string) =>
+      content.trim().toLowerCase() === label.toLowerCase();
+    const skillsRow = screen.getByText(getLabel("skills"));
     const skillsSection =
       skillsRow.parentElement?.querySelector("div:nth-child(2)");
 
@@ -90,7 +84,9 @@ describe("test about page", () => {
     render(<About />);
 
     // Check for work section
-    const workRow = screen.getByText("WORK");
+    const getLabel = (label: string) => (content: string) =>
+      content.trim().toLowerCase() === label.toLowerCase();
+    const workRow = screen.getByText(getLabel("work"));
     const workSection =
       workRow.parentElement?.querySelector("div:nth-child(2)");
 

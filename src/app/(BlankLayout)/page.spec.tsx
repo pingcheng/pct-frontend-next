@@ -35,7 +35,7 @@ describe("test home page", () => {
       /Node\/TS\/JS, Java, PHP, Linux, Server management/
     );
     expect(skills).toBeInTheDocument();
-    expect(skills).toHaveClass("text-black");
+    expect(skills).toHaveClass("text-primary");
   });
 
   it("should render all necessary social links with correct URLs", () => {

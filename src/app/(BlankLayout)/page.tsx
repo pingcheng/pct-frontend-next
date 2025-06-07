@@ -47,16 +47,17 @@ export default function Home() {
       {/* Description */}
       <div className={styles.description}>
         <h1>
-          Hi! It is <span className="text-black">{profile.fullName}</span> here.
+          Hi! It is <span className="text-primary">{profile.fullName}</span>{" "}
+          here.
         </h1>
         <p>
           I am a high passionate{" "}
-          <span className="text-black">software engineer</span>, enjoy the
+          <span className="text-primary">software engineer</span>, enjoy the
           latest techs and bring them into reality.
         </p>
         <p>
           Focusing on{" "}
-          <span className="text-black">
+          <span className="text-primary">
             Node/TS/JS, Java, PHP, Linux, Server management
           </span>
           , etc...

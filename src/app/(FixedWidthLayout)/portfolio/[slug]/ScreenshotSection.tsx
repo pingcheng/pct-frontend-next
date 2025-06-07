@@ -24,7 +24,7 @@ export function ScreenshotSection({ images }: ScreenshotSectionProps) {
   });
 
   return (
-    <div className="w-full bg-gray-100 p-8 px-8 rounded-2xl mt-8 bg-opacity-50">
+    <div className="w-full card p-8 px-8 rounded-2xl mt-8 bg-opacity-90">
       <div className="mb-8">
         <Heading text="Screenshots" align="center" />
       </div>

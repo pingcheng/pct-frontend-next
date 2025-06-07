@@ -28,17 +28,18 @@ exports[`test home page ensure snapshot is correct 1`] = `
       <h1>
         Hi! It is 
         <span
-          class="text-black"
+          class="text-primary"
         >
           Ping Cheng
         </span>
-         here.
+         
+        here.
       </h1>
       <p>
         I am a high passionate
          
         <span
-          class="text-black"
+          class="text-primary"
         >
           software engineer
         </span>
@@ -48,7 +49,7 @@ exports[`test home page ensure snapshot is correct 1`] = `
         Focusing on
          
         <span
-          class="text-black"
+          class="text-primary"
         >
           Node/TS/JS, Java, PHP, Linux, Server management
         </span>

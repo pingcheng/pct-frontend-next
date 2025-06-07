@@ -2,9 +2,7 @@
 
 exports[`test <NavBar /> should match the snapshot 1`] = `
 <div>
-  <nav
-    class="bg-gray-700"
-  >
+  <nav>
     <div
       class="fixed-container relative flex items-center justify-between h-16"
     >
@@ -60,8 +58,7 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
           class="shrink-0 flex items-center"
         >
           <div
-            class="font-bold text-white"
-            style="border-top: 3px solid white; border-bottom: 3px solid white;"
+            class="font-bold text-primary"
           >
             Ping Cheng
           </div>

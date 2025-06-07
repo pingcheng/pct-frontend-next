@@ -2,8 +2,8 @@
 
 exports[`test <Footer /> should match snapshot 1`] = `
 <div>
-  <div
-    class="text-center mb-4 text-gray-400"
+  <footer
+    class="text-center mb-4 text-gray-400 pt-4 pb-4"
   >
     Hand crafted with
      
@@ -27,6 +27,6 @@ exports[`test <Footer /> should match snapshot 1`] = `
      
     by 
     Ping Cheng
-  </div>
+  </footer>
 </div>
 `;

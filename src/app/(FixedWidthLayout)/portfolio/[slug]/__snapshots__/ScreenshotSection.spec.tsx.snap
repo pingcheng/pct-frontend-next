@@ -3,7 +3,7 @@
 exports[`test <ScreenshotSection /> should match snapshot 1`] = `
 <div>
   <div
-    class="w-full bg-gray-100 p-8 px-8 rounded-2xl mt-8 bg-opacity-50"
+    class="w-full card p-8 px-8 rounded-2xl mt-8 bg-opacity-90"
   >
     <div
       class="mb-8"

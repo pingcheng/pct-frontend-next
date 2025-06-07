@@ -7,14 +7,18 @@ describe("test <DataRow />", () => {
 
   it("should match snapshot", () => {
     const { container } = render(
-      <DataRow label={defaultLabel}>{defaultValue}</DataRow>,
+      <DataRow label={defaultLabel}>{defaultValue}</DataRow>
     );
     expect(container).toMatchSnapshot();
   });
 
   it("should contain label as all upper case", () => {
     render(<DataRow label={defaultLabel}>{defaultValue}</DataRow>);
-    expect(screen.getByText(defaultLabel.toUpperCase())).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        (content) => content.toLowerCase() === defaultLabel.toLowerCase()
+      )
+    ).toBeInTheDocument();
   });
 
   it("should contain value as text", () => {

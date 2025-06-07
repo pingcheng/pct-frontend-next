@@ -34,7 +34,7 @@ export function NavBar() {
 
   return (
     <>
-      <nav className="bg-gray-700">
+      <nav>
         <div className="fixed-container relative flex items-center justify-between h-16">
           {/* Mobile nav bar*/}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -84,11 +84,13 @@ export function NavBar() {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="shrink-0 flex items-center">
               <div
-                className="font-bold text-white"
-                style={{
-                  borderTop: "3px solid white",
-                  borderBottom: "3px solid white",
-                }}
+                className="font-bold text-primary"
+                style={
+                  {
+                    borderTop: "3px solid var(--logo-line-color)",
+                    borderBottom: "3px solid var(--logo-line-color)",
+                  } as React.CSSProperties
+                }
               >
                 {profile.fullName}
               </div>

@@ -20,77 +20,101 @@ export default function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-4 pt-4">
-      <Heading text="About me" align="center" />
-      <Avatar width={128} height={128} />
+    <div className="min-h-screen bg-transparent flex flex-col items-center justify-center">
+      <div className="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4">
+        <Heading text="About me" align="center" />
+        <div className="flex flex-col items-center gap-4 mt-4 mb-6">
+          <div className="shadow-lg" style={{ borderRadius: "50%" }}>
+            <Avatar width={128} height={128} />
+          </div>
+        </div>
+        <div className="w-full">
+          {links.map((link) => (
+            <DataRow key={link.label} label={link.label}>
+              <a href={link.url} target="_blank" rel="noopener">
+                {link.text ?? link.url}
+              </a>
+            </DataRow>
+          ))}
 
-      <div>
-        {links.map((link) => (
-          <DataRow key={link.label} label={link.label}>
-            <a href={link.url} target="_blank" rel="noopener">
-              {link.text ?? link.url}
-            </a>
+          <DataRow label="skills">
+            <div className="mb-4 pb-2 last:mb-0 last:pb-0">
+              <span className="inline-flex items-center gap-2 font-semibold text-accent">
+                <GrCode /> Backend
+              </span>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {backendStack.map((text) => (
+                  <span
+                    key={text}
+                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-4 pb-2 last:mb-0 last:pb-0">
+              <span className="inline-flex items-center gap-2 font-semibold text-accent">
+                <IoLogoJavascript /> Frontend
+              </span>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {frontendStack.map((text) => (
+                  <span
+                    key={text}
+                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-2">
+              <span className="inline-flex items-center gap-2 font-semibold text-accent">
+                <FaCloud /> Cloud & DevOps
+              </span>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {devOpsStack.map((text) => (
+                  <span
+                    key={text}
+                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </div>
           </DataRow>
-        ))}
 
-        <DataRow label="bio">{profile.bio}</DataRow>
+          <DataRow label="work">
+            {workExperiences.map((item, index) => {
+              return (
+                <div key={index} className="mb-2">
+                  <div>{item.company}</div>
+                  <div className="text-xs">
+                    <div>
+                      <span>{item.position}</span>
+                      <span className="text-gray-400">
+                        {" "}
+                        / {item.startDate} - {item.endDate}
+                      </span>
+                    </div>
+                    <div className="text-gray-400">
+                      {item.description.map((line, index) => {
+                        if (line === ":line-break:") {
+                          return <br key={index} />;
+                        }
 
-        <DataRow label="skills">
-          <div className="mb-2">
-            <GrCode /> Backend
-            <div className="text-gray-400 text-xs">
-              {backendStack.map((text) => (
-                <div key={text}>{text}</div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-2">
-            <IoLogoJavascript /> Frontend
-            <div className="text-gray-400 text-xs">
-              {frontendStack.map((text) => (
-                <div key={text}>{text}</div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-2">
-            <FaCloud /> Cloud & DevOps
-            <div className="text-gray-400 text-xs">
-              {devOpsStack.map((text) => (
-                <div key={text}>{text}</div>
-              ))}
-            </div>
-          </div>
-        </DataRow>
-
-        <DataRow label="work">
-          {workExperiences.map((item, index) => {
-            return (
-              <div key={index} className="mb-2">
-                <div>{item.company}</div>
-                <div className="text-xs">
-                  <div>
-                    <span>{item.position}</span>
-                    <span className="text-gray-400">
-                      {" "}
-                      / {item.startDate} - {item.endDate}
-                    </span>
-                  </div>
-                  <div className="text-gray-400">
-                    {item.description.map((line, index) => {
-                      if (line === ":line-break:") {
-                        return <br key={index} />;
-                      }
-
-                      return <div key={index}>{line}</div>;
-                    })}
+                        return <div key={index}>{line}</div>;
+                      })}
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </DataRow>
+              );
+            })}
+          </DataRow>
+        </div>
       </div>
     </div>
   );

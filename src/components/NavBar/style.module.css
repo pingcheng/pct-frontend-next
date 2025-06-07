@@ -1,16 +1,47 @@
 @reference "../../app/globals.css";
 
+.navBarRoot {
+  background: var(--color-card-light);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  border-bottom: 1px solid var(--color-border-light);
+  transition: background 0.3s, border 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  .navBarRoot {
+    background: var(--color-card-dark);
+    border-bottom: 1px solid var(--color-border-dark);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.16);
+  }
+}
+
 .navItem {
-  @apply block text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition duration-300;
-  @apply bg-gray-700 text-white;
+  @apply block px-3 py-2 rounded-md text-base font-medium transition duration-300;
+  color: var(--color-text-light);
+  background: transparent;
+  position: relative;
+}
+
+.navItem:hover {
+  color: var(--color-accent);
+  background: rgba(99, 102, 241, 0.08);
 }
 
 .navItem.active {
-  @apply bg-gray-900 text-white;
+  color: var(--color-accent);
+  font-weight: 600;
+  background: rgba(99, 102, 241, 0.16);
 }
 
-@screen md {
-  .nav-item {
-    @apply inline-block;
+@media (prefers-color-scheme: dark) {
+  .navItem {
+    color: var(--color-text-dark);
+  }
+  .navItem:hover {
+    color: var(--color-accent);
+    background: rgba(99, 102, 241, 0.12);
+  }
+  .navItem.active {
+    color: var(--color-accent);
+    background: rgba(99, 102, 241, 0.24);
   }
 }
