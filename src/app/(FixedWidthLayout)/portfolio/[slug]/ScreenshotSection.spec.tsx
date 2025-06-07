@@ -4,7 +4,15 @@ import { ScreenshotSection } from "./ScreenshotSection";
 // Mock the next/image component
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: ({ src, alt, fill }: { src: string; alt: string; fill?: boolean }) => {
+  default: ({
+    src,
+    alt,
+    fill,
+  }: {
+    src: string;
+    alt: string;
+    fill?: boolean;
+  }) => {
     return <img src={src} alt={alt} data-testid="next-image" />;
   },
 }));
@@ -36,31 +44,41 @@ describe("test <ScreenshotSection />", () => {
     render(<ScreenshotSection images={mockImages} />);
     const images = screen.getAllByTestId("next-image");
     expect(images.length).toBe(mockImages.length);
-    
+
     // Verify all image sources are correct
     mockImages.forEach((src) => {
-      const imageWithSrc = images.find((img) => img.getAttribute("src") === src);
+      const imageWithSrc = images.find(
+        (img) => img.getAttribute("src") === src
+      );
       expect(imageWithSrc).toBeInTheDocument();
     });
   });
 
   it("should distribute images across three columns", () => {
     render(<ScreenshotSection images={mockImages} />);
-    
+
     // The component should create 3 column divs
-    const columns = screen.getAllByRole("generic").filter(
-      (element) => element.parentElement?.className.includes("portfolioScreenshots")
-    );
-    
+    const columns = screen
+      .getAllByRole("generic")
+      .filter((element) =>
+        element.parentElement?.className.includes("portfolioScreenshots")
+      );
+
     expect(columns.length).toBe(3);
-    
+
     // First column should have 2 images (for 4 total images)
-    expect(columns[0].querySelectorAll('[data-testid="next-image"]').length).toBe(2);
-    
+    expect(
+      columns[0].querySelectorAll('[data-testid="next-image"]').length
+    ).toBe(2);
+
     // Second column should have 1 image
-    expect(columns[1].querySelectorAll('[data-testid="next-image"]').length).toBe(1);
-    
+    expect(
+      columns[1].querySelectorAll('[data-testid="next-image"]').length
+    ).toBe(1);
+
     // Third column should have 1 image
-    expect(columns[2].querySelectorAll('[data-testid="next-image"]').length).toBe(1);
+    expect(
+      columns[2].querySelectorAll('[data-testid="next-image"]').length
+    ).toBe(1);
   });
 });

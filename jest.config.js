@@ -11,4 +11,8 @@ module.exports = createJestConfig({
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
   },
+  coveragePathIgnorePatterns: [
+    "<rootDir>/src/data",
+    "<rootDir>/src/app/layout.tsx",
+  ],
 });

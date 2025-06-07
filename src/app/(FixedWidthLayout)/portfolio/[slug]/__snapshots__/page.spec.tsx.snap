@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio Slug Page should match snapshot 1`] = `
+<div>
+  <div
+    class="py-4"
+  >
+    <a
+      class="text-gray-500"
+      href="/portfolio"
+    >
+      &lt; Back
+    </a>
+    <h1
+      data-align="center"
+    >
+      Test Project
+    </h1>
+    <div
+      class="flex mt-4 flex-wrap"
+    >
+      <div
+        class="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0"
+      >
+        <div
+          data-testid="portfolio-card"
+        >
+          Test Project
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/2 flex flex-col text-sm"
+      >
+        <div
+          data-label="project"
+          data-testid="data-row"
+        >
+          Test Project
+        </div>
+        <div
+          data-label="url"
+          data-testid="data-row"
+        >
+          <a
+            href="https://test-project.com"
+            rel="noopener"
+            target="_blank"
+          >
+            https://test-project.com
+          </a>
+        </div>
+        <div
+          data-label="description"
+          data-testid="data-row"
+        >
+          A long description of the test project
+        </div>
+        <div
+          data-label="workplace"
+          data-testid="data-row"
+        >
+          Test Company
+        </div>
+        <div
+          data-label="project role"
+          data-testid="data-row"
+        >
+          Developer
+        </div>
+        <div
+          data-label="role description"
+          data-testid="data-row"
+        >
+          <div>
+            Task 1
+          </div>
+          <div>
+            Task 2
+          </div>
+        </div>
+        <div
+          data-label="team members"
+          data-testid="data-row"
+        >
+          <div>
+            Person 1
+          </div>
+          <div>
+            Person 2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex mt-4"
+    >
+      <div
+        data-testid="screenshot-section"
+      >
+        <div
+          data-image="/screenshot1.jpg"
+        />
+        <div
+          data-image="/screenshot2.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
