@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio page should render the portfolio page 1`] = `
+<div>
+  <div
+    class="py-4"
+  >
+    <h1
+      class="heading1 center"
+    >
+      Portfolio
+    </h1>
+    <div
+      class="mt-4 flex flex-row flex-wrap gap-8 justify-center"
+    >
+      <div>
+        <a
+          href="/portfolio/test-portfolio-1"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(undefined); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                Test Portfolio 1
+              </div>
+              <div
+                class="text-xs"
+              >
+                Test Description 1
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/test-portfolio-2"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(undefined); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                Test Portfolio 2
+              </div>
+              <div
+                class="text-xs"
+              >
+                Test Description 2
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

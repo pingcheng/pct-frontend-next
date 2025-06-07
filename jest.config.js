@@ -8,4 +8,7 @@ module.exports = createJestConfig({
   moduleDirectories: ["node_modules", "<rootDir>/"],
   testEnvironment: "jest-environment-jsdom",
   collectCoverageFrom: ["src/**/*.{ts,tsx}"],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
 });
