@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio page matches snapshot 1`] = `
+<div>
+  <div
+    class="py-4"
+  >
+    <h1
+      class="heading1 center"
+    >
+      Portfolio
+    </h1>
+    <div
+      class="mt-4 flex flex-row flex-wrap gap-8 justify-center"
+    >
+      <div>
+        <a
+          href="/portfolio/empire-cbs"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs.png); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                Empire CBS
+              </div>
+              <div
+                class="text-xs"
+              >
+                Empire CBS internal job management system
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/pteplus"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/pteplus.jpg); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                PTEPLUS
+              </div>
+              <div
+                class="text-xs"
+              >
+                PTEPLUS provides a user friendly UI and accurate machine scoring for PTE test taker
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/pinhr"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/cover.jpg); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                PinHR
+              </div>
+              <div
+                class="text-xs"
+              >
+                A customised human resources management tool
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/vatgc"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/vagtc.png); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                VAGTC
+              </div>
+              <div
+                class="text-xs"
+              >
+                The final year project in the university
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/qce-eduplus"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/cover.jpg); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                QCE Eduplus
+              </div>
+              <div
+                class="text-xs"
+              >
+                Maths practice platform partners with Cengage for Queensland secondary schools
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          href="/portfolio/rhfoto"
+        >
+          <div
+            class="portfolioCard"
+            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/rhfoto.png); background-size: cover;"
+          >
+            <div
+              class="absolute bottom-0 p-2 text-gray-200"
+              style="z-index: 10;"
+            >
+              <div
+                class="text-sm font-bold"
+              >
+                RH.foto
+              </div>
+              <div
+                class="text-xs"
+              >
+                A simplistic and clean photo wall for a group of professional photographers
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

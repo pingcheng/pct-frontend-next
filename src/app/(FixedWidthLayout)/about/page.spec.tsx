@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import About from "./page";
+import About, { metadata } from "./page";
 import { profile, socialUrls } from "@/data/profile";
 import { backendStack, frontendStack, devOpsStack } from "@/data/skills";
 import { workExperiences } from "@/data/work-experience";
@@ -101,12 +101,20 @@ describe("test about page", () => {
       expect(workSection).toHaveTextContent(experience.startDate);
       expect(workSection).toHaveTextContent(experience.endDate);
 
-      // Check all description lines that are not line breaks
-      experience.description
-        .filter((line) => line !== ":line-break:")
-        .forEach((line) => {
+      // Test each line of the description
+      experience.description.forEach((line) => {
+        if (line === ":line-break:") {
+          // Check for <br> element when line-break is found
+          const brElements = workSection?.querySelectorAll("br");
+          expect(brElements?.length).toBeGreaterThan(0);
+        } else {
           expect(workSection).toHaveTextContent(line);
-        });
+        }
+      });
     });
+  });
+
+  it("should have correct metadata", () => {
+    expect(metadata.title).toBe("About me");
   });
 });
