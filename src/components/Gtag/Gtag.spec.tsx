@@ -8,7 +8,7 @@ jest.mock("next/script", () => {
     return children ? (
       <script id={id} dangerouslySetInnerHTML={{ __html: children }} />
     ) : (
-      <script src={src} />
+      <script defer src={src} />
     );
   });
 });
