@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Page from "./page";
+import Page, { generateMetadata } from "./page";
 import { notFound } from "next/navigation";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 
@@ -223,5 +223,21 @@ describe("Portfolio Slug Page", () => {
 
     expect(urlRow).toHaveTextContent("-");
     expect(urlRow?.querySelector("a")).not.toBeInTheDocument();
+  });
+});
+
+describe("generateMetadata", () => {
+  it("should return correct metadata for an existing portfolio", async () => {
+    const metadata = await generateMetadata({
+      params: Promise.resolve({ slug: "test-project" }),
+    });
+    expect(metadata).toEqual({ title: "Portfolio - Test Project" });
+  });
+
+  it("should return title with undefined for a non-existent portfolio", async () => {
+    const metadata = await generateMetadata({
+      params: Promise.resolve({ slug: "non-existent" }),
+    });
+    expect(metadata).toEqual({ title: "Portfolio - undefined" });
   });
 });
