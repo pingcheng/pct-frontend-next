@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import Gtag from "./Gtag";
+import Gtag from "./index";
 import Script from "next/script";
 
 // Mock the Next.js Script component

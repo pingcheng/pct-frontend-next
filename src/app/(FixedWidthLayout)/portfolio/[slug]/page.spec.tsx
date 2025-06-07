@@ -224,6 +224,35 @@ describe("Portfolio Slug Page", () => {
     expect(urlRow).toHaveTextContent("-");
     expect(urlRow?.querySelector("a")).not.toBeInTheDocument();
   });
+
+  it("should render an empty role description when roleDescription is an empty array", async () => {
+    // Add a portfolio with empty roleDescription to the mock
+    const { Portfolios } = require("@/data/portfolios");
+    Portfolios.push({
+      slug: "empty-role-desc",
+      name: "Empty Role Desc Project",
+      coverImage: "/test-cover.jpg",
+      url: "https://empty-role-desc.com",
+      shortDescription: "A short description",
+      longDescription: "A long description of the test project",
+      workplace: "Test Company",
+      projectRole: "Developer",
+      roleDescription: [],
+      members: ["Person 1", "Person 2"],
+      screenshots: ["/screenshot1.jpg", "/screenshot2.jpg"],
+      hasScreenshots: true,
+    });
+
+    render(
+      await Page({ params: Promise.resolve({ slug: "empty-role-desc" }) })
+    );
+    const roleDescriptionRow = screen
+      .getAllByTestId("data-row")
+      .find((row) => row.getAttribute("data-label") === "role description");
+    expect(roleDescriptionRow).toBeInTheDocument();
+    // Should not have any child divs for role description
+    expect(roleDescriptionRow?.querySelectorAll("div").length).toBe(0);
+  });
 });
 
 describe("generateMetadata", () => {
