@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixedWidthLayout should match snapshot 1`] = `
+<div>
+  <div
+    data-testid="navbar"
+  >
+    NavBar Component
+  </div>
+  <div
+    class="fixed-container pt-2"
+  >
+    <div
+      data-testid="child-content"
+    >
+      Test Content
+    </div>
+  </div>
+  <div
+    data-testid="footer"
+  >
+    Footer Component
+  </div>
+</div>
+`;
