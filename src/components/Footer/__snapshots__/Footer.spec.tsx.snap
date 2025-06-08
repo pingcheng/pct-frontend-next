@@ -5,12 +5,13 @@ exports[`test <Footer /> should match snapshot 1`] = `
   <footer
     class="text-center mb-4 text-gray-400 pt-4 pb-4"
   >
-    Hand crafted with
+    Hand and AI crafted with
      
     <span
       class="text-red-400"
     >
       <svg
+        class="inline-block"
         fill="currentColor"
         height="1em"
         stroke="currentColor"

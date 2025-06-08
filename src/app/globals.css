@@ -95,10 +95,6 @@ body {
   margin-bottom: 2rem;
 }
 
-svg {
-  @apply inline-block;
-}
-
 .text-primary {
   color: var(--color-text-light);
 }
