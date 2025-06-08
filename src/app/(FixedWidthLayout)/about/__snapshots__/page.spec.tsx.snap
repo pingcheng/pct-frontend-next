@@ -139,72 +139,72 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 class="flex flex-wrap gap-2 mt-1"
               >
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Node
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   TypeScript
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   JavaScript
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Java
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   ColdFusion
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   PHP
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Laravel
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Moodle
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   MySQL
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   MSSQL
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Redis
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Server management
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Message Queue
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Payment Integration
                 </span>
@@ -235,57 +235,57 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 class="flex flex-wrap gap-2 mt-1"
               >
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   HTML
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   JavaScript
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Vue
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   React
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   jQuery
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   CSS
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   SASS
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   TailwindCSS
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Styled Components
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Bootstrap
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Webpack
                 </span>
@@ -316,47 +316,47 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 class="flex flex-wrap gap-2 mt-1"
               >
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   AWS
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Infrastructure planning and implementing
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Horizontal scaling
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Serverless
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Docker
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   ECS
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   CI/CD
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   GitlabCI
                 </span>
                 <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   CircleCI
                 </span>

@@ -7,6 +7,7 @@ import { backendStack, devOpsStack, frontendStack } from "@/data/skills";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCloud } from "react-icons/fa6";
 import { workExperiences } from "@/data/work-experience";
+import { Chip } from "@/components/Chip";
 
 export const metadata = {
   title: "About me",
@@ -44,12 +45,7 @@ export default function About() {
               </span>
               <div className="flex flex-wrap gap-2 mt-1">
                 {backendStack.map((text) => (
-                  <span
-                    key={text}
-                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
-                  >
-                    {text}
-                  </span>
+                  <Chip key={text}>{text}</Chip>
                 ))}
               </div>
             </div>
@@ -60,12 +56,7 @@ export default function About() {
               </span>
               <div className="flex flex-wrap gap-2 mt-1">
                 {frontendStack.map((text) => (
-                  <span
-                    key={text}
-                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
-                  >
-                    {text}
-                  </span>
+                  <Chip key={text}>{text}</Chip>
                 ))}
               </div>
             </div>
@@ -76,12 +67,7 @@ export default function About() {
               </span>
               <div className="flex flex-wrap gap-2 mt-1">
                 {devOpsStack.map((text) => (
-                  <span
-                    key={text}
-                    className="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
-                  >
-                    {text}
-                  </span>
+                  <Chip key={text}>{text}</Chip>
                 ))}
               </div>
             </div>
