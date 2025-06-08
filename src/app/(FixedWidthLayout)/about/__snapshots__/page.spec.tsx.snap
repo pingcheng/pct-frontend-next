@@ -141,27 +141,67 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  Node, TypeScript, JavaScript
+                  Node
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  Java, ColdFusion
+                  TypeScript
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  PHP, Laravel, Moodle
+                  JavaScript
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  MySQL, MSSQL, Redis
+                  Java
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  Server management, Message Queue
+                  ColdFusion
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  PHP
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Laravel
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Moodle
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  MySQL
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  MSSQL
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Redis
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Server management
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Message Queue
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
@@ -202,12 +242,47 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  JavaScript, Vue, React, jQuery
+                  JavaScript
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  CSS, SASS, TailwindCSS, Styled Components, Bootstrap
+                  Vue
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  React
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  jQuery
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  CSS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  SASS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  TailwindCSS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Styled Components
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  Bootstrap
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
@@ -258,12 +333,32 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  Serverless, Docker, ECS
+                  Serverless
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
                 >
-                  CI/CD, GitlabCI, CircleCI
+                  Docker
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  ECS
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  CI/CD
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  GitlabCI
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full"
+                >
+                  CircleCI
                 </span>
               </div>
             </div>
