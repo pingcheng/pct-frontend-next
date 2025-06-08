@@ -84,6 +84,7 @@
     --background-start-rgb: 24, 24, 27;
     --background-end-rgb: 24, 24, 27;
     --logo-line-color: var(--color-text-dark);
+    --text-color: var(--color-text-dark);
   }
 }
 @media (prefers-color-scheme: light) {
@@ -91,6 +92,7 @@
     --foreground-rgb: 24, 24, 27;
     --background-start-rgb: 249, 250, 251;
     --background-end-rgb: 249, 250, 251;
+    --text-color: var(--color-text-light);
   }
 }
 
