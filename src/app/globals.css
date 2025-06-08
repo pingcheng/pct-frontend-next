@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import '../styles/vars-generic.css';
 
 @theme {
   --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
@@ -24,7 +25,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-border-light, currentcolor);
+    border-color: var(--color-border);
   }
 }
 
@@ -65,61 +66,23 @@
   }
 }
 
-:root {
-  --color-bg-light: #f9fafb;
-  --color-bg-dark: #18181b;
-  --color-text-light: #18181b;
-  --color-text-dark: #f9fafb;
-  --color-accent: #6366f1; /* indigo-500 */
-  --color-card-light: #fff;
-  --color-card-dark: #232336;
-  --color-border-light: #e5e7eb;
-  --color-border-dark: #2d2d3a;
-  --logo-line-color: var(--color-text-light);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 249, 250, 251;
-    --background-start-rgb: 24, 24, 27;
-    --background-end-rgb: 24, 24, 27;
-    --logo-line-color: var(--color-text-dark);
-    --text-color: var(--color-text-dark);
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 24, 24, 27;
-    --background-start-rgb: 249, 250, 251;
-    --background-end-rgb: 249, 250, 251;
-    --text-color: var(--color-text-light);
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-text);
+  background: var(--color-bg);
   font-family: 'Inter', system-ui, sans-serif;
   transition: background 0.3s, color 0.3s;
 }
 
 .card {
-  background: var(--color-card-light);
+  background: var(--color-card);
   border-radius: 1rem;
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--color-border);
   transition: background 0.3s, border 0.3s;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    background: var(--color-card-dark);
-    border: 1px solid var(--color-border-dark);
     box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   }
 }
@@ -130,10 +93,5 @@ body {
 }
 
 .text-primary {
-  color: var(--color-text-light);
-}
-@media (prefers-color-scheme: dark) {
-  .text-primary {
-    color: var(--color-text-dark);
-  }
+  color: var(--color-text);
 }
