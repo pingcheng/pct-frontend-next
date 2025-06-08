@@ -47,7 +47,7 @@ export function NavBar() {
               <span className="sr-only">Open main menu</span>
 
               <svg
-                className="block h-6 w-6"
+                className={`block h-6 w-6 ${isMobileMenuVisible ? "hidden" : "block"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ export function NavBar() {
               </svg>
 
               <svg
-                className="hidden h-6 w-6"
+                className={`block h-6 w-6 ${isMobileMenuVisible ? "block" : "hidden"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

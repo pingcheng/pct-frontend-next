@@ -25,6 +25,26 @@ describe("test <NavBar />", () => {
     fireEvent.click(toggleButton);
     expect(screen.getByRole("mobile-nav-menu")).toHaveClass("hidden");
   });
+
+  it("should display the correct SVG icon based on mobile menu visibility", () => {
+    render(<NavBar />);
+    const toggleButton = screen.getByRole("mobile-toggle");
+    // Initially, hamburger icon should be visible, close icon hidden
+    const hamburgerIcon = toggleButton.querySelector("svg:nth-of-type(1)");
+    const closeIcon = toggleButton.querySelector("svg:nth-of-type(2)");
+    expect(hamburgerIcon).not.toHaveClass("hidden");
+    expect(closeIcon).toHaveClass("hidden");
+
+    // Click to show mobile menu (should show close icon, hide hamburger)
+    fireEvent.click(toggleButton);
+    expect(hamburgerIcon).toHaveClass("hidden");
+    expect(closeIcon).not.toHaveClass("hidden");
+
+    // Click again to hide mobile menu (should show hamburger icon, hide close)
+    fireEvent.click(toggleButton);
+    expect(hamburgerIcon).not.toHaveClass("hidden");
+    expect(closeIcon).toHaveClass("hidden");
+  });
 });
 
 describe("isActive logic", () => {
