@@ -29,8 +29,40 @@
 }
 
 @utility fixed-container {
-  @apply container mx-auto px-2;
+  @apply container mx-auto;
   max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .fixed-container {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fixed-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@utility responsive-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 640px) {
+  .responsive-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 :root {

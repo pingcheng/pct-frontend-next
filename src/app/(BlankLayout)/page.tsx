@@ -35,12 +35,7 @@ const links: SocialLinkProps[] = [
 
 export default function Home() {
   return (
-    <main
-      className="h-screen flex flex-col items-center justify-center mx-auto gap-8 max-w-lg"
-      style={{
-        maxWidth: "90%",
-      }}
-    >
+    <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 responsive-container">
       {/* Avatar */}
       <Avatar width={192} height={192} />
 
