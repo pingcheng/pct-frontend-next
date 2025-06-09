@@ -14,5 +14,6 @@ module.exports = createJestConfig({
   coveragePathIgnorePatterns: [
     "<rootDir>/src/data",
     "<rootDir>/src/app/layout.tsx",
+    "<rootDir>/src/components/icons/",
   ],
 });
