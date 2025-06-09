@@ -16,14 +16,15 @@ describe("test <NavBar />", () => {
   it("should toggle the mobile menu when the button is clicked", () => {
     render(<NavBar />);
     const toggleButton = screen.getByRole("mobile-toggle");
-    // Initially, the mobile menu should be hidden
-    expect(screen.getByRole("mobile-nav-menu")).toHaveClass("hidden");
+    const menu = screen.getByRole("mobile-nav-menu");
+    // Initially, the mobile menu should be collapsed (not expanded)
+    expect(menu.className).not.toMatch(/expanded/);
     // Click to show
     fireEvent.click(toggleButton);
-    expect(screen.getByRole("mobile-nav-menu")).toHaveClass("block");
+    expect(menu.className).toMatch(/expanded/);
     // Click again to hide
     fireEvent.click(toggleButton);
-    expect(screen.getByRole("mobile-nav-menu")).toHaveClass("hidden");
+    expect(menu.className).not.toMatch(/expanded/);
   });
 
   it("should display the correct SVG icon based on mobile menu visibility", () => {

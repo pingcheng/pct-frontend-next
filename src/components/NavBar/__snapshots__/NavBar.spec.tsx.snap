@@ -92,7 +92,7 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="sm:hidden hidden"
+      class="sm:hidden mobileMenu "
       role="mobile-nav-menu"
     >
       <div

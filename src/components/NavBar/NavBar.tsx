@@ -94,7 +94,9 @@ export function NavBar() {
 
         {/* Mobile nav bar */}
         <div
-          className={`sm:hidden ${isMobileMenuVisible ? "block" : "hidden"}`}
+          className={`sm:hidden ${styles.mobileMenu} ${
+            isMobileMenuVisible ? styles.expanded : ""
+          }`}
           role="mobile-nav-menu"
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
