@@ -379,196 +379,169 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex flex-col gap-6"
             >
               <div
-                class="flex flex-col gap-1 py-2"
+                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <div
-                  class="flex flex-col gap-0.5"
+                <span
+                  class="font-semibold text-base text-accent leading-tight"
                 >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
-                  >
-                    REA Group - PropTrack
-                  </span>
+                  REA Group - PropTrack
+                </span>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Lead Developer
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Aug 2024
-                   - 
-                  Present
-                </div>
-              </div>
-              <div
-                class="flex flex-col gap-1 py-2"
-              >
-                <div
-                  class="flex flex-col gap-0.5"
-                >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
                   >
-                    REA Group - PropTrack
-                  </span>
+                    Aug 2024
+                     - 
+                    Present
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Senior Developer
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Jul 2022
-                   - 
-                  Aug 2024
-                </div>
-                <div
-                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
-                >
-                  <div>
-                    Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
-                  </div>
-                  <br />
-                  <div>
-                    Key Responsibilities:
-                  </div>
-                  <div>
-                    - Collaborate closely with the lead developer to design system solutions.
-                  </div>
-                  <div>
-                    - Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
-                  </div>
-                  <div>
-                    - Take the lead in developing feature slices and efficiently allocate work within the team.
-                  </div>
-                  <div>
-                    - Provide mentorship to less experienced developers within the team.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex flex-col gap-1 py-2"
-              >
-                <div
-                  class="flex flex-col gap-0.5"
-                >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
                   >
-                    REA Group - PropTrack
-                  </span>
+                    Jul 2022
+                     - 
+                    Aug 2024
+                  </div>
+                  <div
+                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                  >
+                    <div>
+                      Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
+                    </div>
+                    <br />
+                    <div>
+                      Key Responsibilities:
+                    </div>
+                    <div>
+                      - Collaborate closely with the lead developer to design system solutions.
+                    </div>
+                    <div>
+                      - Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
+                    </div>
+                    <div>
+                      - Take the lead in developing feature slices and efficiently allocate work within the team.
+                    </div>
+                    <div>
+                      - Provide mentorship to less experienced developers within the team.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Developer
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Aug 2019
-                   - 
-                  Jun 2022
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
+                  >
+                    Aug 2021
+                     - 
+                    Jun 2022
+                  </div>
                 </div>
               </div>
               <div
-                class="flex flex-col gap-1 py-2"
+                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <div
-                  class="flex flex-col gap-0.5"
+                <span
+                  class="font-semibold text-base text-accent leading-tight"
                 >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
-                  >
-                    AroFlo
-                  </span>
+                  AroFlo
+                </span>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Web Developer
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Aug 2019
-                   - 
-                  Sept 2021
-                </div>
-                <div
-                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
-                >
-                  <div>
-                    Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
+                  >
+                    Aug 2019
+                     - 
+                    Sept 2021
+                  </div>
+                  <div
+                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                  >
+                    <div>
+                      Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
+                    </div>
                   </div>
                 </div>
               </div>
               <div
-                class="flex flex-col gap-1 py-2"
+                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <div
-                  class="flex flex-col gap-0.5"
+                <span
+                  class="font-semibold text-base text-accent leading-tight"
                 >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
-                  >
-                    PTEPLUS
-                  </span>
+                  PTEPLUS
+                </span>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Development Lead
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Jan 2018
-                   - 
-                  May 2019
-                </div>
-                <div
-                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
-                >
-                  <div>
-                    Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
+                  >
+                    Jan 2018
+                     - 
+                    May 2019
+                  </div>
+                  <div
+                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                  >
+                    <div>
+                      Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="flex flex-col gap-1 py-2"
-              >
                 <div
-                  class="flex flex-col gap-0.5"
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
                 >
-                  <span
-                    class="font-semibold text-base text-accent leading-tight"
-                  >
-                    PTEPLUS
-                  </span>
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
                     Full Stack Developer
                   </span>
-                </div>
-                <div
-                  class="text-xs text-gray-400 mt-0.5"
-                >
-                  Oct 2016
-                   - 
-                  Jan 2018
-                </div>
-                <div
-                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
-                >
-                  <div>
-                    One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers’ setup.
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
+                  >
+                    Oct 2016
+                     - 
+                    Jan 2018
+                  </div>
+                  <div
+                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                  >
+                    <div>
+                      One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers' setup.
+                    </div>
                   </div>
                 </div>
               </div>

@@ -90,22 +90,22 @@ describe("test about page", () => {
     const workSection =
       workRow.parentElement?.querySelector("div:nth-child(2)");
 
-    // Check all work experiences are displayed
-    workExperiences.forEach((experience) => {
-      expect(workSection).toHaveTextContent(experience.company);
-      expect(workSection).toHaveTextContent(experience.position);
-      expect(workSection).toHaveTextContent(experience.startDate);
-      expect(workSection).toHaveTextContent(experience.endDate);
-
-      // Test each line of the description
-      experience.description.forEach((line) => {
-        if (line === ":line-break:") {
-          // Check for <br> element when line-break is found
-          const brElements = workSection?.querySelectorAll("br");
-          expect(brElements?.length).toBeGreaterThan(0);
-        } else {
-          expect(workSection).toHaveTextContent(line);
-        }
+    // Check all work experiences are displayed (grouped by company)
+    workExperiences.forEach((company) => {
+      expect(workSection).toHaveTextContent(company.company);
+      company.positions.forEach((position) => {
+        expect(workSection).toHaveTextContent(position.position);
+        expect(workSection).toHaveTextContent(position.startDate);
+        expect(workSection).toHaveTextContent(position.endDate);
+        position.description.forEach((line) => {
+          if (line === ":line-break:") {
+            // Check for <br> element when line-break is found
+            const brElements = workSection?.querySelectorAll("br");
+            expect(brElements?.length).toBeGreaterThan(0);
+          } else {
+            expect(workSection).toHaveTextContent(line);
+          }
+        });
       });
     });
   });
