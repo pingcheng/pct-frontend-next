@@ -29,29 +29,10 @@
   }
 }
 
-@utility fixed-container {
-  @apply container mx-auto;
-  max-width: 1200px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (max-width: 1024px) {
-  .fixed-container {
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .fixed-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@utility responsive-container {
+/*
+ * Standardized container utilities for consistent spacing throughout the app
+ */
+@utility page-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -59,8 +40,16 @@
   padding-right: 2rem;
 }
 
+@media (max-width: 1024px) {
+  .page-container {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 @media (max-width: 640px) {
-  .responsive-container {
+  .page-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -87,9 +76,17 @@ body {
   }
 }
 
+/* Standardized section class for consistent spacing */
 .section {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .text-primary {

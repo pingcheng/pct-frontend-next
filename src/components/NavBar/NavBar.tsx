@@ -37,7 +37,7 @@ export function NavBar() {
   return (
     <>
       <nav>
-        <div className="fixed-container relative flex items-center justify-between h-16">
+        <div className="page-container relative flex items-center justify-between h-16">
           {/* Mobile nav bar*/}
           <div className="absolute inset-y-0 left-4 flex items-center sm:hidden">
             <button

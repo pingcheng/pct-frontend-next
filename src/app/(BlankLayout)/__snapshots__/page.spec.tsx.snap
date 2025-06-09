@@ -3,7 +3,7 @@
 exports[`test home page ensure snapshot is correct 1`] = `
 <div>
   <main
-    class="h-screen flex flex-col items-center justify-center mx-auto gap-8 responsive-container"
+    class="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container"
   >
     <div
       class="max-w-full"

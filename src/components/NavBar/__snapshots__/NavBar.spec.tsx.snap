@@ -4,7 +4,7 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
 <div>
   <nav>
     <div
-      class="fixed-container relative flex items-center justify-between h-16"
+      class="page-container relative flex items-center justify-between h-16"
     >
       <div
         class="absolute inset-y-0 left-4 flex items-center sm:hidden"

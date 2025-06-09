@@ -54,7 +54,7 @@ describe("FixedWidthLayout", () => {
     );
   });
 
-  test("should have the fixed-container class on the main content", () => {
+  test("should have the page-container class on the main content", () => {
     render(
       <FixedWidthLayout>
         <div>Test Content</div>
@@ -62,7 +62,7 @@ describe("FixedWidthLayout", () => {
     );
 
     const container = screen.getByText("Test Content").parentElement;
-    expect(container).toHaveClass("fixed-container");
+    expect(container).toHaveClass("page-container");
     expect(container).toHaveClass("pt-2");
   });
 });

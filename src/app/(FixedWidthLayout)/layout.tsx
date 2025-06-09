@@ -10,7 +10,7 @@ export default function FixedWidthLayout({
   return (
     <>
       <NavBar />
-      <div className="fixed-container pt-2">{children}</div>
+      <div className="page-container pt-2">{children}</div>
       <Footer />
     </>
   );

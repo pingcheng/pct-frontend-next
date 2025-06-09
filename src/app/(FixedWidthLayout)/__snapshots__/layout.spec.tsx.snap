@@ -8,7 +8,7 @@ exports[`FixedWidthLayout should match snapshot 1`] = `
     NavBar Component
   </div>
   <div
-    class="fixed-container pt-2"
+    class="page-container pt-2"
   >
     <div
       data-testid="child-content"
