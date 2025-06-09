@@ -101,3 +101,29 @@ describe("Mobile menu interaction", () => {
     expect(menu.className).not.toMatch(/expanded/);
   });
 });
+
+describe("Mobile menu dynamic max-height", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("should set max-height to scrollHeight when opening and 0px when closing", () => {
+    (usePathname as jest.Mock).mockReturnValue("/");
+    render(<NavBar />);
+    const toggleButton = screen.getByRole("mobile-toggle");
+    const menu = screen.getByRole("mobile-nav-menu");
+    // Mock scrollHeight
+    Object.defineProperty(menu, "scrollHeight", {
+      value: 123,
+      configurable: true,
+    });
+    // Initially closed
+    expect(menu.style.maxHeight).toBe("0px");
+    // Open the menu
+    fireEvent.click(toggleButton);
+    expect(menu.style.maxHeight).toBe("123px");
+    // Close the menu
+    fireEvent.click(toggleButton);
+    expect(menu.style.maxHeight).toBe("0px");
+  });
+});

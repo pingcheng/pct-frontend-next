@@ -4,7 +4,7 @@ import { profile } from "@/data/profile";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./style.module.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { MenuIcon } from "../icons/MenuIcon";
 import { CloseIcon } from "../icons/CloseIcon";
 
@@ -33,6 +33,19 @@ const menuItems: MenuItem[] = [
 export function NavBar() {
   const pathName = usePathname();
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const menu = mobileMenuRef.current;
+    if (!menu) return;
+    if (isMobileMenuVisible) {
+      // Set to scrollHeight for smooth open
+      menu.style.maxHeight = menu.scrollHeight + "px";
+    } else {
+      // Set to 0 for smooth close
+      menu.style.maxHeight = "0px";
+    }
+  }, [isMobileMenuVisible]);
 
   return (
     <>
@@ -94,6 +107,7 @@ export function NavBar() {
 
         {/* Mobile nav bar */}
         <div
+          ref={mobileMenuRef}
           className={`sm:hidden ${styles.mobileMenu} ${
             isMobileMenuVisible ? styles.expanded : ""
           }`}

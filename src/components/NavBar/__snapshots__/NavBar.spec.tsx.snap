@@ -94,6 +94,7 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
     <div
       class="sm:hidden mobileMenu "
       role="mobile-nav-menu"
+      style="max-height: 0px;"
     >
       <div
         class="px-4 pt-2 pb-3 space-y-1"
