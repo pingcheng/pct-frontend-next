@@ -5,14 +5,22 @@ export type WorkPosition = {
   description: string[];
 };
 
+export type Company = {
+  name: string;
+  linkedInUrl?: string;
+};
+
 export type WorkExperience = {
-  company: string;
+  company: Company;
   positions: WorkPosition[];
 };
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "REA Group - PropTrack",
+    company: {
+      name: "REA Group - PropTrack",
+      linkedInUrl: "https://www.linkedin.com/company/rea-group",
+    },
     positions: [
       {
         position: "Lead Developer",
@@ -43,7 +51,10 @@ export const workExperiences: WorkExperience[] = [
     ],
   },
   {
-    company: "AroFlo",
+    company: {
+      name: "AroFlo",
+      linkedInUrl: "https://www.linkedin.com/company/aroflo",
+    },
     positions: [
       {
         position: "Web Developer",
@@ -56,7 +67,9 @@ export const workExperiences: WorkExperience[] = [
     ],
   },
   {
-    company: "PTEPLUS",
+    company: {
+      name: "PTEPLUS",
+    },
     positions: [
       {
         position: "Development Lead",

@@ -8,6 +8,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaCloud } from "react-icons/fa6";
 import { workExperiences } from "@/data/work-experience";
 import { Chip } from "@/components/Chip";
+import { FaLinkedin } from "react-icons/fa";
 
 export const metadata = {
   title: "About me",
@@ -81,7 +82,18 @@ export default function About() {
                   className="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
                 >
                   <span className="font-semibold text-base text-accent leading-tight">
-                    {companyItem.company}
+                    {companyItem.company.name}
+                    {companyItem.company.linkedInUrl && (
+                      <a
+                        href={companyItem.company.linkedInUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-blue-500 hover:text-blue-700 align-middle inline-block"
+                        aria-label="LinkedIn"
+                      >
+                        <FaLinkedin size={18} />
+                      </a>
+                    )}
                   </span>
                   {companyItem.positions.map((item, idx) => (
                     <div key={idx} className="flex flex-col gap-0.5 mt-1 mb-2">

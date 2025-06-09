@@ -38,8 +38,9 @@ describe("test about page", () => {
     expect(githubLink).toHaveAttribute("rel", "noopener");
 
     // Check for LinkedIn link
-    const linkedinRow = screen.getByText(getLabel("linkedin"));
-    const linkedinLink = linkedinRow.parentElement?.querySelector("a");
+    const linkedinRow = screen.getAllByText(getLabel("linkedin"))[0]; // Get only the first LinkedIn text, which is the label
+    const linkedinContainer = linkedinRow.parentElement;
+    const linkedinLink = linkedinContainer?.querySelector("a");
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute("href", socialUrls.linkedin);
 
@@ -92,7 +93,7 @@ describe("test about page", () => {
 
     // Check all work experiences are displayed (grouped by company)
     workExperiences.forEach((company) => {
-      expect(workSection).toHaveTextContent(company.company);
+      expect(workSection).toHaveTextContent(company.company.name);
       company.positions.forEach((position) => {
         expect(workSection).toHaveTextContent(position.position);
         expect(workSection).toHaveTextContent(position.startDate);
