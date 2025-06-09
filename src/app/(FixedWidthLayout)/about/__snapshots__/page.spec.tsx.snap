@@ -376,58 +376,59 @@ exports[`test about page ensures snapshot is correct 1`] = `
             class="flex-1 pl-0 sm:pl-2 w-full"
           >
             <div
-              class="mb-2"
+              class="flex flex-col gap-6"
             >
-              <div>
-                REA Group - PropTrack
-              </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    REA Group - PropTrack
+                  </span>
+                  <span
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                  >
                     Lead Developer
                   </span>
-                  <span
-                    class="text-gray-400"
-                  >
-                     
-                    / 
-                    Aug 2024
-                     - 
-                    Present
-                  </span>
                 </div>
                 <div
-                  class="text-gray-400"
-                />
-              </div>
-            </div>
-            <div
-              class="mb-2"
-            >
-              <div>
-                REA Group - PropTrack
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Aug 2024
+                   - 
+                  Present
+                </div>
               </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
-                    Senior Developer
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    REA Group - PropTrack
                   </span>
                   <span
-                    class="text-gray-400"
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
-                     
-                    / 
-                    Jul 2022
-                     - 
-                    Aug 2024
+                    Senior Developer
                   </span>
                 </div>
                 <div
-                  class="text-gray-400"
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Jul 2022
+                   - 
+                  Aug 2024
+                </div>
+                <div
+                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
                 >
                   <div>
                     Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
@@ -450,124 +451,121 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="mb-2"
-            >
-              <div>
-                REA Group - PropTrack
-              </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    REA Group - PropTrack
+                  </span>
+                  <span
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                  >
                     Developer
                   </span>
-                  <span
-                    class="text-gray-400"
-                  >
-                     
-                    / 
-                    Aug 2019
-                     - 
-                    Jun 2022
-                  </span>
                 </div>
                 <div
-                  class="text-gray-400"
-                />
-              </div>
-            </div>
-            <div
-              class="mb-2"
-            >
-              <div>
-                AroFlo
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Aug 2019
+                   - 
+                  Jun 2022
+                </div>
               </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
-                    Web Developer
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    AroFlo
                   </span>
                   <span
-                    class="text-gray-400"
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
-                     
-                    / 
-                    Aug 2019
-                     - 
-                    Sept 2021
+                    Web Developer
                   </span>
                 </div>
                 <div
-                  class="text-gray-400"
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Aug 2019
+                   - 
+                  Sept 2021
+                </div>
+                <div
+                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
                 >
                   <div>
                     Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="mb-2"
-            >
-              <div>
-                PTEPLUS
-              </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
-                    Development Lead
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    PTEPLUS
                   </span>
                   <span
-                    class="text-gray-400"
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
-                     
-                    / 
-                    Jan 2018
-                     - 
-                    May 2019
+                    Development Lead
                   </span>
                 </div>
                 <div
-                  class="text-gray-400"
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Jan 2018
+                   - 
+                  May 2019
+                </div>
+                <div
+                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
                 >
                   <div>
                     Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="mb-2"
-            >
-              <div>
-                PTEPLUS
-              </div>
               <div
-                class="text-xs"
+                class="flex flex-col gap-1 py-2"
               >
-                <div>
-                  <span>
-                    Full Stack Developer
+                <div
+                  class="flex flex-col gap-0.5"
+                >
+                  <span
+                    class="font-semibold text-base text-accent leading-tight"
+                  >
+                    PTEPLUS
                   </span>
                   <span
-                    class="text-gray-400"
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
-                     
-                    / 
-                    Oct 2016
-                     - 
-                    Jan 2018
+                    Full Stack Developer
                   </span>
                 </div>
                 <div
-                  class="text-gray-400"
+                  class="text-xs text-gray-400 mt-0.5"
+                >
+                  Oct 2016
+                   - 
+                  Jan 2018
+                </div>
+                <div
+                  class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
                 >
                   <div>
                     One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers’ setup.

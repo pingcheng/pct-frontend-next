@@ -74,31 +74,34 @@ export default function About() {
           </DataRow>
 
           <DataRow label="work">
-            {workExperiences.map((item, index) => {
-              return (
-                <div key={index} className="mb-2">
-                  <div>{item.company}</div>
-                  <div className="text-xs">
-                    <div>
-                      <span>{item.position}</span>
-                      <span className="text-gray-400">
-                        {" "}
-                        / {item.startDate} - {item.endDate}
-                      </span>
-                    </div>
-                    <div className="text-gray-400">
-                      {item.description.map((line, index) => {
-                        if (line === ":line-break:") {
-                          return <br key={index} />;
-                        }
-
-                        return <div key={index}>{line}</div>;
-                      })}
-                    </div>
+            <div className="flex flex-col gap-6">
+              {workExperiences.map((item, index) => (
+                <div key={index} className="flex flex-col gap-1 py-2">
+                  <div className="flex flex-col gap-0.5">
+                    <span className="font-semibold text-base text-accent leading-tight">
+                      {item.company}
+                    </span>
+                    <span className="text-sm text-gray-700 dark:text-gray-200 font-medium">
+                      {item.position}
+                    </span>
                   </div>
+                  <div className="text-xs text-gray-400 mt-0.5">
+                    {item.startDate} - {item.endDate}
+                  </div>
+                  {item.description.length > 0 && (
+                    <div className="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1">
+                      {item.description.map((line, idx) =>
+                        line === ":line-break:" ? (
+                          <br key={idx} />
+                        ) : (
+                          <div key={idx}>{line}</div>
+                        )
+                      )}
+                    </div>
+                  )}
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </DataRow>
         </div>
       </div>
