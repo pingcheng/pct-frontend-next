@@ -80,3 +80,24 @@ describe("isActive logic", () => {
     });
   });
 });
+
+describe("Mobile menu interaction", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("should close the mobile menu when a menu item is clicked", () => {
+    (usePathname as jest.Mock).mockReturnValue("/");
+    render(<NavBar />);
+    const toggleButton = screen.getByRole("mobile-toggle");
+    const menu = screen.getByRole("mobile-nav-menu");
+    // Open the mobile menu
+    fireEvent.click(toggleButton);
+    expect(menu.className).toMatch(/expanded/);
+    // Click a menu item
+    const homeLink = screen.getAllByText("Home")[1]; // mobile menu is rendered after desktop
+    fireEvent.click(homeLink);
+    // Menu should be closed
+    expect(menu.className).not.toMatch(/expanded/);
+  });
+});

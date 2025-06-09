@@ -108,6 +108,7 @@ export function NavBar() {
                   className={`${styles.navItem} ${
                     isActive(item, pathName) ? styles["active"] : ""
                   }`}
+                  onClick={() => setIsMobileMenuVisible(false)}
                 >
                   {item.label}
                 </Link>
