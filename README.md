@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## SEO & Sitemap
+
+This project automatically generates a `sitemap.xml` at `/sitemap.xml` for SEO purposes, including all static and dynamic routes (portfolio pages).
+
+**How it works:**
+
+- The sitemap is generated at build time using the data in `src/data/portfolios.ts`.
+- The base URL is taken from the `NEXT_PUBLIC_SITE_URL` environment variable.
+
+**To set your site URL:**
+
+Edit the `build` script in `package.json` or set the environment variable before building:
+
+```
+NEXT_PUBLIC_SITE_URL=https://your-domain.com pnpm build
+```
+
+**Access your sitemap:**
+
+```
+https://your-domain.com/sitemap.xml
+```
