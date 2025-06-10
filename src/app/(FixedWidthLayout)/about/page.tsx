@@ -14,6 +14,8 @@ export const metadata = {
   title: "About me",
 };
 
+import { getDurationString } from "@/utils/getDurationString";
+
 export default function About() {
   const links = [
     { label: "github", url: socialUrls.github },
@@ -101,7 +103,10 @@ export default function About() {
                         {item.position}
                       </span>
                       <div className="text-xs text-gray-400 mt-0.5">
-                        {item.startDate} - {item.endDate}
+                        {item.startDate} - {item.endDate}{" "}
+                        <span className="text-gray-500">
+                          ({getDurationString(item.startDate, item.endDate)})
+                        </span>
                       </div>
                       {item.description.length > 0 && (
                         <div className="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1">
