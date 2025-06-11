@@ -16,14 +16,6 @@ describe("test about page", () => {
     expect(heading).toHaveTextContent("About me");
   });
 
-  it("should display the avatar with correct dimensions", () => {
-    render(<About />);
-    const avatar = document.querySelector("img");
-    expect(avatar).toBeInTheDocument();
-    expect(avatar).toHaveAttribute("width", "128");
-    expect(avatar).toHaveAttribute("height", "128");
-  });
-
   it("should display social links with correct URLs", () => {
     render(<About />);
 
@@ -112,6 +104,50 @@ describe("test about page", () => {
   });
 
   it("should have correct metadata", () => {
-    expect(metadata.title).toBe("About me");
+    expect(metadata.title).toBe(
+      "About Ping Cheng | Lead Developer at REA Group, Melbourne"
+    );
+    expect(metadata.description).toBe(
+      "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills."
+    );
+    expect(metadata.keywords).toEqual([
+      "Ping Cheng",
+      "Lead Developer",
+      "Software Engineer",
+      "Melbourne",
+      "Full Stack Developer",
+      "Cloud Engineer",
+      "REA Group",
+      "PropTrack",
+      "Node.js",
+      "TypeScript",
+      "PHP",
+      "Java",
+      "DevOps",
+    ]);
+    expect(metadata.openGraph).toEqual({
+      title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+      description:
+        "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
+      url: "https://www.pingchengtech.com/about",
+      type: "profile",
+      images: [
+        {
+          url: "/apple-icon.png",
+          width: 180,
+          height: 180,
+          alt: "Ping Cheng - Lead Developer",
+        },
+      ],
+    });
+  });
+
+  it("should display the avatar with correct dimensions and alt text", () => {
+    render(<About />);
+    const avatar = document.querySelector("img");
+    expect(avatar).toBeInTheDocument();
+    expect(avatar).toHaveAttribute("width", "128");
+    expect(avatar).toHaveAttribute("height", "128");
+    expect(avatar).toHaveAttribute("alt", "Ping Cheng profile photo");
   });
 });

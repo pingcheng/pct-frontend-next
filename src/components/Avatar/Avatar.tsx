@@ -4,9 +4,10 @@ import { profile } from "@/data/profile";
 type AvatarProps = {
   width: number;
   height: number;
+  alt?: string;
 };
 
-export function Avatar({ width, height }: AvatarProps) {
+export function Avatar({ width, height, alt }: AvatarProps) {
   return (
     <div
       className="max-w-full"
@@ -17,7 +18,7 @@ export function Avatar({ width, height }: AvatarProps) {
     >
       <Image
         src={profile.avatarUrl}
-        alt={profile.fullName}
+        alt={alt || profile.fullName}
         width={width}
         height={height}
         style={{

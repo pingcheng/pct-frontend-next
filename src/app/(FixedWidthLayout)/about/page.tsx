@@ -11,7 +11,39 @@ import { Chip } from "@/components/Chip";
 import { FaLinkedin } from "react-icons/fa";
 
 export const metadata = {
-  title: "About me",
+  title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+  description:
+    "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
+  keywords: [
+    "Ping Cheng",
+    "Lead Developer",
+    "Software Engineer",
+    "Melbourne",
+    "Full Stack Developer",
+    "Cloud Engineer",
+    "REA Group",
+    "PropTrack",
+    "Node.js",
+    "TypeScript",
+    "PHP",
+    "Java",
+    "DevOps",
+  ],
+  openGraph: {
+    title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+    description:
+      "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
+    url: "https://www.pingchengtech.com/about",
+    type: "profile",
+    images: [
+      {
+        url: "/apple-icon.png",
+        width: 180,
+        height: 180,
+        alt: "Ping Cheng - Lead Developer",
+      },
+    ],
+  },
 };
 
 import { getDurationString } from "@/utils/getDurationString";
@@ -29,7 +61,7 @@ export default function About() {
         <Heading text="About me" align="center" />
         <div className="flex flex-col items-center gap-4 mt-4 mb-6">
           <div className="shadow-lg" style={{ borderRadius: "50%" }}>
-            <Avatar width={128} height={128} />
+            <Avatar width={128} height={128} alt="Ping Cheng profile photo" />
           </div>
         </div>
         <div className="w-full">
