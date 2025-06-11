@@ -33,6 +33,27 @@ const links: SocialLinkProps[] = [
   },
 ];
 
+export const metadata = {
+  title: "Ping Cheng | Lead Developer, Software Engineer, Melbourne",
+  description:
+    "Ping Cheng is a lead developer and software engineer in Melbourne, passionate about Node, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+  keywords: [
+    "Ping Cheng",
+    "Lead Developer",
+    "Software Engineer",
+    "Melbourne",
+    "Node",
+    "TypeScript",
+    "PHP",
+    "Java",
+    "Linux",
+    "REA Group",
+    "PropTrack",
+    "Web Development",
+    "Digital Solutions",
+  ],
+};
+
 export default function Home() {
   return (
     <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container">
