@@ -22,7 +22,7 @@ jobs:
         run: pnpm install
 
       - name: Audit packages
-        run: pnpm audit
+        run: pnpm audit --audit-level=high
 
       - name: Lint codes
         run: pnpm run lint
