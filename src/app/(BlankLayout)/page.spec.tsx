@@ -26,16 +26,16 @@ describe("test home page", () => {
 
   it("should display description text with correct styling", () => {
     render(<Home />);
-    // Test for specific text content
-    expect(screen.getByText(/software engineer/)).toBeInTheDocument();
-    expect(screen.getByText(/Focusing on/)).toBeInTheDocument();
+    // Test for new description text content
+    expect(screen.getByText(/Lead dev/)).toBeInTheDocument();
+    expect(screen.getByText(/latest tech/)).toBeInTheDocument();
 
-    // Test that key technical skills are mentioned
-    const skills = screen.getByText(
-      /Node\/TS\/JS, Java, PHP, Linux, Server management/
-    );
-    expect(skills).toBeInTheDocument();
-    expect(skills).toHaveClass("text-primary");
+    // Test that key technical skills are mentioned and highlighted
+    ["Node", "TypeScript", "PHP", "Java", "Linux"].forEach((skill) => {
+      const el = screen.getByText(skill, { exact: false });
+      expect(el).toBeInTheDocument();
+      expect(el).toHaveClass("text-primary");
+    });
   });
 
   it("should render all necessary social links with correct URLs", () => {

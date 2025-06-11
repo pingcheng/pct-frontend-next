@@ -42,20 +42,20 @@ export default function Home() {
       {/* Description */}
       <div className={styles.description}>
         <h1>
-          Hi! It is <span className="text-primary">{profile.fullName}</span>{" "}
-          here.
+          Hey, I’m <span className="text-primary">{profile.fullName}</span>.
         </h1>
         <p>
-          I am a high passionate{" "}
-          <span className="text-primary">software engineer</span>, enjoy the
-          latest techs and bring them into reality.
+          <span className="text-primary">Lead dev</span>, code lover, and always
+          building something cool with the
+          <span className="text-primary"> latest tech</span>.
         </p>
         <p>
-          Focusing on{" "}
-          <span className="text-primary">
-            Node/TS/JS, Java, PHP, Linux, Server management
-          </span>
-          , etc...
+          Into <span className="text-primary">Node</span>,{" "}
+          <span className="text-primary">TypeScript</span>,{" "}
+          <span className="text-primary">PHP</span>,{" "}
+          <span className="text-primary">Java</span>,{" "}
+          <span className="text-primary">Linux</span>, and making things work
+          better.
         </p>
       </div>
 

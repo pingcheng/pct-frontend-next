@@ -25,34 +25,64 @@ exports[`test home page ensure snapshot is correct 1`] = `
       class="description"
     >
       <h1>
-        Hi! It is 
+        Hey, I’m 
         <span
           class="text-primary"
         >
           Ping Cheng
         </span>
-         
-        here.
+        .
       </h1>
       <p>
-        I am a high passionate
-         
         <span
           class="text-primary"
         >
-          software engineer
+          Lead dev
         </span>
-        , enjoy the latest techs and bring them into reality.
+        , code lover, and always building something cool with the
+        <span
+          class="text-primary"
+        >
+           latest tech
+        </span>
+        .
       </p>
       <p>
-        Focusing on
+        Into 
+        <span
+          class="text-primary"
+        >
+          Node
+        </span>
+        ,
          
         <span
           class="text-primary"
         >
-          Node/TS/JS, Java, PHP, Linux, Server management
+          TypeScript
         </span>
-        , etc...
+        ,
+         
+        <span
+          class="text-primary"
+        >
+          PHP
+        </span>
+        ,
+         
+        <span
+          class="text-primary"
+        >
+          Java
+        </span>
+        ,
+         
+        <span
+          class="text-primary"
+        >
+          Linux
+        </span>
+        , and making things work better.
       </p>
     </div>
     <div
