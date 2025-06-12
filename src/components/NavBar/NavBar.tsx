@@ -4,7 +4,7 @@ import { profile } from "@/data/profile";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./style.module.css";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo, KeyboardEvent } from "react";
 import { MenuIcon } from "../icons/MenuIcon";
 import { CloseIcon } from "../icons/CloseIcon";
 
@@ -35,51 +35,68 @@ export function NavBar() {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
+  const logoStyles = useMemo(() => ({
+    borderTop: "3px solid var(--logo-line-color)",
+    borderBottom: "3px solid var(--logo-line-color)",
+  }), []);
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      setIsMobileMenuVisible(!isMobileMenuVisible);
+    }
+  };
+
   useEffect(() => {
     const menu = mobileMenuRef.current;
     if (!menu) return;
     if (isMobileMenuVisible) {
-      // Set to scrollHeight for smooth open
       menu.style.maxHeight = menu.scrollHeight + "px";
     } else {
-      // Set to 0 for smooth close
       menu.style.maxHeight = "0px";
     }
   }, [isMobileMenuVisible]);
 
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isMobileMenuVisible) {
+        setIsMobileMenuVisible(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape as any);
+    return () => document.removeEventListener('keydown', handleEscape as any);
+  }, [isMobileMenuVisible]);
+
   return (
     <>
-      <nav>
+      <nav role="navigation" aria-label="Main navigation">
         <div className="page-container relative flex items-center justify-between h-16">
-          {/* Mobile nav bar*/}
           <div className="absolute inset-y-0 left-4 flex items-center sm:hidden">
             <button
               onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-expanded="false"
-              role="mobile-toggle"
+              onKeyDown={handleKeyDown}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-expanded={isMobileMenuVisible}
+              aria-controls="mobile-menu"
+              aria-label={isMobileMenuVisible ? "Close main menu" : "Open main menu"}
             >
-              <span className="sr-only">Open main menu</span>
-
-              {/* Hamburger menu icon */}
-              <MenuIcon className={isMobileMenuVisible ? "hidden" : "block"} />
-
-              {/* Close icon */}
-              <CloseIcon className={isMobileMenuVisible ? "block" : "hidden"} />
+              <MenuIcon 
+                className={isMobileMenuVisible ? "hidden" : "block"} 
+                aria-hidden="true"
+              />
+              <CloseIcon 
+                className={isMobileMenuVisible ? "block" : "hidden"} 
+                aria-hidden="true"
+              />
             </button>
           </div>
 
-          {/* Desktop nav bar */}
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="shrink-0 flex items-center">
               <div
                 className="font-bold text-primary"
-                style={
-                  {
-                    borderTop: "3px solid var(--logo-line-color)",
-                    borderBottom: "3px solid var(--logo-line-color)",
-                  } as React.CSSProperties
-                }
+                style={logoStyles}
               >
                 {profile.fullName}
               </div>
@@ -105,13 +122,13 @@ export function NavBar() {
           </div>
         </div>
 
-        {/* Mobile nav bar */}
         <div
+          id="mobile-menu"
           ref={mobileMenuRef}
           className={`sm:hidden ${styles.mobileMenu} ${
             isMobileMenuVisible ? styles.expanded : ""
           }`}
-          role="mobile-nav-menu"
+          aria-hidden={!isMobileMenuVisible}
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => {

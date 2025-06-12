@@ -11,7 +11,7 @@ import { Chip } from "@/components/Chip";
 import { FaLinkedin } from "react-icons/fa";
 
 export const metadata = {
-  title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+  title: "About Ping Cheng",
   description:
     "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
     "DevOps",
   ],
   openGraph: {
-    title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+    title: "About Ping Cheng",
     description:
       "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
     url: "https://www.pingchengtech.com/about",
@@ -46,8 +46,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
-    description: "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
+    title: "About Ping Cheng",
+    description:
+      "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
     images: ["/apple-icon.png"],
   },
 };

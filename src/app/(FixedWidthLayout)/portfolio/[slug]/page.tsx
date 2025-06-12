@@ -37,6 +37,21 @@ export default async function Page(props: PageProps) {
     return notFound();
   }
 
+  const portfolioData = {
+    slug: portfolio.slug,
+    name: portfolio.name,
+    coverImage: portfolio.coverImage,
+    url: portfolio.url,
+    shortDescription: portfolio.shortDescription,
+    longDescription: portfolio.longDescription,
+    workplace: portfolio.workplace,
+    projectRole: portfolio.projectRole,
+    roleDescription: portfolio.roleDescription ? [...portfolio.roleDescription] : [],
+    members: portfolio.members ? [...portfolio.members] : [],
+    screenshots: portfolio.screenshots ? [...portfolio.screenshots] : [],
+    hasScreenshots: portfolio.hasScreenshots,
+  };
+
   return (
     <div className="py-4">
       <Link href="/portfolio" className="text-gray-500">
@@ -47,7 +62,7 @@ export default async function Page(props: PageProps) {
 
       <div className="flex mt-4 flex-wrap">
         <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
-          <PortfolioCard portfolio={portfolio} />
+          <PortfolioCard portfolio={portfolioData} />
         </div>
         <div className="w-full md:w-1/2 flex flex-col text-sm">
           <DataRow label="project">{portfolio.name}</DataRow>

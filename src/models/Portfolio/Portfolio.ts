@@ -34,6 +34,23 @@ export class Portfolio {
   get hasScreenshots(): boolean {
     return this.screenshots.length > 0;
   }
+
+  toJSON() {
+    return {
+      slug: this.slug,
+      name: this.name,
+      coverImage: this.coverImage,
+      url: this.url,
+      shortDescription: this.shortDescription,
+      longDescription: this.longDescription,
+      workplace: this.workplace,
+      projectRole: this.projectRole,
+      roleDescription: this.roleDescription,
+      members: this.members,
+      screenshots: this.screenshots,
+      hasScreenshots: this.hasScreenshots,
+    };
+  }
 }
 
 export type PortfolioProps = {

@@ -26,7 +26,7 @@ describe("test <SocialLink />", () => {
     const link = screen.getByText(/Example/i);
     expect(link).toHaveAttribute("href", "https://example.com");
     expect(link).toHaveAttribute("target", "_blank");
-    expect(link).toHaveAttribute("rel", "noopener");
+    expect(link).toHaveAttribute("rel", "noopener noreferrer");
   });
 
   it("should render internal link using Next.js Link component", () => {

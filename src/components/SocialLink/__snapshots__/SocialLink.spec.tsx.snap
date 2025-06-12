@@ -3,9 +3,10 @@
 exports[`test <SocialLink /> should match snapshot for external link 1`] = `
 <div>
   <a
+    aria-label="Example (opens in new tab)"
     class="socialLink"
     href="https://example.com"
-    rel="noopener"
+    rel="noopener noreferrer"
     target="_blank"
   >
     <span

@@ -2,7 +2,10 @@
 
 exports[`test <NavBar /> should match the snapshot 1`] = `
 <div>
-  <nav>
+  <nav
+    aria-label="Main navigation"
+    role="navigation"
+  >
     <div
       class="page-container relative flex items-center justify-between h-16"
     >
@@ -10,15 +13,11 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
         class="absolute inset-y-0 left-4 flex items-center sm:hidden"
       >
         <button
+          aria-controls="mobile-menu"
           aria-expanded="false"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white"
-          role="mobile-toggle"
+          aria-label="Open main menu"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
         >
-          <span
-            class="sr-only"
-          >
-            Open main menu
-          </span>
           <svg
             aria-hidden="true"
             class="block h-6 w-6 block"
@@ -92,8 +91,9 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="sm:hidden mobileMenu "
-      role="mobile-nav-menu"
+      id="mobile-menu"
       style="max-height: 0px;"
     >
       <div

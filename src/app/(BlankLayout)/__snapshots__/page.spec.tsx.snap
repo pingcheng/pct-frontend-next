@@ -16,16 +16,16 @@ exports[`test home page ensure snapshot is correct 1`] = `
     class="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container"
   >
     <div
-      class="max-w-full"
+      class="max-w-full "
       style="width: 192px; height: 192px;"
     >
       <img
-        alt="Ping Cheng"
+        alt="Ping Cheng profile photo"
         data-nimg="1"
         decoding="async"
         height="192"
         loading="lazy"
-        src="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=384&q=75"
+        src="http://localhost/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=384&q=75"
         srcset="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=384&q=75 2x"
         style="color: transparent; border-radius: 50%;"
         width="192"
@@ -99,9 +99,10 @@ exports[`test home page ensure snapshot is correct 1`] = `
       class="flex flex-wrap content-around text-lg justify-center"
     >
       <a
+        aria-label="Github (opens in new tab)"
         class="socialLink"
         href="https://github.com/pingcheng"
-        rel="noopener"
+        rel="noopener noreferrer"
         target="_blank"
       >
         <svg
@@ -123,9 +124,10 @@ exports[`test home page ensure snapshot is correct 1`] = `
         Github
       </a>
       <a
+        aria-label="LinkedIn (opens in new tab)"
         class="socialLink"
         href="https://www.linkedin.com/in/ping-cheng-5a47b484"
-        rel="noopener"
+        rel="noopener noreferrer"
         target="_blank"
       >
         <svg

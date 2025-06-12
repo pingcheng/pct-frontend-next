@@ -1,9 +1,10 @@
 import { render } from "@testing-library/react";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
-import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { SerializedPortfolio } from "@/types/Portfolio";
 
 describe("test PortfolioCard", () => {
-  const portfolio: Portfolio = new Portfolio("test-portfolio", {
+  const portfolio: SerializedPortfolio = {
+    slug: "test-portfolio",
     name: "Test Portfolio",
     coverImage: "https://sample.jpg",
     url: "https://sample.com",
@@ -14,7 +15,8 @@ describe("test PortfolioCard", () => {
     roleDescription: ["Design", "Development", "Test"],
     members: ["Ping Cheng"],
     screenshots: ["https://image1.jpg", "https://image2.jpg"],
-  });
+    hasScreenshots: true,
+  };
 
   it("should match the snapshot", () => {
     const { container } = render(<PortfolioCard portfolio={portfolio} />);

@@ -104,9 +104,7 @@ describe("test about page", () => {
   });
 
   it("should have correct metadata", () => {
-    expect(metadata.title).toBe(
-      "About Ping Cheng | Lead Developer at REA Group, Melbourne"
-    );
+    expect(metadata.title).toBe("About Ping Cheng");
     expect(metadata.description).toBe(
       "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills."
     );
@@ -126,7 +124,7 @@ describe("test about page", () => {
       "DevOps",
     ]);
     expect(metadata.openGraph).toEqual({
-      title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+      title: "About Ping Cheng",
       description:
         "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
       url: "https://www.pingchengtech.com/about",

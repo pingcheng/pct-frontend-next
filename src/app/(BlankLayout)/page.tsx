@@ -9,7 +9,10 @@ import {
   SocialLink,
   SocialLinkProps,
 } from "@/components/SocialLink/SocialLink";
-import { PersonStructuredData, WebsiteStructuredData } from "@/components/StructuredData/StructuredData";
+import {
+  PersonStructuredData,
+  WebsiteStructuredData,
+} from "@/components/StructuredData/StructuredData";
 
 const links: SocialLinkProps[] = [
   {
@@ -35,7 +38,7 @@ const links: SocialLinkProps[] = [
 ];
 
 export const metadata = {
-  title: "Ping Cheng | Lead Developer, Software Engineer, Melbourne",
+  title: "Ping Cheng",
   description:
     "Ping Cheng is a lead developer and software engineer in Melbourne, passionate about Node, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
   keywords: [
@@ -54,8 +57,9 @@ export const metadata = {
     "Digital Solutions",
   ],
   openGraph: {
-    title: "Ping Cheng | Lead Developer, Software Engineer, Melbourne",
-    description: "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+    title: "Ping Cheng",
+    description:
+      "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
     url: "https://www.pingchengtech.com",
     type: "profile",
     images: [
@@ -69,8 +73,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Ping Cheng | Lead Developer, Software Engineer, Melbourne",
-    description: "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux.",
+    title: "Ping Cheng",
+    description:
+      "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux.",
     images: ["/apple-icon.png"],
   },
 };
@@ -99,36 +104,36 @@ export default function Home() {
         }}
       />
       <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container">
-      {/* Avatar */}
-      <Avatar width={192} height={192} />
+        {/* Avatar */}
+        <Avatar width={192} height={192} />
 
-      {/* Description */}
-      <div className={styles.description}>
-        <h1>
-          Hey, I’m <span className="text-primary">{profile.fullName}</span>.
-        </h1>
-        <p>
-          <span className="text-primary">Lead dev</span>, code lover, and always
-          building something cool with the
-          <span className="text-primary"> latest tech</span>.
-        </p>
-        <p>
-          Into <span className="text-primary">Node</span>,{" "}
-          <span className="text-primary">TypeScript</span>,{" "}
-          <span className="text-primary">PHP</span>,{" "}
-          <span className="text-primary">Java</span>,{" "}
-          <span className="text-primary">Linux</span>, and making things work
-          better.
-        </p>
-      </div>
+        {/* Description */}
+        <div className={styles.description}>
+          <h1>
+            Hey, I’m <span className="text-primary">{profile.fullName}</span>.
+          </h1>
+          <p>
+            <span className="text-primary">Lead dev</span>, code lover, and
+            always building something cool with the
+            <span className="text-primary"> latest tech</span>.
+          </p>
+          <p>
+            Into <span className="text-primary">Node</span>,{" "}
+            <span className="text-primary">TypeScript</span>,{" "}
+            <span className="text-primary">PHP</span>,{" "}
+            <span className="text-primary">Java</span>,{" "}
+            <span className="text-primary">Linux</span>, and making things work
+            better.
+          </p>
+        </div>
 
-      {/* Social links */}
-      <div className="flex flex-wrap content-around text-lg justify-center">
-        {links.map(({ href, label, icon }) => (
-          <SocialLink key={label} href={href} label={label} icon={icon} />
-        ))}
-      </div>
-    </main>
+        {/* Social links */}
+        <div className="flex flex-wrap content-around text-lg justify-center">
+          {links.map(({ href, label, icon }) => (
+            <SocialLink key={label} href={href} label={label} icon={icon} />
+          ))}
+        </div>
+      </main>
     </>
   );
 }
