@@ -44,6 +44,12 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary",
+    title: "About Ping Cheng | Lead Developer at REA Group, Melbourne",
+    description: "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
+    images: ["/apple-icon.png"],
+  },
 };
 
 import { getDurationString } from "@/utils/getDurationString";

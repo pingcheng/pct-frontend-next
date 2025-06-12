@@ -38,6 +38,6 @@ describe("Portfolio page", () => {
   });
 
   it("should have correct metadata", () => {
-    expect(metadata.title).toBe("Portfolio");
+    expect(metadata.title).toBe("Portfolio | Ping Cheng - Software Development Projects");
   });
 });
