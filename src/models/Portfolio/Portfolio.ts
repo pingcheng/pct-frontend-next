@@ -1,56 +1,34 @@
-export class Portfolio {
+export type Portfolio = {
   slug: string;
   name: string;
   coverImage: string;
   url: string | null;
-
   shortDescription: string;
   longDescription: string;
-
   workplace: string;
   projectRole: string;
   roleDescription: string[];
-
   members: string[];
   screenshots: string[];
+  hasScreenshots: boolean;
+};
 
-  constructor(slug: string, props: PortfolioProps) {
-    this.slug = slug;
-    this.name = props.name ?? "";
-    this.coverImage = props.coverImage ?? "";
-    this.url = props.url ?? null;
-
-    this.shortDescription = props.shortDescription ?? "";
-    this.longDescription = props.longDescription ?? "";
-
-    this.workplace = props.workplace ?? "";
-    this.projectRole = props.projectRole ?? "";
-    this.roleDescription = props.roleDescription ?? [];
-
-    this.members = props.members ?? [];
-    this.screenshots = props.screenshots ?? [];
-  }
-
-  get hasScreenshots(): boolean {
-    return this.screenshots.length > 0;
-  }
-
-  toJSON() {
-    return {
-      slug: this.slug,
-      name: this.name,
-      coverImage: this.coverImage,
-      url: this.url,
-      shortDescription: this.shortDescription,
-      longDescription: this.longDescription,
-      workplace: this.workplace,
-      projectRole: this.projectRole,
-      roleDescription: this.roleDescription,
-      members: this.members,
-      screenshots: this.screenshots,
-      hasScreenshots: this.hasScreenshots,
-    };
-  }
+export function createPortfolio(slug: string, props: PortfolioProps): Portfolio {
+  const screenshots = props.screenshots ?? [];
+  return {
+    slug,
+    name: props.name ?? "",
+    coverImage: props.coverImage ?? "",
+    url: props.url ?? null,
+    shortDescription: props.shortDescription ?? "",
+    longDescription: props.longDescription ?? "",
+    workplace: props.workplace ?? "",
+    projectRole: props.projectRole ?? "",
+    roleDescription: props.roleDescription ?? [],
+    members: props.members ?? [],
+    screenshots,
+    hasScreenshots: screenshots.length > 0,
+  };
 }
 
 export type PortfolioProps = {

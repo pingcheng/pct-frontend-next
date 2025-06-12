@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import Page, { generateMetadata } from "./page";
 import { notFound } from "next/navigation";
-import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { Portfolio } from "@/types/Portfolio";
+import { createPortfolio } from "@/models/Portfolio/Portfolio";
 
 // Mock the imported components and modules
 jest.mock("@/components/Heading", () => ({
@@ -100,7 +101,7 @@ jest.mock("@/data/portfolios", () => ({
 }));
 
 // Mock portfolio data for tests
-const mockPortfolio = new Portfolio("test-project", {
+const mockPortfolio = createPortfolio("test-project", {
   name: "Test Project",
   coverImage: "/test-cover.jpg",
   url: "https://test-project.com",

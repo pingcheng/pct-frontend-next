@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { SerializedPortfolio } from "@/types/Portfolio";
+import { Portfolio } from "@/types/Portfolio";
 import styles from "./style.module.css";
 
 type PortfolioCardProps = {
-  portfolio: SerializedPortfolio;
+  portfolio: Portfolio;
   priority?: boolean;
 };
 

@@ -1,14 +1,2 @@
-export type SerializedPortfolio = {
-  slug: string;
-  name: string;
-  coverImage: string;
-  url: string | null;
-  shortDescription: string;
-  longDescription: string;
-  workplace: string;
-  projectRole: string;
-  roleDescription: string[];
-  members: string[];
-  screenshots: string[];
-  hasScreenshots: boolean;
-};
+export type { Portfolio } from "@/models/Portfolio/Portfolio";
+export type { Portfolio as SerializedPortfolio } from "@/models/Portfolio/Portfolio";

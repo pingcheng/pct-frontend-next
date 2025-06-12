@@ -1,4 +1,4 @@
-import { Portfolio, PortfolioProps } from "./Portfolio";
+import { createPortfolio, PortfolioProps } from "./Portfolio";
 
 describe("test Portfolio model", () => {
   const mockPortfolioProps: PortfolioProps = {
@@ -20,7 +20,7 @@ describe("test Portfolio model", () => {
   };
 
   it("should create a portfolio with provided values", () => {
-    const portfolio = new Portfolio("test-portfolio", mockPortfolioProps);
+    const portfolio = createPortfolio("test-portfolio", mockPortfolioProps);
 
     expect(portfolio.slug).toBe("test-portfolio");
     expect(portfolio.name).toBe("Test Portfolio");
@@ -58,7 +58,7 @@ describe("test Portfolio model", () => {
       screenshots: null,
     };
 
-    const portfolio = new Portfolio("empty-portfolio", nullProps);
+    const portfolio = createPortfolio("empty-portfolio", nullProps);
 
     expect(portfolio.slug).toBe("empty-portfolio");
     expect(portfolio.name).toBe("");
@@ -74,13 +74,13 @@ describe("test Portfolio model", () => {
   });
 
   it("hasScreenshots should return true when screenshots exist", () => {
-    const portfolio = new Portfolio("with-screenshots", mockPortfolioProps);
+    const portfolio = createPortfolio("with-screenshots", mockPortfolioProps);
     expect(portfolio.hasScreenshots).toBe(true);
   });
 
   it("hasScreenshots should return false when no screenshots exist", () => {
     const propsWithoutScreenshots = { ...mockPortfolioProps, screenshots: [] };
-    const portfolio = new Portfolio("no-screenshots", propsWithoutScreenshots);
+    const portfolio = createPortfolio("no-screenshots", propsWithoutScreenshots);
     expect(portfolio.hasScreenshots).toBe(false);
   });
 });

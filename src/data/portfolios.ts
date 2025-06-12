@@ -1,7 +1,7 @@
-import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { createPortfolio } from "@/models/Portfolio/Portfolio";
 
 export const Portfolios = [
-  new Portfolio("empire-cbs", {
+  createPortfolio("empire-cbs", {
     name: "Empire CBS",
     shortDescription: "Empire CBS internal job management system",
     coverImage:
@@ -27,7 +27,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs-4.png",
     ],
   }),
-  new Portfolio("pteplus", {
+  createPortfolio("pteplus", {
     name: "PTEPLUS",
     shortDescription:
       "PTEPLUS provides a user friendly UI and accurate machine scoring for PTE test taker",
@@ -69,7 +69,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/report-analysis.jpg",
     ],
   }),
-  new Portfolio("pinhr", {
+  createPortfolio("pinhr", {
     name: "PinHR",
     shortDescription: "A customised human resources management tool",
     coverImage:
@@ -96,7 +96,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/7.jpg",
     ],
   }),
-  new Portfolio("vatgc", {
+  createPortfolio("vatgc", {
     name: "VAGTC",
     shortDescription: "The final year project in the university",
     coverImage:
@@ -123,7 +123,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/4.jpg",
     ],
   }),
-  new Portfolio("qce-eduplus", {
+  createPortfolio("qce-eduplus", {
     name: "QCE Eduplus",
     shortDescription:
       "Maths practice platform partners with Cengage for Queensland secondary schools",
@@ -157,7 +157,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/8.jpg",
     ],
   }),
-  new Portfolio("rhfoto", {
+  createPortfolio("rhfoto", {
     name: "RH.foto",
     shortDescription:
       "A simplistic and clean photo wall for a group of professional photographers",

@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
-import { SerializedPortfolio } from "@/types/Portfolio";
+import { Portfolio } from "@/types/Portfolio";
 
 describe("test PortfolioCard", () => {
-  const portfolio: SerializedPortfolio = {
+  const portfolio: Portfolio = {
     slug: "test-portfolio",
     name: "Test Portfolio",
     coverImage: "https://sample.jpg",

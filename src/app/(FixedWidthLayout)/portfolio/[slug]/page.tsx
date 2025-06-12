@@ -3,7 +3,7 @@ import { Portfolios } from "@/data/portfolios";
 import { notFound } from "next/navigation";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import { DataRow } from "@/components/DataRow";
-import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { Portfolio } from "@/types/Portfolio";
 import Link from "next/link";
 import { Metadata } from "next";
 import { ScreenshotSection } from "@/app/(FixedWidthLayout)/portfolio/[slug]/ScreenshotSection";
@@ -37,20 +37,6 @@ export default async function Page(props: PageProps) {
     return notFound();
   }
 
-  const portfolioData = {
-    slug: portfolio.slug,
-    name: portfolio.name,
-    coverImage: portfolio.coverImage,
-    url: portfolio.url,
-    shortDescription: portfolio.shortDescription,
-    longDescription: portfolio.longDescription,
-    workplace: portfolio.workplace,
-    projectRole: portfolio.projectRole,
-    roleDescription: portfolio.roleDescription ? [...portfolio.roleDescription] : [],
-    members: portfolio.members ? [...portfolio.members] : [],
-    screenshots: portfolio.screenshots ? [...portfolio.screenshots] : [],
-    hasScreenshots: portfolio.hasScreenshots,
-  };
 
   return (
     <div className="py-4">
@@ -66,7 +52,7 @@ export default async function Page(props: PageProps) {
 
       <div className="flex mt-4 flex-wrap">
         <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 animate-slide-in-left animate-delay-200">
-          <PortfolioCard portfolio={portfolioData} />
+          <PortfolioCard portfolio={portfolio} />
         </div>
         <div className="w-full md:w-1/2 flex flex-col text-sm animate-slide-in-right animate-delay-300">
           <DataRow label="project">{portfolio.name}</DataRow>

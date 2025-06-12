@@ -48,33 +48,16 @@ export default function Portfolio() {
       </div>
 
       <div className="mt-4 flex flex-row flex-wrap gap-8 justify-center">
-        {Portfolios.map((portfolio, index) => {
-          const portfolioData = {
-            slug: portfolio.slug,
-            name: portfolio.name,
-            coverImage: portfolio.coverImage,
-            url: portfolio.url,
-            shortDescription: portfolio.shortDescription,
-            longDescription: portfolio.longDescription,
-            workplace: portfolio.workplace,
-            projectRole: portfolio.projectRole,
-            roleDescription: portfolio.roleDescription ? [...portfolio.roleDescription] : [],
-            members: portfolio.members ? [...portfolio.members] : [],
-            screenshots: portfolio.screenshots ? [...portfolio.screenshots] : [],
-            hasScreenshots: portfolio.hasScreenshots,
-          };
-          
-          return (
-            <div 
-              key={portfolio.slug}
-              className={`animate-fade-in-scale animate-delay-${200 + (index * 100)}`}
-            >
-              <Link href={`/portfolio/${portfolio.slug}`}>
-                <PortfolioCard portfolio={portfolioData} />
-              </Link>
-            </div>
-          );
-        })}
+        {Portfolios.map((portfolio, index) => (
+          <div 
+            key={portfolio.slug}
+            className={`animate-fade-in-scale animate-delay-${200 + (index * 100)}`}
+          >
+            <Link href={`/portfolio/${portfolio.slug}`}>
+              <PortfolioCard portfolio={portfolio} />
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
