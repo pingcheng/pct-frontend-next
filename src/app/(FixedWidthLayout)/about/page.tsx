@@ -64,20 +64,24 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-transparent flex flex-col items-center justify-center">
-      <div className="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4">
-        <Heading text="About me" align="center" />
-        <div className="flex flex-col items-center gap-4 mt-4 mb-6">
+      <div className="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4 animate-fade-in-scale">
+        <div className="animate-fade-in">
+          <Heading text="About me" align="center" />
+        </div>
+        <div className="flex flex-col items-center gap-4 mt-4 mb-6 animate-fade-in animate-delay-200">
           <div className="shadow-lg" style={{ borderRadius: "50%" }}>
             <Avatar width={128} height={128} alt="Ping Cheng profile photo" />
           </div>
         </div>
-        <div className="w-full">
-          {links.map((link) => (
-            <DataRow key={link.label} label={link.label}>
-              <a href={link.url} target="_blank" rel="noopener">
-                {link.text ?? link.url}
-              </a>
-            </DataRow>
+        <div className="w-full animate-fade-in animate-delay-300">
+          {links.map((link, index) => (
+            <div key={link.label} className={`animate-slide-in-left animate-delay-${400 + (index * 100)}`}>
+              <DataRow label={link.label}>
+                <a href={link.url} target="_blank" rel="noopener">
+                  {link.text ?? link.url}
+                </a>
+              </DataRow>
+            </div>
           ))}
 
           <DataRow label="skills">

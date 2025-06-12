@@ -62,7 +62,7 @@ describe("Portfolio page", () => {
     // Find the portfolio grid container
     const gridContainer = screen
       .getByText("Portfolio")
-      .parentElement?.querySelector(".mt-4");
+      .parentElement?.parentElement?.querySelector(".mt-4");
     expect(gridContainer).toHaveClass("flex");
     expect(gridContainer).toHaveClass("flex-row");
     expect(gridContainer).toHaveClass("flex-wrap");

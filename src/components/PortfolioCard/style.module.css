@@ -1,9 +1,11 @@
 @reference "../../app/globals.css";
 
 .portfolioCard {
-  @apply shadow-sm cursor-pointer transition ease-out relative rounded;
+  @apply shadow-sm cursor-pointer relative rounded;
   width: 300px;
   height: 400px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0) scale(1);
 
   &::after {
     @apply block absolute bottom-0 w-full;
@@ -13,11 +15,16 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     z-index: 1;
+    transition: background 0.3s ease;
   }
 
   &:hover {
     @apply shadow-2xl;
     transform: scale(1.03) translateY(-10px);
+    
+    &::after {
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    }
   }
 }
 

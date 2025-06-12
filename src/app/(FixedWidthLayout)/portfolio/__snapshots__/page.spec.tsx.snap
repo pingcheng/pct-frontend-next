@@ -5,15 +5,21 @@ exports[`Portfolio page matches snapshot 1`] = `
   <div
     class="py-4"
   >
-    <h1
-      class="heading1 center"
+    <div
+      class="animate-fade-in"
     >
-      Portfolio
-    </h1>
+      <h1
+        class="heading1 center"
+      >
+        Portfolio
+      </h1>
+    </div>
     <div
       class="mt-4 flex flex-row flex-wrap gap-8 justify-center"
     >
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-200"
+      >
         <a
           href="/portfolio/empire-cbs"
         >
@@ -41,7 +47,9 @@ exports[`Portfolio page matches snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-300"
+      >
         <a
           href="/portfolio/pteplus"
         >
@@ -69,7 +77,9 @@ exports[`Portfolio page matches snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-400"
+      >
         <a
           href="/portfolio/pinhr"
         >
@@ -97,7 +107,9 @@ exports[`Portfolio page matches snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-500"
+      >
         <a
           href="/portfolio/vatgc"
         >
@@ -125,7 +137,9 @@ exports[`Portfolio page matches snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-600"
+      >
         <a
           href="/portfolio/qce-eduplus"
         >
@@ -153,7 +167,9 @@ exports[`Portfolio page matches snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-700"
+      >
         <a
           href="/portfolio/rhfoto"
         >

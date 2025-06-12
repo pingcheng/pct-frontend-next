@@ -6,15 +6,19 @@ exports[`test about page ensures snapshot is correct 1`] = `
     class="min-h-screen bg-transparent flex flex-col items-center justify-center"
   >
     <div
-      class="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4"
+      class="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4 animate-fade-in-scale"
     >
-      <h1
-        class="heading1 center"
-      >
-        About me
-      </h1>
       <div
-        class="flex flex-col items-center gap-4 mt-4 mb-6"
+        class="animate-fade-in"
+      >
+        <h1
+          class="heading1 center"
+        >
+          About me
+        </h1>
+      </div>
+      <div
+        class="flex flex-col items-center gap-4 mt-4 mb-6 animate-fade-in animate-delay-200"
       >
         <div
           class="shadow-lg"
@@ -39,66 +43,78 @@ exports[`test about page ensures snapshot is correct 1`] = `
         </div>
       </div>
       <div
-        class="w-full"
+        class="w-full animate-fade-in animate-delay-300"
       >
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+          class="animate-slide-in-left animate-delay-400"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
           >
-            github
-          </div>
-          <div
-            class="flex-1 pl-0 sm:pl-2 w-full"
-          >
-            <a
-              href="https://github.com/pingcheng"
-              rel="noopener"
-              target="_blank"
+            <div
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
             >
-              https://github.com/pingcheng
-            </a>
+              github
+            </div>
+            <div
+              class="flex-1 pl-0 sm:pl-2 w-full"
+            >
+              <a
+                href="https://github.com/pingcheng"
+                rel="noopener"
+                target="_blank"
+              >
+                https://github.com/pingcheng
+              </a>
+            </div>
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+          class="animate-slide-in-left animate-delay-500"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
           >
-            linkedin
-          </div>
-          <div
-            class="flex-1 pl-0 sm:pl-2 w-full"
-          >
-            <a
-              href="https://www.linkedin.com/in/ping-cheng-5a47b484"
-              rel="noopener"
-              target="_blank"
+            <div
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
             >
-              https://www.linkedin.com/in/ping-cheng-5a47b484
-            </a>
+              linkedin
+            </div>
+            <div
+              class="flex-1 pl-0 sm:pl-2 w-full"
+            >
+              <a
+                href="https://www.linkedin.com/in/ping-cheng-5a47b484"
+                rel="noopener"
+                target="_blank"
+              >
+                https://www.linkedin.com/in/ping-cheng-5a47b484
+              </a>
+            </div>
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+          class="animate-slide-in-left animate-delay-600"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
           >
-            email
-          </div>
-          <div
-            class="flex-1 pl-0 sm:pl-2 w-full"
-          >
-            <a
-              href="mailto:ping.che@hotmail.com"
-              rel="noopener"
-              target="_blank"
+            <div
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
             >
-              ping.che@hotmail.com
-            </a>
+              email
+            </div>
+            <div
+              class="flex-1 pl-0 sm:pl-2 w-full"
+            >
+              <a
+                href="mailto:ping.che@hotmail.com"
+                rel="noopener"
+                target="_blank"
+              >
+                ping.che@hotmail.com
+              </a>
+            </div>
           </div>
         </div>
         <div

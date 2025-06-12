@@ -37,7 +37,7 @@ export function Avatar({ width, height, alt, priority = false, className }: Avat
         />
       ) : (
         <div
-          className="bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 rounded-full"
+          className="bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 rounded-full animate-fade-in"
           style={{
             width,
             height,
@@ -45,7 +45,7 @@ export function Avatar({ width, height, alt, priority = false, className }: Avat
           role="img"
           aria-label={alt || `${profile.fullName} profile photo (image unavailable)`}
         >
-          <span className="text-xs">No Image</span>
+          <span className="text-xs animate-fade-in animate-delay-200">No Image</span>
         </div>
       )}
     </div>

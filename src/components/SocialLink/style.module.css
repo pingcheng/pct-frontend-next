@@ -1,9 +1,11 @@
 @reference "../../app/globals.css";
 
 .socialLink {
-  @apply cursor-pointer text-gray-400 mr-4 p-2 transition duration-300;
+  @apply cursor-pointer text-gray-400 mr-4 p-2 transition-all duration-300 ease-in-out;
+  transform: translateY(0);
   &:hover {
     color: var(--text-color);
+    transform: translateY(-2px);
   }
 }
 

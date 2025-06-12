@@ -43,10 +43,12 @@ export const metadata = {
 export default function Portfolio() {
   return (
     <div className="py-4">
-      <Heading text="Portfolio" align="center" />
+      <div className="animate-fade-in">
+        <Heading text="Portfolio" align="center" />
+      </div>
 
       <div className="mt-4 flex flex-row flex-wrap gap-8 justify-center">
-        {Portfolios.map((portfolio) => {
+        {Portfolios.map((portfolio, index) => {
           const portfolioData = {
             slug: portfolio.slug,
             name: portfolio.name,
@@ -63,7 +65,10 @@ export default function Portfolio() {
           };
           
           return (
-            <div key={portfolio.slug}>
+            <div 
+              key={portfolio.slug}
+              className={`animate-fade-in-scale animate-delay-${200 + (index * 100)}`}
+            >
               <Link href={`/portfolio/${portfolio.slug}`}>
                 <PortfolioCard portfolio={portfolioData} />
               </Link>

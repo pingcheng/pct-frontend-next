@@ -5,15 +5,21 @@ exports[`Portfolio page should render the portfolio page 1`] = `
   <div
     class="py-4"
   >
-    <h1
-      class="heading1 center"
+    <div
+      class="animate-fade-in"
     >
-      Portfolio
-    </h1>
+      <h1
+        class="heading1 center"
+      >
+        Portfolio
+      </h1>
+    </div>
     <div
       class="mt-4 flex flex-row flex-wrap gap-8 justify-center"
     >
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-200"
+      >
         <a
           href="/portfolio/test-portfolio-1"
         >
@@ -41,7 +47,9 @@ exports[`Portfolio page should render the portfolio page 1`] = `
           </div>
         </a>
       </div>
-      <div>
+      <div
+        class="animate-fade-in-scale animate-delay-300"
+      >
         <a
           href="/portfolio/test-portfolio-2"
         >

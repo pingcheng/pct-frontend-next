@@ -105,10 +105,12 @@ export default function Home() {
       />
       <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container">
         {/* Avatar */}
-        <Avatar width={192} height={192} />
+        <div className="animate-fade-in-scale">
+          <Avatar width={192} height={192} priority />
+        </div>
 
         {/* Description */}
-        <div className={styles.description}>
+        <div className={`${styles.description} animate-fade-in animate-delay-200`}>
           <h1>
             Hey, I’m <span className="text-primary">{profile.fullName}</span>.
           </h1>
@@ -128,9 +130,14 @@ export default function Home() {
         </div>
 
         {/* Social links */}
-        <div className="flex flex-wrap content-around text-lg justify-center">
-          {links.map(({ href, label, icon }) => (
-            <SocialLink key={label} href={href} label={label} icon={icon} />
+        <div className="flex flex-wrap content-around text-lg justify-center animate-fade-in animate-delay-400">
+          {links.map(({ href, label, icon }, index) => (
+            <div 
+              key={label}
+              className={`animate-fade-in animate-delay-${500 + (index * 100)}`}
+            >
+              <SocialLink href={href} label={label} icon={icon} />
+            </div>
           ))}
         </div>
       </main>

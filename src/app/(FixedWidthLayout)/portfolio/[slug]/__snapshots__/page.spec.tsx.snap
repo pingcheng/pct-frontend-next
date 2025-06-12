@@ -5,22 +5,30 @@ exports[`Portfolio Slug Page should match snapshot 1`] = `
   <div
     class="py-4"
   >
-    <a
-      class="text-gray-500"
-      href="/portfolio"
+    <div
+      class="animate-fade-in"
     >
-      &lt; Back
-    </a>
-    <h1
-      data-align="center"
+      <a
+        class="text-gray-500 hover:text-gray-700 transition-colors duration-200"
+        href="/portfolio"
+      >
+        &lt; Back
+      </a>
+    </div>
+    <div
+      class="animate-fade-in animate-delay-100"
     >
-      Test Project
-    </h1>
+      <h1
+        data-align="center"
+      >
+        Test Project
+      </h1>
+    </div>
     <div
       class="flex mt-4 flex-wrap"
     >
       <div
-        class="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0"
+        class="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 animate-slide-in-left animate-delay-200"
       >
         <div
           data-testid="portfolio-card"
@@ -29,7 +37,7 @@ exports[`Portfolio Slug Page should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="w-full md:w-1/2 flex flex-col text-sm"
+        class="w-full md:w-1/2 flex flex-col text-sm animate-slide-in-right animate-delay-300"
       >
         <div
           data-label="project"
@@ -92,7 +100,7 @@ exports[`Portfolio Slug Page should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="flex mt-4"
+      class="flex mt-4 animate-fade-in animate-delay-500"
     >
       <div
         data-testid="screenshot-section"
