@@ -49,15 +49,15 @@ exports[`test about page ensures snapshot is correct 1`] = `
           class="animate-slide-in-left animate-delay-400"
         >
           <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
           >
             <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
             >
               github
             </div>
             <div
-              class="flex-1 pl-0 sm:pl-2 w-full"
+              class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
                 href="https://github.com/pingcheng"
@@ -73,15 +73,15 @@ exports[`test about page ensures snapshot is correct 1`] = `
           class="animate-slide-in-left animate-delay-500"
         >
           <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
           >
             <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
             >
               linkedin
             </div>
             <div
-              class="flex-1 pl-0 sm:pl-2 w-full"
+              class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
                 href="https://www.linkedin.com/in/ping-cheng-5a47b484"
@@ -97,15 +97,15 @@ exports[`test about page ensures snapshot is correct 1`] = `
           class="animate-slide-in-left animate-delay-600"
         >
           <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
           >
             <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
             >
               email
             </div>
             <div
-              class="flex-1 pl-0 sm:pl-2 w-full"
+              class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
                 href="mailto:ping.che@hotmail.com"
@@ -118,15 +118,15 @@ exports[`test about page ensures snapshot is correct 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+          class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
           >
             skills
           </div>
           <div
-            class="flex-1 pl-0 sm:pl-2 w-full"
+            class="flex-1 pl-0 sm:pl-3 w-full"
           >
             <div
               class="mb-4 pb-2 last:mb-0 last:pb-0"
@@ -381,15 +381,15 @@ exports[`test about page ensures snapshot is correct 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline mb-6 pb-4 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:mb-0 last:pb-0"
+          class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 font-semibold tracking-wide uppercase text-xs mb-1 sm:mb-0 pt-0 sm:pt-1"
+            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
           >
             work
           </div>
           <div
-            class="flex-1 pl-0 sm:pl-2 w-full"
+            class="flex-1 pl-0 sm:pl-3 w-full"
           >
             <div
               class="flex flex-col gap-6"
