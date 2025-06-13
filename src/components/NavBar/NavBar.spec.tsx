@@ -15,21 +15,25 @@ describe("test <NavBar />", () => {
 
   it("should toggle the mobile menu when the button is clicked", () => {
     render(<NavBar />);
-    const toggleButton = screen.getByRole("button", { name: /open main menu/i });
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
     const menu = document.getElementById("mobile-menu");
     // Initially, the mobile menu should be collapsed (not expanded)
-    expect(menu.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/expanded/);
     // Click to show
     fireEvent.click(toggleButton);
-    expect(menu.className).toMatch(/expanded/);
+    expect(menu?.className).toMatch(/expanded/);
     // Click again to hide
     fireEvent.click(toggleButton);
-    expect(menu.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/expanded/);
   });
 
   it("should display the correct SVG icon based on mobile menu visibility", () => {
     render(<NavBar />);
-    const toggleButton = screen.getByRole("button", { name: /open main menu/i });
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
     // Initially, hamburger icon should be visible, close icon hidden
     const hamburgerIcon = toggleButton.querySelector("svg:nth-of-type(1)");
     const closeIcon = toggleButton.querySelector("svg:nth-of-type(2)");
@@ -89,16 +93,18 @@ describe("Mobile menu interaction", () => {
   it("should close the mobile menu when a menu item is clicked", () => {
     (usePathname as jest.Mock).mockReturnValue("/");
     render(<NavBar />);
-    const toggleButton = screen.getByRole("button", { name: /open main menu/i });
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
     const menu = document.getElementById("mobile-menu");
     // Open the mobile menu
     fireEvent.click(toggleButton);
-    expect(menu.className).toMatch(/expanded/);
+    expect(menu?.className).toMatch(/expanded/);
     // Click a menu item
     const homeLink = screen.getAllByText("Home")[1]; // mobile menu is rendered after desktop
     fireEvent.click(homeLink);
     // Menu should be closed
-    expect(menu.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/expanded/);
   });
 });
 
@@ -110,7 +116,9 @@ describe("Mobile menu dynamic max-height", () => {
   it("should set max-height to scrollHeight when opening and 0px when closing", () => {
     (usePathname as jest.Mock).mockReturnValue("/");
     render(<NavBar />);
-    const toggleButton = screen.getByRole("button", { name: /open main menu/i });
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
     const menu = document.getElementById("mobile-menu");
     // Mock scrollHeight
     Object.defineProperty(menu, "scrollHeight", {
@@ -118,12 +126,12 @@ describe("Mobile menu dynamic max-height", () => {
       configurable: true,
     });
     // Initially closed
-    expect(menu.style.maxHeight).toBe("0px");
+    expect(menu?.style.maxHeight).toBe("0px");
     // Open the menu
     fireEvent.click(toggleButton);
-    expect(menu.style.maxHeight).toBe("123px");
+    expect(menu?.style.maxHeight).toBe("123px");
     // Close the menu
     fireEvent.click(toggleButton);
-    expect(menu.style.maxHeight).toBe("0px");
+    expect(menu?.style.maxHeight).toBe("0px");
   });
 });
