@@ -3,7 +3,7 @@ import { Portfolios } from "@/data/portfolios";
 import { notFound } from "next/navigation";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import { DataRow } from "@/components/DataRow";
-import { Portfolio } from "@/types/Portfolio";
+import { Portfolio } from "@/models/Portfolio/Portfolio";
 import Link from "next/link";
 import { Metadata } from "next";
 import { ScreenshotSection } from "@/app/(FixedWidthLayout)/portfolio/[slug]/ScreenshotSection";
@@ -37,11 +37,13 @@ export default async function Page(props: PageProps) {
     return notFound();
   }
 
-
   return (
     <div className="py-4">
       <div className="animate-fade-in">
-        <Link href="/portfolio" className="text-gray-500 hover:text-gray-700 transition-colors duration-200">
+        <Link
+          href="/portfolio"
+          className="text-gray-500 hover:text-gray-700 transition-colors duration-200"
+        >
           &lt; Back
         </Link>
       </div>

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Page, { generateMetadata } from "./page";
 import { notFound } from "next/navigation";
-import { Portfolio } from "@/types/Portfolio";
+import { Portfolio } from "@/models/Portfolio/Portfolio";
 import { createPortfolio } from "@/models/Portfolio/Portfolio";
 
 // Mock the imported components and modules

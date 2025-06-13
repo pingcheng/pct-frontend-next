@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
-import { Portfolio } from "@/types/Portfolio";
+import { Portfolio } from "@/models/Portfolio/Portfolio";
 
 describe("test PortfolioCard", () => {
   const portfolio: Portfolio = {
