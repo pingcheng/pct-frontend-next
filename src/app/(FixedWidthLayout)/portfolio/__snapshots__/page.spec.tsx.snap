@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Portfolio page matches snapshot 1`] = `
 <div>
@@ -27,7 +27,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="Empire CBS project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs.png); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs.png"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -57,7 +57,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="PTEPLUS project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/pteplus.jpg); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/pteplus.jpg"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -87,7 +87,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="PinHR project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/cover.jpg); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/cover.jpg"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -117,7 +117,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="VAGTC project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/vagtc.png); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/vagtc.png"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -147,7 +147,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="QCE Eduplus project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/cover.jpg); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/cover.jpg"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -177,7 +177,7 @@ exports[`Portfolio page matches snapshot 1`] = `
             aria-label="RH.foto project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/rhfoto.png); background-size: cover;"
+            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/rhfoto.png"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
