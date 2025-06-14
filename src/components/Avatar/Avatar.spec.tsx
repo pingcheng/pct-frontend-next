@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { Avatar } from "@/components/Avatar";
 
 describe("test <Avatar />", () => {
@@ -16,5 +16,15 @@ describe("test <Avatar />", () => {
     render(<Avatar width={100} height={100} />);
     expect(screen.getByRole("img")).toHaveAttribute("width", "100");
     expect(screen.getByRole("img")).toHaveAttribute("height", "100");
+  });
+
+  it("should handle image error", () => {
+    render(<Avatar width={100} height={100} />);
+    const img = screen.getByRole("img");
+    
+    fireEvent.error(img);
+    
+    // After error, should show fallback avatar
+    expect(screen.getByText("No Image")).toBeInTheDocument();
   });
 });

@@ -30,4 +30,10 @@ describe("test <Heading />", () => {
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toHaveClass("right");
   });
+
+  it("should apply custom className when provided", () => {
+    render(<Heading text="Test Heading" className="custom-class" />);
+    const heading = screen.getByRole("heading", { level: 1 });
+    expect(heading).toHaveClass("custom-class");
+  });
 });

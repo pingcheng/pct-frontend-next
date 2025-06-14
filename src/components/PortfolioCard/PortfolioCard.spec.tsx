@@ -22,4 +22,5 @@ describe("test PortfolioCard", () => {
     const { container } = render(<PortfolioCard portfolio={portfolio} />);
     expect(container).toMatchSnapshot();
   });
+
 });

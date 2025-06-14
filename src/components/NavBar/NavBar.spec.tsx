@@ -135,3 +135,39 @@ describe("Mobile menu dynamic max-height", () => {
     expect(menu?.style.maxHeight).toBe("0px");
   });
 });
+
+describe("Keyboard navigation", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("should toggle mobile menu with keyboard", () => {
+    (usePathname as jest.Mock).mockReturnValue("/");
+    render(<NavBar />);
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
+    const menu = document.getElementById("mobile-menu");
+    
+    // Press Enter to open
+    fireEvent.keyDown(toggleButton, { key: 'Enter' });
+    expect(menu?.className).toMatch(/expanded/);
+  });
+
+  it("should close mobile menu with Escape key", () => {
+    (usePathname as jest.Mock).mockReturnValue("/");
+    render(<NavBar />);
+    const toggleButton = screen.getByRole("button", {
+      name: /open main menu/i,
+    });
+    const menu = document.getElementById("mobile-menu");
+    
+    // Open the menu first
+    fireEvent.click(toggleButton);
+    expect(menu?.className).toMatch(/expanded/);
+    
+    // Press Escape to close
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(menu?.className).not.toMatch(/expanded/);
+  });
+});
