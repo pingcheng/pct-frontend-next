@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - '.github/dependabot.yml'
+
+jobs:
+  test:
+    if: github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, 'chore(deps')
+    uses: ./.github/workflows/test.yml
+
+  deploy:
+    if: github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, 'chore(deps')
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy on Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: "--prod"
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          vercel-version: 32.5.0
