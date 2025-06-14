@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Portfolio page should render the portfolio page 1`] = `
 <div>
@@ -27,7 +27,7 @@ exports[`Portfolio page should render the portfolio page 1`] = `
             aria-label="Test Portfolio 1 project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(undefined); background-size: cover;"
+            style="background-image: url("undefined"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
@@ -57,7 +57,7 @@ exports[`Portfolio page should render the portfolio page 1`] = `
             aria-label="Test Portfolio 2 project"
             class="portfolioCard"
             role="article"
-            style="background-image: url(undefined); background-size: cover;"
+            style="background-image: url("undefined"); background-size: cover;"
           >
             <div
               class="absolute bottom-0 p-2 text-gray-200"
