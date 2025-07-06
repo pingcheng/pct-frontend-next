@@ -5,7 +5,7 @@ exports[`test home page ensure snapshot is correct 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Lead Developer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"}}
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Lead Developer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["Node.js","TypeScript","JavaScript","PHP","Java","Linux","React","Vue.js","AWS","Docker","MySQL","Redis"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"}}
   </script>
   <script
     type="application/ld+json"

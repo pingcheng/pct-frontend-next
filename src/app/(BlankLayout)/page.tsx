@@ -93,6 +93,25 @@ export default function Home() {
           name: "REA Group",
           url: "https://www.rea-group.com",
         }}
+        knowsAbout={[
+          "Node.js",
+          "TypeScript", 
+          "JavaScript",
+          "PHP",
+          "Java",
+          "Linux",
+          "React",
+          "Vue.js",
+          "AWS",
+          "Docker",
+          "MySQL",
+          "Redis"
+        ]}
+        address={{
+          addressLocality: "Melbourne",
+          addressRegion: "Victoria",
+          addressCountry: "Australia",
+        }}
       />
       <WebsiteStructuredData
         name="Ping Cheng Tech"

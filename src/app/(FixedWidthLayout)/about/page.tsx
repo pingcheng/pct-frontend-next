@@ -9,6 +9,11 @@ import { FaCloud } from "react-icons/fa6";
 import { workExperiences } from "@/data/work-experience";
 import { Chip } from "@/components/Chip";
 import { FaLinkedin } from "react-icons/fa";
+import {
+  PersonStructuredData,
+  BreadcrumbListStructuredData,
+  ProfessionalServiceStructuredData,
+} from "@/components/StructuredData/StructuredData";
 
 export const metadata = {
   title: "About Ping Cheng",
@@ -62,8 +67,49 @@ export default function About() {
     { label: "email", url: `mailto:${profile.email}`, text: profile.email, ariaLabel: `Send email to ${profile.email}` },
   ];
 
+  const skillsArray = [
+    ...backendStack,
+    ...frontendStack,
+    ...devOpsStack,
+  ];
+
+  const breadcrumbItems = [
+    { name: "Home", url: "https://www.pingchengtech.com" },
+    { name: "About", url: "https://www.pingchengtech.com/about" },
+  ];
+
   return (
-    <main className="min-h-screen bg-transparent flex flex-col items-center justify-center">
+    <>
+      <PersonStructuredData
+        name={profile.fullName}
+        jobTitle="Lead Developer"
+        url="https://www.pingchengtech.com"
+        image="https://www.pingchengtech.com/apple-icon.png"
+        sameAs={[socialUrls.github, socialUrls.linkedin]}
+        worksFor={{
+          name: "REA Group",
+          url: "https://www.rea-group.com",
+        }}
+        knowsAbout={skillsArray}
+        address={{
+          addressLocality: "Melbourne",
+          addressRegion: "Victoria",
+          addressCountry: "Australia",
+        }}
+        email={profile.email}
+      />
+      <BreadcrumbListStructuredData items={breadcrumbItems} />
+      <ProfessionalServiceStructuredData
+        name="Software Development Services"
+        description="Full-stack web development, cloud solutions, and enterprise software development services specializing in Node.js, TypeScript, PHP, Java, and modern web technologies."
+        provider={{
+          name: profile.fullName,
+          url: "https://www.pingchengtech.com",
+        }}
+        areaServed="Melbourne, Australia"
+        serviceType="Software Development"
+      />
+      <main className="min-h-screen bg-transparent flex flex-col items-center justify-center">
       <article className="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4 animate-fade-in-scale">
         <div className="animate-fade-in">
           <Heading text="About me" align="center" />
@@ -176,5 +222,6 @@ export default function About() {
         </section>
       </article>
     </main>
+    </>
   );
 }

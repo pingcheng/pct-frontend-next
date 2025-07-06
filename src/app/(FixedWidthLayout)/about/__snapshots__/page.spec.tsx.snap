@@ -2,6 +2,21 @@
 
 exports[`test about page ensures snapshot is correct 1`] = `
 <div>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Lead Developer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["Node","TypeScript","JavaScript","Java","ColdFusion","PHP","Laravel","Moodle","MySQL","MSSQL","Redis","Server management","Message Queue","Payment Integration","HTML","JavaScript","Vue","React","jQuery","CSS","SASS","TailwindCSS","Styled Components","Bootstrap","Webpack","AWS","Infrastructure planning and implementing","Horizontal scaling","Serverless","Docker","ECS","CI/CD","GitlabCI","CircleCI"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.pingchengtech.com"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.pingchengtech.com/about"}]}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"Software Development Services","description":"Full-stack web development, cloud solutions, and enterprise software development services specializing in Node.js, TypeScript, PHP, Java, and modern web technologies.","provider":{"@type":"Person","name":"Ping Cheng","url":"https://www.pingchengtech.com"},"areaServed":"Melbourne, Australia","serviceType":"Software Development"}
+  </script>
   <main
     class="min-h-screen bg-transparent flex flex-col items-center justify-center"
   >
