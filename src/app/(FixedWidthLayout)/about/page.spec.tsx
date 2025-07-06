@@ -27,7 +27,7 @@ describe("test about page", () => {
     expect(githubLink).toBeInTheDocument();
     expect(githubLink).toHaveAttribute("href", socialUrls.github);
     expect(githubLink).toHaveAttribute("target", "_blank");
-    expect(githubLink).toHaveAttribute("rel", "noopener");
+    expect(githubLink).toHaveAttribute("rel", "noopener noreferrer");
 
     // Check for LinkedIn link
     const linkedinRow = screen.getAllByText(getLabel("linkedin"))[0]; // Get only the first LinkedIn text, which is the label

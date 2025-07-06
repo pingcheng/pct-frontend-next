@@ -2,10 +2,10 @@
 
 exports[`test about page ensures snapshot is correct 1`] = `
 <div>
-  <div
+  <main
     class="min-h-screen bg-transparent flex flex-col items-center justify-center"
   >
-    <div
+    <article
       class="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4 animate-fade-in-scale"
     >
       <div
@@ -17,7 +17,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
           About me
         </h1>
       </div>
-      <div
+      <section
         class="flex flex-col items-center gap-4 mt-4 mb-6 animate-fade-in animate-delay-200"
       >
         <div
@@ -41,8 +41,9 @@ exports[`test about page ensures snapshot is correct 1`] = `
             />
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
+        aria-label="Contact information and professional details"
         class="w-full animate-fade-in animate-delay-300"
       >
         <div
@@ -60,11 +61,12 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
+                aria-label="Visit my GitHub profile"
                 href="https://github.com/pingcheng"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
-                https://github.com/pingcheng
+                GitHub Profile
               </a>
             </div>
           </div>
@@ -84,11 +86,12 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
+                aria-label="Visit my LinkedIn profile"
                 href="https://www.linkedin.com/in/ping-cheng-5a47b484"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
-                https://www.linkedin.com/in/ping-cheng-5a47b484
+                LinkedIn Profile
               </a>
             </div>
           </div>
@@ -108,8 +111,9 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex-1 pl-0 sm:pl-3 w-full"
             >
               <a
+                aria-label="Send email to ping.che@hotmail.com"
                 href="mailto:ping.che@hotmail.com"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 ping.che@hotmail.com
@@ -131,10 +135,11 @@ exports[`test about page ensures snapshot is correct 1`] = `
             <div
               class="mb-4 pb-2 last:mb-0 last:pb-0"
             >
-              <span
+              <h3
                 class="inline-flex items-center gap-2 font-semibold text-accent"
               >
                 <svg
+                  aria-hidden="true"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -150,7 +155,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   />
                 </svg>
                  Backend
-              </span>
+              </h3>
               <div
                 class="flex flex-wrap gap-2 mt-1"
               >
@@ -229,10 +234,11 @@ exports[`test about page ensures snapshot is correct 1`] = `
             <div
               class="mb-4 pb-2 last:mb-0 last:pb-0"
             >
-              <span
+              <h3
                 class="inline-flex items-center gap-2 font-semibold text-accent"
               >
                 <svg
+                  aria-hidden="true"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -246,7 +252,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   />
                 </svg>
                  Frontend
-              </span>
+              </h3>
               <div
                 class="flex flex-wrap gap-2 mt-1"
               >
@@ -310,10 +316,11 @@ exports[`test about page ensures snapshot is correct 1`] = `
             <div
               class="mb-2"
             >
-              <span
+              <h3
                 class="inline-flex items-center gap-2 font-semibold text-accent"
               >
                 <svg
+                  aria-hidden="true"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -327,7 +334,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   />
                 </svg>
                  Cloud & DevOps
-              </span>
+              </h3>
               <div
                 class="flex flex-wrap gap-2 mt-1"
               >
@@ -397,18 +404,19 @@ exports[`test about page ensures snapshot is correct 1`] = `
               <div
                 class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <span
+                <h3
                   class="font-semibold text-base text-accent leading-tight"
                 >
                   REA Group - PropTrack
                   <a
-                    aria-label="LinkedIn"
+                    aria-label="REA Group - PropTrack LinkedIn profile"
                     class="ml-2 text-blue-500 hover:text-blue-700 align-middle inline-block"
                     href="https://www.linkedin.com/company/rea-group"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <svg
+                      aria-hidden="true"
                       fill="currentColor"
                       height="18"
                       stroke="currentColor"
@@ -422,7 +430,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                       />
                     </svg>
                   </a>
-                </span>
+                </h3>
                 <div
                   class="flex flex-col gap-0.5 mt-1 mb-2"
                 >
@@ -522,18 +530,19 @@ exports[`test about page ensures snapshot is correct 1`] = `
               <div
                 class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <span
+                <h3
                   class="font-semibold text-base text-accent leading-tight"
                 >
                   AroFlo
                   <a
-                    aria-label="LinkedIn"
+                    aria-label="AroFlo LinkedIn profile"
                     class="ml-2 text-blue-500 hover:text-blue-700 align-middle inline-block"
                     href="https://www.linkedin.com/company/aroflo"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <svg
+                      aria-hidden="true"
                       fill="currentColor"
                       height="18"
                       stroke="currentColor"
@@ -547,7 +556,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                       />
                     </svg>
                   </a>
-                </span>
+                </h3>
                 <div
                   class="flex flex-col gap-0.5 mt-1 mb-2"
                 >
@@ -583,11 +592,11 @@ exports[`test about page ensures snapshot is correct 1`] = `
               <div
                 class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
               >
-                <span
+                <h3
                   class="font-semibold text-base text-accent leading-tight"
                 >
                   PTEPLUS
-                </span>
+                </h3>
                 <div
                   class="flex flex-col gap-0.5 mt-1 mb-2"
                 >
@@ -654,8 +663,8 @@ exports[`test about page ensures snapshot is correct 1`] = `
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </article>
+  </main>
 </div>
 `;
