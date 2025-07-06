@@ -442,7 +442,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                       class="text-gray-500"
                     >
                       (
-                      10 months
+                      11 months
                       )
                     </span>
                   </div>

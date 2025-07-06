@@ -105,12 +105,12 @@ export default function Home() {
       />
       <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container">
         {/* Avatar */}
-        <div className="animate-fade-in-scale">
+        <section className="animate-fade-in-scale">
           <Avatar width={192} height={192} priority />
-        </div>
+        </section>
 
         {/* Description */}
-        <div className={`${styles.description} animate-fade-in animate-delay-200`}>
+        <section className={`${styles.description} animate-fade-in animate-delay-200`}>
           <h1>
             Hey, I’m <span className="text-primary">{profile.fullName}</span>.
           </h1>
@@ -127,10 +127,10 @@ export default function Home() {
             <span className="text-primary">Linux</span>, and making things work
             better.
           </p>
-        </div>
+        </section>
 
         {/* Social links */}
-        <div className="flex flex-wrap content-around text-lg justify-center animate-fade-in animate-delay-400">
+        <nav className="flex flex-wrap content-around text-lg justify-center animate-fade-in animate-delay-400" aria-label="Social links and navigation">
           {links.map(({ href, label, icon }, index) => (
             <div 
               key={label}
@@ -139,7 +139,7 @@ export default function Home() {
               <SocialLink href={href} label={label} icon={icon} />
             </div>
           ))}
-        </div>
+        </nav>
       </main>
     </>
   );

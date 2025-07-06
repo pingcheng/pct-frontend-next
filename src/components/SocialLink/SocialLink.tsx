@@ -21,7 +21,7 @@ export const SocialLink = ({ href, label, icon }: SocialLinkProps) => {
         rel="noopener noreferrer"
         aria-label={`${label} (opens in new tab)`}
       >
-        {icon} {label}
+        <span aria-hidden="true">{icon}</span> {label}
       </a>
     );
   }
@@ -31,8 +31,9 @@ export const SocialLink = ({ href, label, icon }: SocialLinkProps) => {
       className={styles.socialLink} 
       href={href}
       prefetch={true}
+      aria-label={label}
     >
-      {icon} {label}
+      <span aria-hidden="true">{icon}</span> {label}
     </Link>
   );
 };

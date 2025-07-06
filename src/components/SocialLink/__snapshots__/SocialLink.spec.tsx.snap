@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`test <SocialLink /> should match snapshot for external link 1`] = `
 <div>
@@ -10,9 +10,13 @@ exports[`test <SocialLink /> should match snapshot for external link 1`] = `
     target="_blank"
   >
     <span
-      data-testid="icon"
+      aria-hidden="true"
     >
-      Icon
+      <span
+        data-testid="icon"
+      >
+        Icon
+      </span>
     </span>
      
     Example
@@ -23,13 +27,18 @@ exports[`test <SocialLink /> should match snapshot for external link 1`] = `
 exports[`test <SocialLink /> should match snapshot for internal link 1`] = `
 <div>
   <a
+    aria-label="About"
     class="socialLink"
     href="/about"
   >
     <span
-      data-testid="icon"
+      aria-hidden="true"
     >
-      Icon
+      <span
+        data-testid="icon"
+      >
+        Icon
+      </span>
     </span>
      
     About
