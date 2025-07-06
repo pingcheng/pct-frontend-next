@@ -2,7 +2,7 @@
 // Accepts "Aug 2024", "Sept 2021", "Present", etc.
 export function getDurationString(start: string, end: string): string {
   const parseDate = (str: string): Date => {
-    if (str.toLowerCase() === "present") return new Date();
+    if (str.toLowerCase() === "present") return new Date(Date.now());
     const [monthStr, yearStr] = str.split(" ");
     const months = [
       "jan",
