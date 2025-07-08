@@ -4,7 +4,7 @@
   @apply shadow-sm cursor-pointer relative rounded;
   width: 300px;
   height: 400px;
-  transition: transform 0.2s ease-out;
+  transition: all 0.2s ease-out;
   transform-style: preserve-3d;
 
   &::after {
@@ -19,11 +19,7 @@
   }
 
   &:hover {
-    @apply shadow-2xl;
-    
-    &::after {
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-    }
+    @apply scale-103 shadow-2xl;
   }
 }
 
