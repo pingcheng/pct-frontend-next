@@ -103,9 +103,9 @@ describe("test PortfolioCard", () => {
   it("should show fallback when image error state is true", () => {
     // We'll test the error state by mocking the useState hook to return true for imageError
     const originalUseState = React.useState;
-    let setImageErrorMock: jest.Mock;
+    let setImageErrorMock: jest.Mock | undefined;
     
-    jest.spyOn(React, 'useState').mockImplementation((initial) => {
+    jest.spyOn(React, 'useState').mockImplementation((initial: any) => {
       if (initial === false && setImageErrorMock === undefined) {
         // This is likely the imageError state
         setImageErrorMock = jest.fn();
@@ -129,9 +129,9 @@ describe("test PortfolioCard", () => {
   it("should call setImageError when onError handler is triggered", () => {
     // Mock the useState hook to capture the setImageError function
     const originalUseState = React.useState;
-    let setImageErrorMock: jest.Mock;
+    let setImageErrorMock: jest.Mock | undefined;
     
-    jest.spyOn(React, 'useState').mockImplementation((initial) => {
+    jest.spyOn(React, 'useState').mockImplementation((initial: any) => {
       if (initial === false && setImageErrorMock === undefined) {
         // This is the imageError state
         setImageErrorMock = jest.fn();
@@ -154,7 +154,7 @@ describe("test PortfolioCard", () => {
       });
       
       // Verify setImageError was called with true
-      expect(setImageErrorMock).toHaveBeenCalledWith(true);
+      expect(setImageErrorMock!).toHaveBeenCalledWith(true);
     } else {
       // Fallback: trigger error event and check that handler exists
       expect(portfolioCard).toHaveAttribute('onError');

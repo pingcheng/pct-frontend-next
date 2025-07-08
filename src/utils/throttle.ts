@@ -9,7 +9,7 @@ export function throttle<T extends (...args: any[]) => void>(
   limit: number
 ): T {
   let inThrottle: boolean;
-  return ((...args: Parameters<T>) => {
+  return (function (this: any, ...args: Parameters<T>) {
     if (!inThrottle) {
       func.apply(this, args);
       inThrottle = true;
