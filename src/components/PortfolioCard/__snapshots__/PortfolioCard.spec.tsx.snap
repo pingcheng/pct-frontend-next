@@ -1,26 +1,61 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
+exports[`test PortfolioCard should handle priority prop 1`] = `
+<div>
+  <div
+    class="perspectiveContainer"
+  >
+    <div
+      aria-label="Test Portfolio project"
+      class="portfolioCard"
+      role="article"
+      style="background-image: url("https://sample.jpg"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
+    >
+      <div
+        class="absolute bottom-0 p-2 text-gray-200"
+        style="z-index: 10;"
+      >
+        <div
+          class="text-sm font-bold"
+        >
+          Test Portfolio
+        </div>
+        <div
+          class="text-xs"
+        >
+          This is test portfolio description
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`test PortfolioCard should match the snapshot 1`] = `
 <div>
   <div
-    aria-label="Test Portfolio project"
-    class="portfolioCard"
-    role="article"
-    style="background-image: url("https://sample.jpg"); background-size: cover;"
+    class="perspectiveContainer"
   >
     <div
-      class="absolute bottom-0 p-2 text-gray-200"
-      style="z-index: 10;"
+      aria-label="Test Portfolio project"
+      class="portfolioCard"
+      role="article"
+      style="background-image: url("https://sample.jpg"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
     >
       <div
-        class="text-sm font-bold"
+        class="absolute bottom-0 p-2 text-gray-200"
+        style="z-index: 10;"
       >
-        Test Portfolio
-      </div>
-      <div
-        class="text-xs"
-      >
-        This is test portfolio description
+        <div
+          class="text-sm font-bold"
+        >
+          Test Portfolio
+        </div>
+        <div
+          class="text-xs"
+        >
+          This is test portfolio description
+        </div>
       </div>
     </div>
   </div>

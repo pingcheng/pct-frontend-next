@@ -24,24 +24,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/empire-cbs"
         >
           <div
-            aria-label="Empire CBS project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs.png"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="Empire CBS project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs.png"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                Empire CBS
-              </div>
-              <div
-                class="text-xs"
-              >
-                Empire CBS internal job management system
+                <div
+                  class="text-sm font-bold"
+                >
+                  Empire CBS
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  Empire CBS internal job management system
+                </div>
               </div>
             </div>
           </div>
@@ -54,24 +58,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/pteplus"
         >
           <div
-            aria-label="PTEPLUS project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/pteplus.jpg"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="PTEPLUS project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/pteplus.jpg"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                PTEPLUS
-              </div>
-              <div
-                class="text-xs"
-              >
-                PTEPLUS provides a user friendly UI and accurate machine scoring for PTE test taker
+                <div
+                  class="text-sm font-bold"
+                >
+                  PTEPLUS
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  PTEPLUS provides a user friendly UI and accurate machine scoring for PTE test taker
+                </div>
               </div>
             </div>
           </div>
@@ -84,24 +92,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/pinhr"
         >
           <div
-            aria-label="PinHR project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/cover.jpg"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="PinHR project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/cover.jpg"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                PinHR
-              </div>
-              <div
-                class="text-xs"
-              >
-                A customised human resources management tool
+                <div
+                  class="text-sm font-bold"
+                >
+                  PinHR
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  A customised human resources management tool
+                </div>
               </div>
             </div>
           </div>
@@ -114,24 +126,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/vatgc"
         >
           <div
-            aria-label="VAGTC project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/vagtc.png"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="VAGTC project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/vagtc.png"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                VAGTC
-              </div>
-              <div
-                class="text-xs"
-              >
-                The final year project in the university
+                <div
+                  class="text-sm font-bold"
+                >
+                  VAGTC
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  The final year project in the university
+                </div>
               </div>
             </div>
           </div>
@@ -144,24 +160,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/qce-eduplus"
         >
           <div
-            aria-label="QCE Eduplus project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/cover.jpg"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="QCE Eduplus project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/cover.jpg"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                QCE Eduplus
-              </div>
-              <div
-                class="text-xs"
-              >
-                Maths practice platform partners with Cengage for Queensland secondary schools
+                <div
+                  class="text-sm font-bold"
+                >
+                  QCE Eduplus
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  Maths practice platform partners with Cengage for Queensland secondary schools
+                </div>
               </div>
             </div>
           </div>
@@ -174,24 +194,28 @@ exports[`Portfolio page matches snapshot 1`] = `
           href="/portfolio/rhfoto"
         >
           <div
-            aria-label="RH.foto project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/rhfoto.png"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="RH.foto project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/rhfoto.png"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                RH.foto
-              </div>
-              <div
-                class="text-xs"
-              >
-                A simplistic and clean photo wall for a group of professional photographers
+                <div
+                  class="text-sm font-bold"
+                >
+                  RH.foto
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  A simplistic and clean photo wall for a group of professional photographers
+                </div>
               </div>
             </div>
           </div>

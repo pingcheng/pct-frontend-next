@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { throttle } from "@/utils/throttle";
+import { calculateRotation } from "@/utils/calculateRotation";
 import styles from "./style.module.css";
 
 type PortfolioCardProps = {
@@ -15,6 +16,32 @@ export default function PortfolioCard({
   priority = false,
 }: PortfolioCardProps) {
   const [imageError, setImageError] = useState(false);
+  const [transform, setTransform] = useState("rotateX(0deg) rotateY(0deg)");
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (prefersReducedMotion) {
+      setTransform("rotateX(0deg) rotateY(0deg)");
+      return;
+    }
+
+    const handleGlobalMouseMove = throttle((e: MouseEvent) => {
+      if (!containerRef.current) return;
+      
+      const rect = containerRef.current.getBoundingClientRect();
+      const transform = calculateRotation(e.clientX, e.clientY, rect);
+      setTransform(transform);
+    }, 16); // ~60fps
+
+    document.addEventListener('mousemove', handleGlobalMouseMove);
+    
+    return () => {
+      document.removeEventListener('mousemove', handleGlobalMouseMove);
+    };
+  }, []);
 
   if (imageError) {
     return (
@@ -35,22 +62,28 @@ export default function PortfolioCard({
   }
 
   return (
-    <div
-      className={styles.portfolioCard}
-      style={{
-        backgroundImage: `url('${portfolio.coverImage}')`,
-        backgroundSize: "cover",
-      }}
-      role="article"
-      aria-label={`${portfolio.name} project`}
-      onError={() => setImageError(true)}
+    <div 
+      ref={containerRef}
+      className={styles.perspectiveContainer}
     >
       <div
-        className="absolute bottom-0 p-2 text-gray-200"
-        style={{ zIndex: 10 }}
+        className={styles.portfolioCard}
+        style={{
+          backgroundImage: `url('${portfolio.coverImage}')`,
+          backgroundSize: "cover",
+          transform: transform,
+        }}
+        role="article"
+        aria-label={`${portfolio.name} project`}
+        onError={() => setImageError(true)}
       >
-        <div className="text-sm font-bold">{portfolio.name}</div>
-        <div className="text-xs">{portfolio.shortDescription}</div>
+        <div
+          className="absolute bottom-0 p-2 text-gray-200"
+          style={{ zIndex: 10 }}
+        >
+          <div className="text-sm font-bold">{portfolio.name}</div>
+          <div className="text-xs">{portfolio.shortDescription}</div>
+        </div>
       </div>
     </div>
   );
