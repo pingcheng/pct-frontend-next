@@ -1,7 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
+import { throttle } from "@/utils/throttle";
+import { calculateRotation } from "@/utils/calculateRotation";
 import styles from "./style.module.css";
 
 type PortfolioCardProps = {
@@ -18,21 +20,21 @@ export default function PortfolioCard({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleGlobalMouseMove = (e: MouseEvent) => {
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (prefersReducedMotion) {
+      setTransform("rotateX(0deg) rotateY(0deg)");
+      return;
+    }
+
+    const handleGlobalMouseMove = throttle((e: MouseEvent) => {
       if (!containerRef.current) return;
       
       const rect = containerRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      
-      const rotateX = Math.max(-5, Math.min(5, (y - centerY) / centerY * -3));
-      const rotateY = Math.max(-5, Math.min(5, (x - centerX) / centerX * 3));
-      
-      setTransform(`rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
-    };
+      const transform = calculateRotation(e.clientX, e.clientY, rect);
+      setTransform(transform);
+    }, 16); // ~60fps
 
     document.addEventListener('mousemove', handleGlobalMouseMove);
     
