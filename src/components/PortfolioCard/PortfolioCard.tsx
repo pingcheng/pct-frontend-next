@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 import styles from "./style.module.css";
@@ -20,25 +20,29 @@ export default function PortfolioCard({
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return;
-    
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    
-    const rotateX = (y - centerY) / centerY * -10;
-    const rotateY = (x - centerX) / centerX * 10;
-    
-    setTransform(`rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
-  };
+  useEffect(() => {
+    const handleGlobalMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current) return;
+      
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = Math.max(-5, Math.min(5, (y - centerY) / centerY * -3));
+      const rotateY = Math.max(-5, Math.min(5, (x - centerX) / centerX * 3));
+      
+      setTransform(`rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
+    };
 
-  const handleMouseLeave = () => {
-    setTransform("rotateX(0deg) rotateY(0deg)");
-  };
+    document.addEventListener('mousemove', handleGlobalMouseMove);
+    
+    return () => {
+      document.removeEventListener('mousemove', handleGlobalMouseMove);
+    };
+  }, []);
 
   const handleClick = () => {
     router.push(`/portfolio/${portfolio.slug}`);
@@ -66,8 +70,6 @@ export default function PortfolioCard({
     <div 
       ref={containerRef}
       className={styles.perspectiveContainer}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
       <div
