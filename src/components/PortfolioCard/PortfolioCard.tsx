@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 import styles from "./style.module.css";
 
@@ -18,7 +16,6 @@ export default function PortfolioCard({
   const [imageError, setImageError] = useState(false);
   const [transform, setTransform] = useState("rotateX(0deg) rotateY(0deg)");
   const containerRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
 
   useEffect(() => {
     const handleGlobalMouseMove = (e: MouseEvent) => {
@@ -44,10 +41,6 @@ export default function PortfolioCard({
     };
   }, []);
 
-  const handleClick = () => {
-    router.push(`/portfolio/${portfolio.slug}`);
-  };
-
   if (imageError) {
     return (
       <div
@@ -70,7 +63,6 @@ export default function PortfolioCard({
     <div 
       ref={containerRef}
       className={styles.perspectiveContainer}
-      onClick={handleClick}
     >
       <div
         className={styles.portfolioCard}

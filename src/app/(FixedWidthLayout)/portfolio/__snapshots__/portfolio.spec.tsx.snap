@@ -24,24 +24,28 @@ exports[`Portfolio page should render the portfolio page 1`] = `
           href="/portfolio/test-portfolio-1"
         >
           <div
-            aria-label="Test Portfolio 1 project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("undefined"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="Test Portfolio 1 project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("undefined"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                Test Portfolio 1
-              </div>
-              <div
-                class="text-xs"
-              >
-                Test Description 1
+                <div
+                  class="text-sm font-bold"
+                >
+                  Test Portfolio 1
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  Test Description 1
+                </div>
               </div>
             </div>
           </div>
@@ -54,24 +58,28 @@ exports[`Portfolio page should render the portfolio page 1`] = `
           href="/portfolio/test-portfolio-2"
         >
           <div
-            aria-label="Test Portfolio 2 project"
-            class="portfolioCard"
-            role="article"
-            style="background-image: url("undefined"); background-size: cover;"
+            class="perspectiveContainer"
           >
             <div
-              class="absolute bottom-0 p-2 text-gray-200"
-              style="z-index: 10;"
+              aria-label="Test Portfolio 2 project"
+              class="portfolioCard"
+              role="article"
+              style="background-image: url("undefined"); background-size: cover; transform: rotateX(0deg) rotateY(0deg);"
             >
               <div
-                class="text-sm font-bold"
+                class="absolute bottom-0 p-2 text-gray-200"
+                style="z-index: 10;"
               >
-                Test Portfolio 2
-              </div>
-              <div
-                class="text-xs"
-              >
-                Test Description 2
+                <div
+                  class="text-sm font-bold"
+                >
+                  Test Portfolio 2
+                </div>
+                <div
+                  class="text-xs"
+                >
+                  Test Description 2
+                </div>
               </div>
             </div>
           </div>

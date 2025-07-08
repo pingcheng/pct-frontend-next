@@ -1,6 +1,7 @@
 import { Heading } from "@/components/Heading";
 import { Portfolios } from "@/data/portfolios";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
+import Link from "next/link";
 
 export const metadata = {
   title: "Portfolio | Ping Cheng - Software Development Projects",
@@ -52,7 +53,9 @@ export default function Portfolio() {
             key={portfolio.slug}
             className={`animate-fade-in-scale animate-delay-${200 + (index * 100)}`}
           >
-            <PortfolioCard portfolio={portfolio} />
+            <Link href={`/portfolio/${portfolio.slug}`}>
+              <PortfolioCard portfolio={portfolio} />
+            </Link>
           </div>
         ))}
       </div>
