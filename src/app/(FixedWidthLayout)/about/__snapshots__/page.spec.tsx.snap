@@ -452,6 +452,30 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   <span
                     class="text-sm text-gray-700 dark:text-gray-200 font-medium"
                   >
+                    Staff Engineer
+                  </span>
+                  <div
+                    class="text-xs text-gray-400 mt-0.5"
+                  >
+                    July 2025
+                     - 
+                    Present
+                     
+                    <span
+                      class="text-gray-500"
+                    >
+                      (
+                      Less than a month
+                      )
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                >
+                  <span
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                  >
                     Lead Developer
                   </span>
                   <div
@@ -459,7 +483,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   >
                     Aug 2024
                      - 
-                    Present
+                    July 2025
                      
                     <span
                       class="text-gray-500"

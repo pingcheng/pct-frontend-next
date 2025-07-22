@@ -23,9 +23,15 @@ export const workExperiences: WorkExperience[] = [
     },
     positions: [
       {
+        position: "Staff Engineer",
+        startDate: "July 2025",
+        endDate: "Present",
+        description: []
+      },
+      {
         position: "Lead Developer",
         startDate: "Aug 2024",
-        endDate: "Present",
+        endDate: "July 2025",
         description: [],
       },
       {
