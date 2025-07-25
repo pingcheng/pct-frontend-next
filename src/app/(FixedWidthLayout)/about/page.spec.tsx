@@ -106,11 +106,11 @@ describe("test about page", () => {
   it("should have correct metadata", () => {
     expect(metadata.title).toBe("About Ping Cheng");
     expect(metadata.description).toBe(
-      "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills."
+      "Staff Engineer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills."
     );
     expect(metadata.keywords).toEqual([
       "Ping Cheng",
-      "Lead Developer",
+      "Staff Engineer",
       "Software Engineer",
       "Melbourne",
       "Full Stack Developer",
@@ -126,7 +126,7 @@ describe("test about page", () => {
     expect(metadata.openGraph).toEqual({
       title: "About Ping Cheng",
       description:
-        "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
+        "Staff Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
       url: "https://www.pingchengtech.com/about",
       type: "profile",
       images: [
@@ -134,7 +134,7 @@ describe("test about page", () => {
           url: "/apple-icon.png",
           width: 180,
           height: 180,
-          alt: "Ping Cheng - Lead Developer",
+          alt: "Ping Cheng - Staff Engineer",
         },
       ],
     });

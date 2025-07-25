@@ -18,10 +18,10 @@ import {
 export const metadata = {
   title: "About Ping Cheng",
   description:
-    "Lead developer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
+    "Staff Engineer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
   keywords: [
     "Ping Cheng",
-    "Lead Developer",
+    "Staff Engineer",
     "Software Engineer",
     "Melbourne",
     "Full Stack Developer",
@@ -37,7 +37,7 @@ export const metadata = {
   openGraph: {
     title: "About Ping Cheng",
     description:
-      "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
+      "Staff Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
     url: "https://www.pingchengtech.com/about",
     type: "profile",
     images: [
@@ -45,7 +45,7 @@ export const metadata = {
         url: "/apple-icon.png",
         width: 180,
         height: 180,
-        alt: "Ping Cheng - Lead Developer",
+        alt: "Ping Cheng - Staff Engineer",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const metadata = {
     card: "summary",
     title: "About Ping Cheng",
     description:
-      "Lead developer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
+      "Staff Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
     images: ["/apple-icon.png"],
   },
 };
@@ -82,7 +82,7 @@ export default function About() {
     <>
       <PersonStructuredData
         name={profile.fullName}
-        jobTitle="Lead Developer"
+        jobTitle="Staff Engineer"
         url="https://www.pingchengtech.com"
         image="https://www.pingchengtech.com/apple-icon.png"
         sameAs={[socialUrls.github, socialUrls.linkedin]}

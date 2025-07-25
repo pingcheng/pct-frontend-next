@@ -27,7 +27,7 @@ describe("test home page", () => {
   it("should display description text with correct styling", () => {
     render(<Home />);
     // Test for new description text content
-    expect(screen.getByText(/Lead dev/)).toBeInTheDocument();
+    expect(screen.getByText(/Staff Engineer/)).toBeInTheDocument();
     expect(screen.getByText(/latest tech/)).toBeInTheDocument();
 
     // Test that key technical skills are mentioned and highlighted

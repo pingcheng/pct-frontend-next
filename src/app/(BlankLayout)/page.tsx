@@ -40,10 +40,10 @@ const links: SocialLinkProps[] = [
 export const metadata = {
   title: "Ping Cheng",
   description:
-    "Ping Cheng is a lead developer and software engineer in Melbourne, passionate about Node, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+    "Ping Cheng is a Staff Engineer and software engineer in Melbourne, passionate about Node, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
   keywords: [
     "Ping Cheng",
-    "Lead Developer",
+    "Staff Engineer",
     "Software Engineer",
     "Melbourne",
     "Node",
@@ -59,7 +59,7 @@ export const metadata = {
   openGraph: {
     title: "Ping Cheng",
     description:
-      "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+      "Staff Engineer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
     url: "https://www.pingchengtech.com",
     type: "profile",
     images: [
@@ -67,7 +67,7 @@ export const metadata = {
         url: "/apple-icon.png",
         width: 180,
         height: 180,
-        alt: "Ping Cheng - Lead Developer",
+        alt: "Ping Cheng - Staff Engineer",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const metadata = {
     card: "summary",
     title: "Ping Cheng",
     description:
-      "Lead developer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux.",
+      "Staff Engineer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux.",
     images: ["/apple-icon.png"],
   },
 };
@@ -85,7 +85,7 @@ export default function Home() {
     <>
       <PersonStructuredData
         name={profile.fullName}
-        jobTitle="Lead Developer"
+        jobTitle="Staff Engineer"
         url="https://www.pingchengtech.com"
         image="https://www.pingchengtech.com/apple-icon.png"
         sameAs={[socialUrls.github, socialUrls.linkedin]}
@@ -116,7 +116,7 @@ export default function Home() {
       <WebsiteStructuredData
         name="Ping Cheng Tech"
         url="https://www.pingchengtech.com"
-        description="Personal website and portfolio of Ping Cheng, Lead Developer and Software Engineer in Melbourne"
+        description="Personal website and portfolio of Ping Cheng, Staff Engineer and Software Engineer in Melbourne"
         author={{
           name: profile.fullName,
           url: "https://www.pingchengtech.com",
@@ -134,7 +134,7 @@ export default function Home() {
             Hey, I’m <span className="text-primary">{profile.fullName}</span>.
           </h1>
           <p>
-            <span className="text-primary">Lead dev</span>, code lover, and
+            <span className="text-primary">Staff Engineer</span>, code lover, and
             always building something cool with the
             <span className="text-primary"> latest tech</span>.
           </p>
