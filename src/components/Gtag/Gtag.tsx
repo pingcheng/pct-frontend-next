@@ -12,7 +12,7 @@ export default function Gtag() {
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
       />
-      <Script id="google-anlytics">
+      <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
