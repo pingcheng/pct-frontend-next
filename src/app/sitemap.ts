@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { Portfolios } from '@/data/portfolios'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.pingchengtech.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pingchengtech.com'
   
   const routes = [
     {
