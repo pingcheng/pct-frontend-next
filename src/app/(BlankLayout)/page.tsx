@@ -96,7 +96,7 @@ export default function Home() {
         }}
         knowsAbout={[
           "Node.js",
-          "TypeScript", 
+          "TypeScript",
           "JavaScript",
           "PHP",
           "Java",
@@ -132,7 +132,7 @@ export default function Home() {
         {/* Description */}
         <section className={`${styles.description} animate-fade-in animate-delay-200`}>
           <h1>
-            Hey, I'm <span className="text-primary">{profile.fullName}</span>.
+            Hey, I&apos;m <span className="text-primary">{profile.fullName}</span>.
           </h1>
           <p>
             <span className="text-primary">Staff Engineer</span>, code lover, and
@@ -140,7 +140,7 @@ export default function Home() {
             <span className="text-primary"> latest tech</span>.
           </p>
           <p className="min-h-[1.5rem]">
-            <CyclingTypewriterEffect 
+            <CyclingTypewriterEffect
               texts={[
                 "Building scalable solutions 🚀",
                 "Turning ideas into reality ✨",
@@ -168,7 +168,7 @@ export default function Home() {
         {/* Social links */}
         <nav className="flex flex-wrap content-around text-lg justify-center animate-fade-in animate-delay-400" aria-label="Social links and navigation">
           {links.map(({ href, label, icon }, index) => (
-            <div 
+            <div
               key={label}
               className={`animate-fade-in animate-delay-${500 + (index * 100)}`}
             >
