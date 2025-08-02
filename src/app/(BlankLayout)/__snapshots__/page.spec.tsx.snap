@@ -38,7 +38,7 @@ exports[`test home page ensure snapshot is correct 1`] = `
       class="description animate-fade-in animate-delay-200"
     >
       <h1>
-        Hey, I’m 
+        Hey, I'm 
         <span
           class="text-primary"
         >
@@ -59,6 +59,20 @@ exports[`test home page ensure snapshot is correct 1`] = `
            latest tech
         </span>
         .
+      </p>
+      <p
+        class="min-h-[1.5rem]"
+      >
+        <span
+          class="text-primary font-medium"
+        >
+          <span
+            class="inline-block opacity-100"
+            style="transition: opacity 0.1s;"
+          >
+            |
+          </span>
+        </span>
       </p>
       <p>
         Into 
