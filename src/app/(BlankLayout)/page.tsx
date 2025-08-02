@@ -13,6 +13,7 @@ import {
   PersonStructuredData,
   WebsiteStructuredData,
 } from "@/components/StructuredData/StructuredData";
+import { CyclingTypewriterEffect } from "@/components/TypewriterEffect";
 
 const links: SocialLinkProps[] = [
   {
@@ -131,12 +132,28 @@ export default function Home() {
         {/* Description */}
         <section className={`${styles.description} animate-fade-in animate-delay-200`}>
           <h1>
-            Hey, I’m <span className="text-primary">{profile.fullName}</span>.
+            Hey, I'm <span className="text-primary">{profile.fullName}</span>.
           </h1>
           <p>
             <span className="text-primary">Staff Engineer</span>, code lover, and
             always building something cool with the
             <span className="text-primary"> latest tech</span>.
+          </p>
+          <p className="min-h-[1.5rem]">
+            <CyclingTypewriterEffect 
+              texts={[
+                "Building scalable solutions 🚀",
+                "Turning ideas into reality ✨",
+                "Crafting elegant code 💻",
+                "Solving complex problems 🧩",
+                "Creating digital experiences 🎨"
+              ]}
+              typeSpeed={80}
+              deleteSpeed={40}
+              pauseTime={2000}
+              delay={1000}
+              className="text-primary font-medium"
+            />
           </p>
           <p>
             Into <span className="text-primary">Node</span>,{" "}
