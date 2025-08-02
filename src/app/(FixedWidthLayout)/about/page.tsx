@@ -3,9 +3,10 @@ import { Avatar } from "@/components/Avatar";
 import { profile, socialUrls } from "@/data/profile";
 import { DataRow } from "@/components/DataRow";
 import { GrCode } from "react-icons/gr";
-import { backendStack, devOpsStack, frontendStack } from "@/data/skills";
+import { backendStack, devOpsStack, frontendStack, legacyStack } from "@/data/skills";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCloud } from "react-icons/fa6";
+import { MdHistory } from "react-icons/md";
 import { workExperiences } from "@/data/work-experience";
 import { Chip } from "@/components/Chip";
 import { FaLinkedin } from "react-icons/fa";
@@ -71,6 +72,7 @@ export default function About() {
     ...backendStack,
     ...frontendStack,
     ...devOpsStack,
+    ...legacyStack,
   ];
 
   const breadcrumbItems = [
@@ -158,12 +160,23 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mb-2">
+            <div className="mb-4 pb-2 last:mb-0 last:pb-0">
               <h3 className="inline-flex items-center gap-2 font-semibold text-accent">
                 <FaCloud aria-hidden="true" /> Cloud & DevOps
               </h3>
               <div className="flex flex-wrap gap-2 mt-1">
                 {devOpsStack.map((text) => (
+                  <Chip key={text}>{text}</Chip>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-2">
+              <h3 className="inline-flex items-center gap-2 font-semibold text-accent">
+                <MdHistory aria-hidden="true" /> Legacy Technologies
+              </h3>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {legacyStack.map((text) => (
                   <Chip key={text}>{text}</Chip>
                 ))}
               </div>

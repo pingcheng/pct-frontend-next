@@ -5,7 +5,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["Node","TypeScript","JavaScript","Java","ColdFusion","PHP","Laravel","Moodle","MySQL","MSSQL","Redis","Server management","Message Queue","Payment Integration","HTML","JavaScript","Vue","React","jQuery","CSS","SASS","TailwindCSS","Styled Components","Bootstrap","Webpack","AWS","Infrastructure planning and implementing","Horizontal scaling","Serverless","Docker","ECS","CI/CD","GitlabCI","CircleCI"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["TypeScript","Node.js","GraphQL","REST API","PostgreSQL","Redis","Java","PHP","Laravel","MySQL","Message Queue","TypeScript","React","Next.js","TailwindCSS","Vue.js","Vite","Redux","SASS","Webpack","AWS","Kubernetes","Docker","Terraform","GitHub Actions","Serverless","CI/CD","CloudWatch","ColdFusion","Moodle","jQuery"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
   </script>
   <script
     type="application/ld+json"
@@ -177,27 +177,37 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  Node
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
                   TypeScript
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  JavaScript
+                  Node.js
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  GraphQL
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  REST API
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  PostgreSQL
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  Redis
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
                   Java
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  ColdFusion
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -212,37 +222,12 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  Moodle
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
                   MySQL
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  MSSQL
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Redis
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Server management
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
                   Message Queue
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Payment Integration
                 </span>
               </div>
             </div>
@@ -274,17 +259,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  HTML
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  JavaScript
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Vue
+                  TypeScript
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -294,17 +269,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  jQuery
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  CSS
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  SASS
+                  Next.js
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -314,12 +279,22 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  Styled Components
+                  Vue.js
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  Bootstrap
+                  Vite
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  Redux
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  SASS
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -329,7 +304,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
               </div>
             </div>
             <div
-              class="mb-2"
+              class="mb-4 pb-2 last:mb-0 last:pb-0"
             >
               <h3
                 class="inline-flex items-center gap-2 font-semibold text-accent"
@@ -361,17 +336,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  Infrastructure planning and implementing
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Horizontal scaling
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Serverless
+                  Kubernetes
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -381,7 +346,17 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  ECS
+                  Terraform
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  GitHub Actions
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  Serverless
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
@@ -391,12 +366,53 @@ exports[`test about page ensures snapshot is correct 1`] = `
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  GitlabCI
+                  CloudWatch
+                </span>
+              </div>
+            </div>
+            <div
+              class="mb-2"
+            >
+              <h3
+                class="inline-flex items-center gap-2 font-semibold text-accent"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+                  />
+                </svg>
+                 Legacy Technologies
+              </h3>
+              <div
+                class="flex flex-wrap gap-2 mt-1"
+              >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  ColdFusion
                 </span>
                 <span
                   class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
                 >
-                  CircleCI
+                  Moodle
+                </span>
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
+                >
+                  jQuery
                 </span>
               </div>
             </div>
@@ -465,7 +481,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
                       class="text-gray-500"
                     >
                       (
-                      Less than a month
+                      1 month
                       )
                     </span>
                   </div>
