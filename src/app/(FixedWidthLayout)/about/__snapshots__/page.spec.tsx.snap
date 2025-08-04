@@ -201,57 +201,57 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex flex-wrap gap-2 justify-center"
             >
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 TypeScript
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Node.js
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 GraphQL
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 REST API
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 PostgreSQL
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Redis
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Java
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 PHP
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Laravel
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 MySQL
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Message Queue
               </span>
@@ -292,47 +292,47 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex flex-wrap gap-2 justify-center"
             >
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 TypeScript
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 React
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Next.js
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 TailwindCSS
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Vue.js
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Vite
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Redux
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 SASS
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Webpack
               </span>
@@ -373,32 +373,32 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex flex-wrap gap-2 justify-center"
             >
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 AWS
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Docker
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 GitHub Actions
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Serverless
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 CI/CD
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 CloudWatch
               </span>
@@ -443,17 +443,17 @@ exports[`test about page ensures snapshot is correct 1`] = `
               class="flex flex-wrap gap-2 justify-center"
             >
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 ColdFusion
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 Moodle
               </span>
               <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+                class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
               >
                 jQuery
               </span>

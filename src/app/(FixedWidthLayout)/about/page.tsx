@@ -1,5 +1,6 @@
 import { Heading } from "@/components/Heading";
 import { Avatar } from "@/components/Avatar";
+import { Chip } from "@/components/Chip";
 import { profile, socialUrls } from "@/data/profile";
 import { GrCode } from "react-icons/gr";
 import { backendStack, devOpsStack, frontendStack, legacyStack } from "@/data/skills";
@@ -176,9 +177,7 @@ export default function About() {
                     </div>
                     <div className="flex flex-wrap gap-2 justify-center">
                       {category.skills.map((text) => (
-                        <span key={text} className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md">
-                          {text}
-                        </span>
+                        <Chip key={text}>{text}</Chip>
                       ))}
                     </div>
                   </div>
