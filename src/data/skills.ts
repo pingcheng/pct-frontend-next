@@ -26,9 +26,7 @@ export const frontendStack: string[] = [
 
 export const devOpsStack: string[] = [
   "AWS",
-  "Kubernetes",
   "Docker",
-  "Terraform",
   "GitHub Actions",
   "Serverless",
   "CI/CD",

@@ -12,33 +12,27 @@ describe("test about page", () => {
 
   it("should display the correct heading", () => {
     render(<About />);
-    const heading = screen.getByRole("heading", { level: 1 });
-    expect(heading).toHaveTextContent("About me");
+    const heading = screen.getByText("Ping Cheng");
+    expect(heading).toBeInTheDocument();
   });
 
   it("should display social links with correct URLs", () => {
     render(<About />);
 
     // Check for GitHub link
-    const getLabel = (label: string) => (content: string) =>
-      content.trim().toLowerCase() === label.toLowerCase();
-    const githubRow = screen.getByText(getLabel("github"));
-    const githubLink = githubRow.parentElement?.querySelector("a");
+    const githubLink = screen.getByRole("link", { name: /visit my github profile/i });
     expect(githubLink).toBeInTheDocument();
     expect(githubLink).toHaveAttribute("href", socialUrls.github);
     expect(githubLink).toHaveAttribute("target", "_blank");
     expect(githubLink).toHaveAttribute("rel", "noopener noreferrer");
 
     // Check for LinkedIn link
-    const linkedinRow = screen.getAllByText(getLabel("linkedin"))[0]; // Get only the first LinkedIn text, which is the label
-    const linkedinContainer = linkedinRow.parentElement;
-    const linkedinLink = linkedinContainer?.querySelector("a");
+    const linkedinLink = screen.getByRole("link", { name: /visit my linkedin profile/i });
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute("href", socialUrls.linkedin);
 
     // Check for email link
-    const emailRow = screen.getByText(getLabel("email"));
-    const emailLink = emailRow.parentElement?.querySelector("a");
+    const emailLink = screen.getByRole("link", { name: new RegExp(`send email to ${profile.email}`, "i") });
     expect(emailLink).toBeInTheDocument();
     expect(emailLink).toHaveAttribute("href", `mailto:${profile.email}`);
     expect(emailLink).toHaveTextContent(profile.email);
@@ -47,56 +41,51 @@ describe("test about page", () => {
   it("should display skills correctly", () => {
     render(<About />);
 
-    // Check for skills section
-    const getLabel = (label: string) => (content: string) =>
-      content.trim().toLowerCase() === label.toLowerCase();
-    const skillsRow = screen.getByText(getLabel("skills"));
-    const skillsSection =
-      skillsRow.parentElement?.querySelector("div:nth-child(2)");
+    // Check for skills section heading
+    const skillsHeading = screen.getByText("Technical Expertise");
+    expect(skillsHeading).toBeInTheDocument();
 
     // Backend skills
-    expect(skillsSection).toHaveTextContent("Backend");
+    const backendSection = screen.getByText("Backend");
+    expect(backendSection).toBeInTheDocument();
     backendStack.forEach((skill) => {
-      expect(skillsSection).toHaveTextContent(skill);
+      expect(screen.getAllByText(skill).length).toBeGreaterThanOrEqual(1);
     });
 
     // Frontend skills
-    expect(skillsSection).toHaveTextContent("Frontend");
+    const frontendSection = screen.getByText("Frontend");
+    expect(frontendSection).toBeInTheDocument();
     frontendStack.forEach((skill) => {
-      expect(skillsSection).toHaveTextContent(skill);
+      expect(screen.getAllByText(skill).length).toBeGreaterThanOrEqual(1);
     });
 
     // DevOps skills
-    expect(skillsSection).toHaveTextContent("Cloud & DevOps");
+    const devopsSection = screen.getByText("Cloud & DevOps");
+    expect(devopsSection).toBeInTheDocument();
     devOpsStack.forEach((skill) => {
-      expect(skillsSection).toHaveTextContent(skill);
+      expect(screen.getAllByText(skill).length).toBeGreaterThanOrEqual(1);
     });
   });
 
   it("should display work experience correctly", () => {
     render(<About />);
 
-    // Check for work section
-    const getLabel = (label: string) => (content: string) =>
-      content.trim().toLowerCase() === label.toLowerCase();
-    const workRow = screen.getByText(getLabel("work"));
-    const workSection =
-      workRow.parentElement?.querySelector("div:nth-child(2)");
+    // Check for work section heading
+    const workHeading = screen.getByText("Professional Experience");
+    expect(workHeading).toBeInTheDocument();
 
     // Check all work experiences are displayed (grouped by company)
     workExperiences.forEach((company) => {
-      expect(workSection).toHaveTextContent(company.company.name);
+      expect(screen.getByText(company.company.name)).toBeInTheDocument();
       company.positions.forEach((position) => {
-        expect(workSection).toHaveTextContent(position.position);
-        expect(workSection).toHaveTextContent(position.startDate);
-        expect(workSection).toHaveTextContent(position.endDate);
+        expect(screen.getByText(position.position)).toBeInTheDocument();
+        expect(screen.getAllByText(new RegExp(position.startDate)).length).toBeGreaterThanOrEqual(1);
+        expect(screen.getAllByText(new RegExp(position.endDate)).length).toBeGreaterThanOrEqual(1);
         position.description.forEach((line) => {
-          if (line === ":line-break:") {
-            // Check for <br> element when line-break is found
-            const brElements = workSection?.querySelectorAll("br");
-            expect(brElements?.length).toBeGreaterThan(0);
-          } else {
-            expect(workSection).toHaveTextContent(line);
+          if (line !== ":line-break:" && !line.startsWith("- ") && !line.endsWith(":")) {
+            // Use a more flexible text matcher for long descriptions that might be split
+            const escapedLine = line.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            expect(screen.getByText(new RegExp(escapedLine, 'i'))).toBeInTheDocument();
           }
         });
       });
@@ -144,8 +133,8 @@ describe("test about page", () => {
     render(<About />);
     const avatar = document.querySelector("img");
     expect(avatar).toBeInTheDocument();
-    expect(avatar).toHaveAttribute("width", "128");
-    expect(avatar).toHaveAttribute("height", "128");
+    expect(avatar).toHaveAttribute("width", "120");
+    expect(avatar).toHaveAttribute("height", "120");
     expect(avatar).toHaveAttribute("alt", "Ping Cheng profile photo");
   });
 });

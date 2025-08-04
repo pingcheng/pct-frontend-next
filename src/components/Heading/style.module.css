@@ -3,18 +3,6 @@
 .heading1 {
   @apply text-3xl font-extrabold mb-4 tracking-tight;
   color: var(--color-text-light);
-  position: relative;
-  padding-bottom: 0.25em;
-}
-
-.heading1::after {
-  content: "";
-  display: block;
-  width: 2.5rem;
-  height: 0.18em;
-  background: var(--color-accent);
-  border-radius: 1em;
-  margin: 0.5em auto 0 auto;
 }
 
 .center {

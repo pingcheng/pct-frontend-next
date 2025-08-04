@@ -5,7 +5,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["TypeScript","Node.js","GraphQL","REST API","PostgreSQL","Redis","Java","PHP","Laravel","MySQL","Message Queue","TypeScript","React","Next.js","TailwindCSS","Vue.js","Vite","Redux","SASS","Webpack","AWS","Kubernetes","Docker","Terraform","GitHub Actions","Serverless","CI/CD","CloudWatch","ColdFusion","Moodle","jQuery"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["TypeScript","Node.js","GraphQL","REST API","PostgreSQL","Redis","Java","PHP","Laravel","MySQL","Message Queue","TypeScript","React","Next.js","TailwindCSS","Vue.js","Vite","Redux","SASS","Webpack","AWS","Docker","GitHub Actions","Serverless","CI/CD","CloudWatch","ColdFusion","Moodle","jQuery"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
   </script>
   <script
     type="application/ld+json"
@@ -18,143 +18,164 @@ exports[`test about page ensures snapshot is correct 1`] = `
     {"@context":"https://schema.org","@type":"ProfessionalService","name":"Software Development Services","description":"Full-stack web development, cloud solutions, and enterprise software development services specializing in Node.js, TypeScript, PHP, Java, and modern web technologies.","provider":{"@type":"Person","name":"Ping Cheng","url":"https://www.pingchengtech.com"},"areaServed":"Melbourne, Australia","serviceType":"Software Development"}
   </script>
   <main
-    class="min-h-screen bg-transparent flex flex-col items-center justify-center"
+    class="min-h-screen bg-transparent py-8"
   >
-    <article
-      class="card p-8 rounded-2xl bg-opacity-90 max-w-xl w-full mx-auto mt-4 animate-fade-in-scale"
+    <div
+      class="max-w-4xl mx-auto px-6"
     >
-      <div
-        class="animate-fade-in"
-      >
-        <h1
-          class="heading1 center"
-        >
-          About me
-        </h1>
-      </div>
       <section
-        class="flex flex-col items-center gap-4 mt-4 mb-6 animate-fade-in animate-delay-200"
+        class="card p-8 rounded-lg w-full mb-8 animate-fade-in-scale"
       >
         <div
-          class="shadow-lg"
-          style="border-radius: 50%;"
+          class="flex flex-col lg:flex-row items-center gap-8"
         >
           <div
-            class="max-w-full "
-            style="width: 128px; height: 128px;"
-          >
-            <img
-              alt="Ping Cheng profile photo"
-              data-nimg="1"
-              decoding="async"
-              height="128"
-              loading="lazy"
-              src="http://localhost/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75 2x"
-              style="color: transparent; border-radius: 50%;"
-              width="128"
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        aria-label="Contact information and professional details"
-        class="w-full animate-fade-in animate-delay-300"
-      >
-        <div
-          class="animate-slide-in-left animate-delay-400"
-        >
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
+            class="flex-shrink-0 animate-fade-in animate-delay-200"
           >
             <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
+              class="shadow-lg"
+              style="border-radius: 50%;"
             >
-              github
+              <div
+                class="max-w-full "
+                style="width: 120px; height: 120px;"
+              >
+                <img
+                  alt="Ping Cheng profile photo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="120"
+                  loading="lazy"
+                  src="http://localhost/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Favatars0.githubusercontent.com%2Fu%2F8447539&w=256&q=75 2x"
+                  style="color: transparent; border-radius: 50%;"
+                  width="120"
+                />
+              </div>
             </div>
+          </div>
+          <div
+            class="flex-1 text-center lg:text-left"
+          >
             <div
-              class="flex-1 pl-0 sm:pl-3 w-full"
+              class="mb-3 animate-fade-in animate-delay-300"
+            >
+              <h1
+                class="heading1"
+              >
+                Ping Cheng
+              </h1>
+            </div>
+            <h2
+              class="text-lg font-medium text-gray-800 dark:text-gray-200 mb-4 animate-fade-in animate-delay-400"
+            >
+              Staff Engineer at REA Group
+            </h2>
+            <p
+              class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 animate-fade-in animate-delay-500"
+            >
+              Experienced full-stack engineer specializing in modern web technologies, cloud solutions, and enterprise software development. Passionate about building scalable systems and leading technical initiatives that drive business value.
+            </p>
+            <div
+              class="flex flex-wrap gap-3 justify-center lg:justify-start animate-fade-in animate-delay-600"
             >
               <a
                 aria-label="Visit my GitHub profile"
+                class="inline-flex items-center gap-2 px-3 py-1.5 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                 href="https://github.com/pingcheng"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                GitHub Profile
+                <svg
+                  fill="currentColor"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 496 512"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  />
+                </svg>
+                <span
+                  class="text-xs"
+                >
+                  GitHub
+                </span>
               </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="animate-slide-in-left animate-delay-500"
-        >
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
-          >
-            <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
-            >
-              linkedin
-            </div>
-            <div
-              class="flex-1 pl-0 sm:pl-3 w-full"
-            >
               <a
                 aria-label="Visit my LinkedIn profile"
+                class="inline-flex items-center gap-2 px-3 py-1.5 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                 href="https://www.linkedin.com/in/ping-cheng-5a47b484"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                LinkedIn Profile
+                <svg
+                  fill="currentColor"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  />
+                </svg>
+                <span
+                  class="text-xs"
+                >
+                  LinkedIn
+                </span>
               </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="animate-slide-in-left animate-delay-600"
-        >
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
-          >
-            <div
-              class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
-            >
-              email
-            </div>
-            <div
-              class="flex-1 pl-0 sm:pl-3 w-full"
-            >
               <a
                 aria-label="Send email to ping.che@hotmail.com"
+                class="inline-flex items-center gap-2 px-3 py-1.5 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                 href="mailto:ping.che@hotmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                ping.che@hotmail.com
+                ✉️
+                <span
+                  class="text-xs"
+                >
+                  ping.che@hotmail.com
+                </span>
               </a>
             </div>
           </div>
         </div>
+      </section>
+      <section
+        class="card p-6 rounded-lg w-full mb-8 animate-fade-in animate-delay-700"
+      >
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
+          class="mb-6 animate-fade-in animate-delay-800"
+        >
+          <h1
+            class="heading1 center"
+          >
+            Technical Expertise
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
-          >
-            skills
-          </div>
-          <div
-            class="flex-1 pl-0 sm:pl-3 w-full"
+            class="animate-slide-in-left animate-delay-900"
           >
             <div
-              class="mb-4 pb-2 last:mb-0 last:pb-0"
+              class="text-center mb-3"
             >
-              <h3
-                class="inline-flex items-center gap-2 font-semibold text-accent"
+              <div
+                class="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-2"
               >
                 <svg
                   aria-hidden="true"
+                  class="text-base text-gray-600 dark:text-gray-400"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -169,76 +190,85 @@ exports[`test about page ensures snapshot is correct 1`] = `
                     stroke-width="2"
                   />
                 </svg>
-                 Backend
-              </h3>
-              <div
-                class="flex flex-wrap gap-2 mt-1"
-              >
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  TypeScript
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Node.js
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  GraphQL
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  REST API
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  PostgreSQL
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Redis
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Java
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  PHP
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Laravel
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  MySQL
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Message Queue
-                </span>
               </div>
+              <h3
+                class="font-medium text-gray-900 dark:text-gray-100 text-sm"
+              >
+                Backend
+              </h3>
             </div>
             <div
-              class="mb-4 pb-2 last:mb-0 last:pb-0"
+              class="flex flex-wrap gap-2 justify-center"
             >
-              <h3
-                class="inline-flex items-center gap-2 font-semibold text-accent"
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                TypeScript
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Node.js
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                GraphQL
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                REST API
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                PostgreSQL
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Redis
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Java
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                PHP
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Laravel
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                MySQL
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Message Queue
+              </span>
+            </div>
+          </div>
+          <div
+            class="animate-slide-in-left animate-delay-1000"
+          >
+            <div
+              class="text-center mb-3"
+            >
+              <div
+                class="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-2"
               >
                 <svg
                   aria-hidden="true"
+                  class="text-base text-gray-600 dark:text-gray-400"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -251,66 +281,75 @@ exports[`test about page ensures snapshot is correct 1`] = `
                     d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z"
                   />
                 </svg>
-                 Frontend
-              </h3>
-              <div
-                class="flex flex-wrap gap-2 mt-1"
-              >
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  TypeScript
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  React
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Next.js
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  TailwindCSS
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Vue.js
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Vite
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Redux
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  SASS
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Webpack
-                </span>
               </div>
+              <h3
+                class="font-medium text-gray-900 dark:text-gray-100 text-sm"
+              >
+                Frontend
+              </h3>
             </div>
             <div
-              class="mb-4 pb-2 last:mb-0 last:pb-0"
+              class="flex flex-wrap gap-2 justify-center"
             >
-              <h3
-                class="inline-flex items-center gap-2 font-semibold text-accent"
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                TypeScript
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                React
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Next.js
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                TailwindCSS
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Vue.js
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Vite
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Redux
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                SASS
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Webpack
+              </span>
+            </div>
+          </div>
+          <div
+            class="animate-slide-in-left animate-delay-1100"
+          >
+            <div
+              class="text-center mb-3"
+            >
+              <div
+                class="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-2"
               >
                 <svg
                   aria-hidden="true"
+                  class="text-base text-gray-600 dark:text-gray-400"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -323,61 +362,60 @@ exports[`test about page ensures snapshot is correct 1`] = `
                     d="M0 336c0 79.5 64.5 144 144 144l368 0c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"
                   />
                 </svg>
-                 Cloud & DevOps
-              </h3>
-              <div
-                class="flex flex-wrap gap-2 mt-1"
-              >
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  AWS
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Kubernetes
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Docker
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Terraform
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  GitHub Actions
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Serverless
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  CI/CD
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  CloudWatch
-                </span>
               </div>
+              <h3
+                class="font-medium text-gray-900 dark:text-gray-100 text-sm"
+              >
+                Cloud & DevOps
+              </h3>
             </div>
             <div
-              class="mb-2"
+              class="flex flex-wrap gap-2 justify-center"
             >
-              <h3
-                class="inline-flex items-center gap-2 font-semibold text-accent"
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                AWS
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Docker
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                GitHub Actions
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Serverless
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                CI/CD
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                CloudWatch
+              </span>
+            </div>
+          </div>
+          <div
+            class="animate-slide-in-left animate-delay-1200"
+          >
+            <div
+              class="text-center mb-3"
+            >
+              <div
+                class="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mx-auto mb-2"
               >
                 <svg
                   aria-hidden="true"
+                  class="text-base text-gray-600 dark:text-gray-400"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -394,322 +432,330 @@ exports[`test about page ensures snapshot is correct 1`] = `
                     d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
                   />
                 </svg>
-                 Legacy Technologies
-              </h3>
-              <div
-                class="flex flex-wrap gap-2 mt-1"
-              >
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  ColdFusion
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  Moodle
-                </span>
-                <span
-                  class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded-full transition-colors cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 "
-                >
-                  jQuery
-                </span>
               </div>
+              <h3
+                class="font-medium text-gray-900 dark:text-gray-100 text-sm"
+              >
+                Legacy
+              </h3>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 justify-center"
+            >
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                ColdFusion
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                Moodle
+              </span>
+              <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded-md"
+              >
+                jQuery
+              </span>
             </div>
           </div>
         </div>
+      </section>
+      <section
+        class="card p-6 rounded-lg w-full animate-fade-in animate-delay-1300"
+      >
         <div
-          class="flex flex-col sm:flex-row items-start sm:items-baseline py-3 border-b border-dashed border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0"
+          class="mb-6 animate-fade-in animate-delay-1400"
+        >
+          <h1
+            class="heading1 center"
+          >
+            Professional Experience
+          </h1>
+        </div>
+        <div
+          class="space-y-6"
         >
           <div
-            class="text-gray-500 dark:text-gray-400 w-full sm:w-1/4 text-left sm:text-right pr-2 sm:pr-3 font-semibold tracking-wide uppercase text-xs pt-0 sm:pt-1"
-          >
-            work
-          </div>
-          <div
-            class="flex-1 pl-0 sm:pl-3 w-full"
+            class="border-l-2 border-gray-200 dark:border-gray-700 pl-4 animate-slide-in-left animate-delay-1500"
           >
             <div
-              class="flex flex-col gap-6"
+              class="mb-4"
             >
               <div
-                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
+                class="flex items-center gap-2 mb-1"
               >
                 <h3
-                  class="font-semibold text-base text-accent leading-tight"
+                  class="text-base font-semibold text-gray-900 dark:text-gray-100"
                 >
                   REA Group - PropTrack
-                  <a
-                    aria-label="REA Group - PropTrack LinkedIn profile"
-                    class="ml-2 text-blue-500 hover:text-blue-700 align-middle inline-block"
-                    href="https://www.linkedin.com/company/rea-group"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      fill="currentColor"
-                      height="18"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 448 512"
-                      width="18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      />
-                    </svg>
-                  </a>
                 </h3>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                <a
+                  aria-label="REA Group - PropTrack LinkedIn profile"
+                  class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                  href="https://www.linkedin.com/company/rea-group"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                  <svg
+                    aria-hidden="true"
+                    fill="currentColor"
+                    height="14"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="space-y-3"
+              >
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Staff Engineer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     July 2025
                      - 
                     Present
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      1 month
-                      )
-                    </span>
+                     · 
+                    1 month
                   </div>
                 </div>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
-                >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Lead Developer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Aug 2024
                      - 
                     July 2025
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      11 months
-                      )
-                    </span>
+                     · 
+                    11 months
                   </div>
                 </div>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
-                >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Senior Developer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Jul 2022
                      - 
                     Aug 2024
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      2 years and 1 month
-                      )
-                    </span>
+                     · 
+                    2 years and 1 month
                   </div>
                   <div
-                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                    class="space-y-1"
                   >
-                    <div>
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed"
+                    >
                       Highly involved in digital mortgage areas, seamlessly connecting banks and the valuation industry with modern digital solutions. Contributing to the development of secure, enterprise-level products.
                     </div>
-                    <br />
-                    <div>
+                    <div
+                      class="h-1"
+                    />
+                    <div
+                      class="text-xs font-medium text-gray-700 dark:text-gray-300 mt-2 mb-1"
+                    >
                       Key Responsibilities:
                     </div>
-                    <div>
-                      - Collaborate closely with the lead developer to design system solutions.
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed ml-3"
+                    >
+                      • 
+                      Collaborate closely with the lead developer to design system solutions.
                     </div>
-                    <div>
-                      - Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed ml-3"
+                    >
+                      • 
+                      Utilise existing group-wide infrastructure to optimise efficiency and avoid redundancy.
                     </div>
-                    <div>
-                      - Take the lead in developing feature slices and efficiently allocate work within the team.
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed ml-3"
+                    >
+                      • 
+                      Take the lead in developing feature slices and efficiently allocate work within the team.
                     </div>
-                    <div>
-                      - Provide mentorship to less experienced developers within the team.
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed ml-3"
+                    >
+                      • 
+                      Provide mentorship to less experienced developers within the team.
                     </div>
                   </div>
                 </div>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
-                >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Developer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Aug 2021
                      - 
                     Jun 2022
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      10 months
-                      )
-                    </span>
+                     · 
+                    10 months
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="border-l-2 border-gray-200 dark:border-gray-700 pl-4 animate-slide-in-left animate-delay-1700"
+          >
+            <div
+              class="mb-4"
+            >
               <div
-                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
+                class="flex items-center gap-2 mb-1"
               >
                 <h3
-                  class="font-semibold text-base text-accent leading-tight"
+                  class="text-base font-semibold text-gray-900 dark:text-gray-100"
                 >
                   AroFlo
-                  <a
-                    aria-label="AroFlo LinkedIn profile"
-                    class="ml-2 text-blue-500 hover:text-blue-700 align-middle inline-block"
-                    href="https://www.linkedin.com/company/aroflo"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      fill="currentColor"
-                      height="18"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 448 512"
-                      width="18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      />
-                    </svg>
-                  </a>
                 </h3>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
+                <a
+                  aria-label="AroFlo LinkedIn profile"
+                  class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                  href="https://www.linkedin.com/company/aroflo"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                  <svg
+                    aria-hidden="true"
+                    fill="currentColor"
+                    height="14"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="space-y-3"
+              >
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Web Developer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Aug 2019
                      - 
                     Sept 2021
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      2 years and 1 month
-                      )
-                    </span>
+                     · 
+                    2 years and 1 month
                   </div>
                   <div
-                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                    class="space-y-1"
                   >
-                    <div>
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed"
+                    >
                       Working as a full stack developer. Delivering new features to AroFlo Platform which is an industry leading product in Australia, my current main involves in the platform include but not limited to project management, quotes, invoices, payment integration areas.
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="border-l-2 border-gray-200 dark:border-gray-700 pl-4 animate-slide-in-left animate-delay-1900"
+          >
+            <div
+              class="mb-4"
+            >
               <div
-                class="flex flex-col gap-1 py-2 border-b-1 last:border-b-0 border-dashed"
+                class="flex items-center gap-2 mb-1"
               >
                 <h3
-                  class="font-semibold text-base text-accent leading-tight"
+                  class="text-base font-semibold text-gray-900 dark:text-gray-100"
                 >
                   PTEPLUS
                 </h3>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
-                >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+              </div>
+              <div
+                class="space-y-3"
+              >
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Development Lead
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Jan 2018
                      - 
                     May 2019
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      1 year and 4 months
-                      )
-                    </span>
+                     · 
+                    1 year and 4 months
                   </div>
                   <div
-                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                    class="space-y-1"
                   >
-                    <div>
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed"
+                    >
                       Work with the dev team on two main products. Design and implement IT architecture on the clouding computing platforms (AWS and Aliyun). Deliver stable, rapid responsible and reliable web applications to product's users.
                     </div>
                   </div>
                 </div>
-                <div
-                  class="flex flex-col gap-0.5 mt-1 mb-2"
-                >
-                  <span
-                    class="text-sm text-gray-700 dark:text-gray-200 font-medium"
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
                     Full Stack Developer
-                  </span>
+                  </h4>
                   <div
-                    class="text-xs text-gray-400 mt-0.5"
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
                   >
                     Oct 2016
                      - 
                     Jan 2018
-                     
-                    <span
-                      class="text-gray-500"
-                    >
-                      (
-                      1 year and 3 months
-                      )
-                    </span>
+                     · 
+                    1 year and 3 months
                   </div>
                   <div
-                    class="mt-1 text-xs text-gray-600 dark:text-gray-300 leading-relaxed space-y-1"
+                    class="space-y-1"
                   >
-                    <div>
+                    <div
+                      class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed"
+                    >
                       One of the key contributors to the start-up company, and participated in almost every stage of product design, implement and testing. Took responsibilities on full solutions to the technical side such as coding and servers' setup.
                     </div>
                   </div>
@@ -719,7 +765,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
           </div>
         </div>
       </section>
-    </article>
+    </div>
   </main>
 </div>
 `;
