@@ -28,13 +28,14 @@ export default function PortfolioCard({
       return;
     }
 
+    const THROTTLE_MS = 16; // ~60fps
     const handleGlobalMouseMove = throttle((e: MouseEvent) => {
       if (!containerRef.current) return;
       
       const rect = containerRef.current.getBoundingClientRect();
       const transform = calculateRotation(e.clientX, e.clientY, rect);
       setTransform(transform);
-    }, 16); // ~60fps
+    }, THROTTLE_MS);
 
     document.addEventListener('mousemove', handleGlobalMouseMove);
     

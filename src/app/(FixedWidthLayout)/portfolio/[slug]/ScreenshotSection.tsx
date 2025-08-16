@@ -8,15 +8,23 @@ type ScreenshotSectionProps = {
 
 export function ScreenshotSection({ images }: ScreenshotSectionProps) {
   if (images.length === 0) {
-    return <></>;
+    return (
+      <div className="w-full card p-8 px-8 rounded-2xl mt-8 bg-opacity-90">
+        <div className="mb-8">
+          <Heading text="Screenshots" align="center" />
+        </div>
+        <div className="text-center text-gray-500 py-8">
+          No screenshots available for this project.
+        </div>
+      </div>
+    );
   }
 
-  const columnCount = 3;
+  const SCREENSHOT_COLUMNS = 3;
   const columns: string[][] = [];
 
-  const length = columns.length;
   images.forEach((image, index) => {
-    const columnIndex = index % columnCount;
+    const columnIndex = index % SCREENSHOT_COLUMNS;
     if (!columns[columnIndex]) {
       columns[columnIndex] = [];
     }

@@ -72,9 +72,10 @@ export function CyclingTypewriterEffect({
   useEffect(() => {
     if (!cursor) return;
 
+    const CURSOR_BLINK_MS = 530;
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev);
-    }, 530);
+    }, CURSOR_BLINK_MS);
 
     return () => clearInterval(cursorInterval);
   }, [cursor]);
