@@ -2,71 +2,22 @@
 
 import { profile } from "@/data/profile";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./style.module.css";
-import { useState, useRef, useEffect, useMemo, KeyboardEvent } from "react";
 import { MenuIcon } from "../icons/MenuIcon";
 import { CloseIcon } from "../icons/CloseIcon";
-
-type MenuItem = {
-  label: string;
-  path: string;
-  activePattern?: RegExp;
-};
-
-const menuItems: MenuItem[] = [
-  {
-    label: "Home",
-    path: "/",
-  },
-  {
-    label: "Portfolio",
-    path: "/portfolio",
-    activePattern: /\/portfolio.*/,
-  },
-  {
-    label: "About me",
-    path: "/about",
-  },
-];
+import { useNavigation } from "./hooks/useNavigation";
+import { useMobileMenu } from "./hooks/useMobileMenu";
+import { MobileMenu } from "./components/MobileMenu";
 
 export function NavBar() {
-  const pathName = usePathname();
-  const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
-
-  const logoStyles = useMemo(() => ({
-    borderTop: "3px solid var(--logo-line-color)",
-    borderBottom: "3px solid var(--logo-line-color)",
-  }), []);
-
-  const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      setIsMobileMenuVisible(!isMobileMenuVisible);
-    }
-  };
-
-  useEffect(() => {
-    const menu = mobileMenuRef.current;
-    if (!menu) return;
-    if (isMobileMenuVisible) {
-      menu.style.maxHeight = menu.scrollHeight + "px";
-    } else {
-      menu.style.maxHeight = "0px";
-    }
-  }, [isMobileMenuVisible]);
-
-  useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isMobileMenuVisible) {
-        setIsMobileMenuVisible(false);
-      }
-    };
-
-    document.addEventListener('keydown', handleEscape as any);
-    return () => document.removeEventListener('keydown', handleEscape as any);
-  }, [isMobileMenuVisible]);
+  const { menuItems, pathName, logoStyles, isActive } = useNavigation();
+  const {
+    isMobileMenuVisible,
+    mobileMenuRef,
+    handleKeyDown,
+    toggleMobileMenu,
+    closeMobileMenu,
+  } = useMobileMenu();
 
   return (
     <>
@@ -74,7 +25,7 @@ export function NavBar() {
         <div className="page-container relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-4 flex items-center sm:hidden">
             <button
-              onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
+              onClick={toggleMobileMenu}
               onKeyDown={handleKeyDown}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded={isMobileMenuVisible}
@@ -103,58 +54,31 @@ export function NavBar() {
 
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
-                  {menuItems.map((item) => {
-                    return (
-                      <Link
-                        key={item.path}
-                        href={item.path}
-                        className={`${styles.navItem} ${
-                          isActive(item, pathName) ? styles["active"] : ""
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    );
-                  })}
+                  {menuItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      href={item.path}
+                      className={`${styles.navItem} ${
+                        isActive(item) ? styles["active"] : ""
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div
-          id="mobile-menu"
+        <MobileMenu
           ref={mobileMenuRef}
-          className={`sm:hidden ${styles.mobileMenu} ${
-            isMobileMenuVisible ? styles.expanded : ""
-          }`}
-          aria-hidden={!isMobileMenuVisible}
-        >
-          <div className="px-4 pt-2 pb-3 space-y-1">
-            {menuItems.map((item) => {
-              return (
-                <Link
-                  key={item.path}
-                  href={item.path}
-                  className={`${styles.navItem} ${
-                    isActive(item, pathName) ? styles["active"] : ""
-                  }`}
-                  onClick={() => setIsMobileMenuVisible(false)}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
+          menuItems={menuItems}
+          isVisible={isMobileMenuVisible}
+          onItemClick={closeMobileMenu}
+        />
       </nav>
     </>
   );
 }
 
-function isActive(item: MenuItem, pathName: string): boolean {
-  if (item.activePattern) {
-    return item.activePattern.test(pathName);
-  }
-  return pathName === item.path;
-}
