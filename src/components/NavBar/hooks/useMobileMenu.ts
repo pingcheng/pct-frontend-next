@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, KeyboardEvent } from "react";
+import { useState, useRef, useEffect, type KeyboardEvent } from "react";
 
 export function useMobileMenu() {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -34,8 +34,7 @@ export function useMobileMenu() {
 
   useEffect(() => {
     const handleEscape = (event: Event) => {
-      const keyEvent = event as unknown as KeyboardEvent;
-      if (keyEvent.key === 'Escape' && isMobileMenuVisible) {
+      if (event instanceof KeyboardEvent && event.key === 'Escape' && isMobileMenuVisible) {
         setIsMobileMenuVisible(false);
       }
     };

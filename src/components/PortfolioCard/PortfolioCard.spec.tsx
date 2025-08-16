@@ -145,12 +145,21 @@ describe("test PortfolioCard", () => {
     
     // Get the React fiber node to access the props directly
     const fiberKey = Object.keys(portfolioCard || {}).find(key => key.startsWith('__reactFiber'));
-    const reactFiber = fiberKey ? (portfolioCard as any)[fiberKey] : null;
     
-    if (reactFiber && reactFiber.memoizedProps && reactFiber.memoizedProps.onError) {
+    interface ReactFiberNode {
+      memoizedProps?: {
+        onError?: () => void;
+      };
+    }
+    
+    const reactFiber = fiberKey 
+      ? (portfolioCard as unknown as Record<string, ReactFiberNode>)[fiberKey] 
+      : null;
+    
+    if (reactFiber?.memoizedProps?.onError) {
       // Call the onError handler directly
       act(() => {
-        reactFiber.memoizedProps.onError();
+        reactFiber.memoizedProps.onError!();
       });
       
       // Verify setImageError was called with true
