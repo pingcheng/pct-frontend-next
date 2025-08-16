@@ -2,6 +2,47 @@
 
 import { useState, useEffect } from "react";
 
+// Animation states for better readability
+enum TypewriterState {
+  TYPING = 'typing',
+  PAUSING = 'pausing', 
+  DELETING = 'deleting',
+  TRANSITIONING = 'transitioning'
+}
+
+// Helper functions for state management
+function getCurrentState(
+  isTyping: boolean, 
+  isDeleting: boolean, 
+  displayLength: number, 
+  targetLength: number
+): TypewriterState {
+  if (isDeleting) {
+    return displayLength > 0 ? TypewriterState.DELETING : TypewriterState.TRANSITIONING;
+  }
+  
+  if (isTyping) {
+    return displayLength < targetLength ? TypewriterState.TYPING : TypewriterState.PAUSING;
+  }
+  
+  return TypewriterState.PAUSING;
+}
+
+function getAnimationDelay(state: TypewriterState, typeSpeed: number, deleteSpeed: number, pauseTime: number): number {
+  switch (state) {
+    case TypewriterState.TYPING:
+      return typeSpeed;
+    case TypewriterState.DELETING:
+      return deleteSpeed;
+    case TypewriterState.PAUSING:
+      return pauseTime;
+    case TypewriterState.TRANSITIONING:
+      return 0; // Immediate transition
+    default:
+      return typeSpeed;
+  }
+}
+
 export interface CyclingTypewriterEffectProps {
   texts: string[];
   typeSpeed?: number;
@@ -41,31 +82,40 @@ export function CyclingTypewriterEffect({
     if (!hasStarted) return;
 
     const currentText = texts[textIndex];
+    const currentState = getCurrentState(isTyping, isDeleting, displayText.length, currentText.length);
     
-    if (isTyping && !isDeleting) {
-      if (displayText.length < currentText.length) {
+    // Handle state transitions and updates
+    switch (currentState) {
+      case TypewriterState.TYPING: {
         const timeout = setTimeout(() => {
           setDisplayText(currentText.slice(0, displayText.length + 1));
-        }, typeSpeed);
+        }, getAnimationDelay(currentState, typeSpeed, deleteSpeed, pauseTime));
         return () => clearTimeout(timeout);
-      } else {
+      }
+      
+      case TypewriterState.PAUSING: {
         const pauseTimeout = setTimeout(() => {
           setIsDeleting(true);
-        }, pauseTime);
+        }, getAnimationDelay(currentState, typeSpeed, deleteSpeed, pauseTime));
         return () => clearTimeout(pauseTimeout);
       }
-    }
-
-    if (isDeleting) {
-      if (displayText.length > 0) {
+      
+      case TypewriterState.DELETING: {
         const timeout = setTimeout(() => {
           setDisplayText(currentText.slice(0, displayText.length - 1));
-        }, deleteSpeed);
+        }, getAnimationDelay(currentState, typeSpeed, deleteSpeed, pauseTime));
         return () => clearTimeout(timeout);
-      } else {
+      }
+      
+      case TypewriterState.TRANSITIONING: {
+        // Move to next text immediately
         setIsDeleting(false);
         setTextIndex((prev) => (prev + 1) % texts.length);
+        break;
       }
+      
+      default:
+        break;
     }
   }, [displayText, textIndex, isTyping, isDeleting, hasStarted, texts, typeSpeed, deleteSpeed, pauseTime, delay]);
 
