@@ -30,9 +30,10 @@ describe("test <ScreenshotSection />", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render nothing when images array is empty", () => {
-    const { container } = render(<ScreenshotSection images={[]} />);
-    expect(container.firstChild).toBeNull();
+  it("should render empty state message when images array is empty", () => {
+    const { getByText } = render(<ScreenshotSection images={[]} />);
+    expect(getByText("Screenshots")).toBeInTheDocument();
+    expect(getByText("No screenshots available for this project.")).toBeInTheDocument();
   });
 
   it("should render the 'Screenshots' heading", () => {

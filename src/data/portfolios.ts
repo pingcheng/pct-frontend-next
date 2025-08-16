@@ -178,7 +178,6 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/1.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/2.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/3.jpg",
-      "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/3.jpg",
     ],
   }),
 ];
