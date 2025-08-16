@@ -1,4 +1,5 @@
 import { profile, socialUrls } from "@/data/profile";
+import { URLS } from "@/constants/urls";
 import styles from "./style.module.css";
 import { FiGithub, FiSmile } from "react-icons/fi";
 import Link from "next/link";
@@ -9,10 +10,8 @@ import {
   SocialLink,
   SocialLinkProps,
 } from "@/components/SocialLink/SocialLink";
-import {
-  PersonStructuredData,
-  WebsiteStructuredData,
-} from "@/components/StructuredData/StructuredData";
+import { PersonStructuredDataProvider } from "@/components/StructuredData/PersonStructuredDataProvider";
+import { WebsiteStructuredData } from "@/components/StructuredData/StructuredData";
 import { CyclingTypewriterEffect } from "@/components/TypewriterEffect";
 
 const links: SocialLinkProps[] = [
@@ -84,43 +83,14 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <PersonStructuredData
-        name={profile.fullName}
-        jobTitle="Staff Engineer"
-        url="https://www.pingchengtech.com"
-        image="https://www.pingchengtech.com/apple-icon.png"
-        sameAs={[socialUrls.github, socialUrls.linkedin]}
-        worksFor={{
-          name: "REA Group",
-          url: "https://www.rea-group.com",
-        }}
-        knowsAbout={[
-          "Node.js",
-          "TypeScript",
-          "JavaScript",
-          "PHP",
-          "Java",
-          "Linux",
-          "React",
-          "Vue.js",
-          "AWS",
-          "Docker",
-          "MySQL",
-          "Redis"
-        ]}
-        address={{
-          addressLocality: "Melbourne",
-          addressRegion: "Victoria",
-          addressCountry: "Australia",
-        }}
-      />
+      <PersonStructuredDataProvider />
       <WebsiteStructuredData
         name="Ping Cheng Tech"
-        url="https://www.pingchengtech.com"
+        url={URLS.WEBSITE.BASE}
         description="Personal website and portfolio of Ping Cheng, Staff Engineer and Software Engineer in Melbourne"
         author={{
           name: profile.fullName,
-          url: "https://www.pingchengtech.com",
+          url: URLS.WEBSITE.BASE,
         }}
       />
       <main className="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container">
