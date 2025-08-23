@@ -26,6 +26,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs-3.png",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/empire-cbs/empire-cbs-4.png",
     ],
+    year: "2020-2021",
   }),
   createPortfolio("pteplus", {
     name: "PTEPLUS",
@@ -68,6 +69,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/op5.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pteplus/report-analysis.jpg",
     ],
+    year: "2016-2019",
   }),
   createPortfolio("pinhr", {
     name: "PinHR",
@@ -95,6 +97,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/6.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/pinhr/7.jpg",
     ],
+    year: "2018",
   }),
   createPortfolio("vatgc", {
     name: "VAGTC",
@@ -122,6 +125,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/3.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/vagtc/4.jpg",
     ],
+    year: "2015",
   }),
   createPortfolio("qce-eduplus", {
     name: "QCE Eduplus",
@@ -156,6 +160,7 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/7.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/qce-eduplus/8.jpg",
     ],
+    year: "2019-2020",
   }),
   createPortfolio("rhfoto", {
     name: "RH.foto",
@@ -179,5 +184,6 @@ export const Portfolios = [
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/2.jpg",
       "https://pct-frontend-assets.s3.ap-southeast-2.amazonaws.com/portfolio/rhfoto/3.jpg",
     ],
+    year: "2017",
   }),
 ];

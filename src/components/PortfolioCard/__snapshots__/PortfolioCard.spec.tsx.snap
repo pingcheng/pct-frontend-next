@@ -16,9 +16,20 @@ exports[`test PortfolioCard should handle priority prop 1`] = `
         style="z-index: 10;"
       >
         <div
-          class="text-sm font-bold"
+          class="flex items-center gap-2"
         >
-          Test Portfolio
+          <div
+            class="text-sm font-bold"
+          >
+            Test Portfolio
+          </div>
+          <div
+            class="text-xs text-gray-300"
+          >
+            (
+            2023
+            )
+          </div>
         </div>
         <div
           class="text-xs"
@@ -47,9 +58,20 @@ exports[`test PortfolioCard should match the snapshot 1`] = `
         style="z-index: 10;"
       >
         <div
-          class="text-sm font-bold"
+          class="flex items-center gap-2"
         >
-          Test Portfolio
+          <div
+            class="text-sm font-bold"
+          >
+            Test Portfolio
+          </div>
+          <div
+            class="text-xs text-gray-300"
+          >
+            (
+            2023
+            )
+          </div>
         </div>
         <div
           class="text-xs"

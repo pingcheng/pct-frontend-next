@@ -37,9 +37,13 @@ exports[`Portfolio page should render the portfolio page 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  Test Portfolio 1
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    Test Portfolio 1
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -71,9 +75,13 @@ exports[`Portfolio page should render the portfolio page 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  Test Portfolio 2
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    Test Portfolio 2
+                  </div>
                 </div>
                 <div
                   class="text-xs"

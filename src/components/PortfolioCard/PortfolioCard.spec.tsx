@@ -17,6 +17,7 @@ describe("test PortfolioCard", () => {
     members: ["Ping Cheng"],
     screenshots: ["https://image1.jpg", "https://image2.jpg"],
     hasScreenshots: true,
+    year: "2023",
   };
 
   beforeEach(() => {

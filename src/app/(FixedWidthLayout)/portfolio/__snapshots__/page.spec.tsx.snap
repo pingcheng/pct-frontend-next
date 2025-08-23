@@ -37,9 +37,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  Empire CBS
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    Empire CBS
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2020-2021
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -71,9 +82,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  PTEPLUS
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    PTEPLUS
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2016-2019
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -105,9 +127,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  PinHR
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    PinHR
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2018
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -139,9 +172,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  VAGTC
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    VAGTC
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2015
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -173,9 +217,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  QCE Eduplus
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    QCE Eduplus
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2019-2020
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"
@@ -207,9 +262,20 @@ exports[`Portfolio page matches snapshot 1`] = `
                 style="z-index: 10;"
               >
                 <div
-                  class="text-sm font-bold"
+                  class="flex items-center gap-2"
                 >
-                  RH.foto
+                  <div
+                    class="text-sm font-bold"
+                  >
+                    RH.foto
+                  </div>
+                  <div
+                    class="text-xs text-gray-300"
+                  >
+                    (
+                    2017
+                    )
+                  </div>
                 </div>
                 <div
                   class="text-xs"

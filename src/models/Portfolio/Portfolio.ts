@@ -11,6 +11,7 @@ export type Portfolio = {
   members: string[];
   screenshots: string[];
   hasScreenshots: boolean;
+  year: string | null;
 };
 
 export function createPortfolio(slug: string, props: PortfolioProps): Portfolio {
@@ -28,6 +29,7 @@ export function createPortfolio(slug: string, props: PortfolioProps): Portfolio 
     members: props.members ?? [],
     screenshots,
     hasScreenshots: screenshots.length > 0,
+    year: props.year ?? null,
   };
 }
 
@@ -45,4 +47,5 @@ export type PortfolioProps = {
 
   members: string[] | null;
   screenshots: string[] | null;
+  year: string | null;
 };

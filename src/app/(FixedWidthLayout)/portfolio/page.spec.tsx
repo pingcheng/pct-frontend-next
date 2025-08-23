@@ -31,9 +31,10 @@ describe("Portfolio page", () => {
 
       // Check if portfolio details are rendered
       const name = portfolioLink?.querySelector(".text-sm.font-bold");
-      const description = portfolioLink?.querySelector(".text-xs");
+      const descriptions = portfolioLink?.querySelectorAll(".text-xs");
+      const shortDescription = descriptions?.[1]; // Second .text-xs element is the description
       expect(name).toHaveTextContent(portfolio.name);
-      expect(description).toHaveTextContent(portfolio.shortDescription);
+      expect(shortDescription).toHaveTextContent(portfolio.shortDescription);
     });
   });
 
