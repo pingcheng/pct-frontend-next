@@ -1,4 +1,17 @@
-import React from 'react';
+import React from "react";
+
+interface StructuredDataProps {
+  structuredData: any;
+}
+
+export function StructuredData({ structuredData }: StructuredDataProps) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
 
 interface PersonStructuredDataProps {
   name: string;
@@ -60,12 +73,7 @@ export function PersonStructuredData({
     ...(telephone && { telephone }),
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
+  return <StructuredData structuredData={structuredData} />;
 }
 
 interface WebsiteStructuredDataProps {
@@ -97,12 +105,7 @@ export function WebsiteStructuredData({
     },
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
+  return <StructuredData structuredData={structuredData} />;
 }
 
 interface BreadcrumbListProps {
@@ -124,12 +127,7 @@ export function BreadcrumbListStructuredData({ items }: BreadcrumbListProps) {
     })),
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
+  return <StructuredData structuredData={structuredData} />;
 }
 
 interface ProfessionalServiceProps {
@@ -164,10 +162,5 @@ export function ProfessionalServiceStructuredData({
     ...(serviceType && { serviceType }),
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
+  return <StructuredData structuredData={structuredData} />;
 }

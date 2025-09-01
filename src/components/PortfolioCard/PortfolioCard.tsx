@@ -11,6 +11,23 @@ type PortfolioCardProps = {
   priority?: boolean;
 };
 
+function PortfolioCardDetails({ portfolio }: { portfolio: Portfolio }) {
+  return (
+    <div
+      className="absolute bottom-0 p-2 text-gray-200"
+      style={{ zIndex: 10 }}
+    >
+      <div className="flex items-center gap-2">
+        <div className="text-sm font-bold">{portfolio.name}</div>
+        {portfolio.year && (
+          <div className="text-xs text-gray-300">({portfolio.year})</div>
+        )}
+      </div>
+      <div className="text-xs">{portfolio.shortDescription}</div>
+    </div>
+  );
+}
+
 export default function PortfolioCard({
   portfolio,
   priority = false,
@@ -51,18 +68,7 @@ export default function PortfolioCard({
         role="img"
         aria-label={`Cover image for ${portfolio.name} project (image unavailable)`}
       >
-        <div
-          className="absolute bottom-0 p-2 text-gray-200"
-          style={{ zIndex: 10 }}
-        >
-          <div className="flex items-center gap-2">
-            <div className="text-sm font-bold">{portfolio.name}</div>
-            {portfolio.year && (
-              <div className="text-xs text-gray-300">({portfolio.year})</div>
-            )}
-          </div>
-          <div className="text-xs">{portfolio.shortDescription}</div>
-        </div>
+        <PortfolioCardDetails portfolio={portfolio} />
       </div>
     );
   }
@@ -83,18 +89,7 @@ export default function PortfolioCard({
         aria-label={`${portfolio.name} project`}
         onError={() => setImageError(true)}
       >
-        <div
-          className="absolute bottom-0 p-2 text-gray-200"
-          style={{ zIndex: 10 }}
-        >
-          <div className="flex items-center gap-2">
-            <div className="text-sm font-bold">{portfolio.name}</div>
-            {portfolio.year && (
-              <div className="text-xs text-gray-300">({portfolio.year})</div>
-            )}
-          </div>
-          <div className="text-xs">{portfolio.shortDescription}</div>
-        </div>
+        <PortfolioCardDetails portfolio={portfolio} />
       </div>
     </div>
   );
