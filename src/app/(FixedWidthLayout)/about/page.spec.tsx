@@ -5,6 +5,18 @@ import { backendStack, frontendStack, devOpsStack } from "@/data/skills";
 import { workExperiences } from "@/data/work-experience";
 
 describe("test about page", () => {
+  // Mock current date to August 10, 2025 for consistent snapshots
+  const MOCK_NOW = new Date(2025, 7, 10).getTime(); // August = month 7 (0-based)
+  let dateNowSpy: jest.SpyInstance;
+
+  beforeAll(() => {
+    dateNowSpy = jest.spyOn(Date, "now").mockImplementation(() => MOCK_NOW);
+  });
+
+  afterAll(() => {
+    dateNowSpy.mockRestore();
+  });
+
   it("ensures snapshot is correct", () => {
     const { container } = render(<About />);
     expect(container).toMatchSnapshot();
