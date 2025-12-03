@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "../style.module.css";
 import { forwardRef } from "react";
 
 type MenuItem = {
@@ -32,9 +31,13 @@ export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(
       <div
         id="mobile-menu"
         ref={ref}
-        className={`sm:hidden ${styles.mobileMenu} ${
-          isVisible ? styles.expanded : ""
-        }`}
+        className={`sm:hidden overflow-hidden max-h-0 opacity-0 invisible pointer-events-none ${isVisible ? "opacity-100 visible pointer-events-auto" : ""
+          }`}
+        style={{
+          transition: isVisible
+            ? "max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s ease"
+            : "max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s ease, visibility 0s linear 0.3s",
+        }}
         aria-hidden={!isVisible}
       >
         <div className="px-4 pt-2 pb-3 space-y-1">
@@ -42,9 +45,10 @@ export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(
             <Link
               key={item.path}
               href={item.path}
-              className={`${styles.navItem} ${
-                isActive(item, pathName) ? styles["active"] : ""
-              }`}
+              className={`block px-3 py-2 rounded-md text-base font-medium transition duration-300 relative ${isActive(item, pathName)
+                ? "text-[var(--color-accent)] font-semibold bg-indigo-500/20 dark:bg-indigo-500/25"
+                : "text-[var(--color-text-light)] dark:text-[var(--color-text-dark)] hover:text-[var(--color-accent)] hover:bg-indigo-500/10 dark:hover:bg-indigo-500/15"
+                }`}
               onClick={onItemClick}
             >
               {item.label}

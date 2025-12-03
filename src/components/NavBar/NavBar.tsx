@@ -2,7 +2,6 @@
 
 import { profile } from "@/data/profile";
 import Link from "next/link";
-import styles from "./style.module.css";
 import { MenuIcon } from "../icons/MenuIcon";
 import { CloseIcon } from "../icons/CloseIcon";
 import { useNavigation } from "./hooks/useNavigation";
@@ -32,12 +31,12 @@ export function NavBar() {
               aria-controls="mobile-menu"
               aria-label={isMobileMenuVisible ? "Close main menu" : "Open main menu"}
             >
-              <MenuIcon 
-                className={isMobileMenuVisible ? "hidden" : "block"} 
+              <MenuIcon
+                className={isMobileMenuVisible ? "hidden" : "block"}
                 aria-hidden="true"
               />
-              <CloseIcon 
-                className={isMobileMenuVisible ? "block" : "hidden"} 
+              <CloseIcon
+                className={isMobileMenuVisible ? "block" : "hidden"}
                 aria-hidden="true"
               />
             </button>
@@ -54,17 +53,22 @@ export function NavBar() {
 
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
-                  {menuItems.map((item) => (
-                    <Link
-                      key={item.path}
-                      href={item.path}
-                      className={`${styles.navItem} ${
-                        isActive(item) ? styles["active"] : ""
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {menuItems.map((item) => {
+                    const isActiveItem = isActive(item);
+                    return (
+                      <Link
+                        key={item.path}
+                        href={item.path}
+                        className={`block px-3 py-2 rounded-md text-base font-medium transition duration-300 relative
+                          ${isActiveItem
+                            ? "text-[var(--color-accent)] font-semibold bg-indigo-500/20 dark:bg-indigo-500/25"
+                            : "text-[var(--color-text-light)] dark:text-[var(--color-text-dark)] hover:text-[var(--color-accent)] hover:bg-indigo-500/10 dark:hover:bg-indigo-500/15"
+                          }`}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             </div>

@@ -19,14 +19,14 @@ describe("test <NavBar />", () => {
       name: /open main menu/i,
     });
     const menu = document.getElementById("mobile-menu");
-    // Initially, the mobile menu should be collapsed (not expanded)
-    expect(menu?.className).not.toMatch(/expanded/);
+    // Initially, the mobile menu should be collapsed (not visible)
+    expect(menu?.className).not.toMatch(/opacity-100/);
     // Click to show
     fireEvent.click(toggleButton);
-    expect(menu?.className).toMatch(/expanded/);
+    expect(menu?.className).toMatch(/opacity-100/);
     // Click again to hide
     fireEvent.click(toggleButton);
-    expect(menu?.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/opacity-100/);
   });
 
   it("should display the correct SVG icon based on mobile menu visibility", () => {
@@ -62,7 +62,7 @@ describe("isActive logic", () => {
     render(<NavBar />);
     const portfolioLinks = screen.getAllByText("Portfolio");
     portfolioLinks.forEach((link) => {
-      expect(link.className).toContain("active");
+      expect(link.className).toContain("font-semibold");
     });
   });
 
@@ -71,7 +71,7 @@ describe("isActive logic", () => {
     render(<NavBar />);
     const aboutLinks = screen.getAllByText("About me");
     aboutLinks.forEach((link) => {
-      expect(link.className).toContain("active");
+      expect(link.className).toContain("font-semibold");
     });
   });
 
@@ -80,7 +80,7 @@ describe("isActive logic", () => {
     render(<NavBar />);
     const aboutLinks = screen.getAllByText("About me");
     aboutLinks.forEach((link) => {
-      expect(link.className).not.toContain("active");
+      expect(link.className).not.toContain("font-semibold");
     });
   });
 });
@@ -99,12 +99,12 @@ describe("Mobile menu interaction", () => {
     const menu = document.getElementById("mobile-menu");
     // Open the mobile menu
     fireEvent.click(toggleButton);
-    expect(menu?.className).toMatch(/expanded/);
+    expect(menu?.className).toMatch(/opacity-100/);
     // Click a menu item
     const homeLink = screen.getAllByText("Home")[1]; // mobile menu is rendered after desktop
     fireEvent.click(homeLink);
     // Menu should be closed
-    expect(menu?.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/opacity-100/);
   });
 });
 
@@ -148,10 +148,10 @@ describe("Keyboard navigation", () => {
       name: /open main menu/i,
     });
     const menu = document.getElementById("mobile-menu");
-    
+
     // Press Enter to open
     fireEvent.keyDown(toggleButton, { key: 'Enter' });
-    expect(menu?.className).toMatch(/expanded/);
+    expect(menu?.className).toMatch(/opacity-100/);
   });
 
   it("should close mobile menu with Escape key", () => {
@@ -161,13 +161,13 @@ describe("Keyboard navigation", () => {
       name: /open main menu/i,
     });
     const menu = document.getElementById("mobile-menu");
-    
+
     // Open the menu first
     fireEvent.click(toggleButton);
-    expect(menu?.className).toMatch(/expanded/);
-    
+    expect(menu?.className).toMatch(/opacity-100/);
+
     // Press Escape to close
     fireEvent.keyDown(document, { key: 'Escape' });
-    expect(menu?.className).not.toMatch(/expanded/);
+    expect(menu?.className).not.toMatch(/opacity-100/);
   });
 });
