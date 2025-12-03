@@ -96,7 +96,7 @@ exports[`test <NavBar /> should match the snapshot 1`] = `
     </div>
     <div
       aria-hidden="true"
-      class="sm:hidden overflow-hidden max-h-0 opacity-0 invisible pointer-events-none "
+      class="sm:hidden overflow-hidden max-h-0 opacity-0 invisible pointer-events-none"
       id="mobile-menu"
       style="transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s ease, visibility 0s linear 0.3s; max-height: 0px;"
     >

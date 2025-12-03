@@ -31,7 +31,7 @@ export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(
       <div
         id="mobile-menu"
         ref={ref}
-        className={`sm:hidden overflow-hidden max-h-0 opacity-0 invisible pointer-events-none ${isVisible ? "opacity-100 visible pointer-events-auto" : ""
+        className={`sm:hidden overflow-hidden max-h-0 opacity-0 invisible ${isVisible ? "opacity-100 visible pointer-events-auto" : "pointer-events-none"
           }`}
         style={{
           transition: isVisible
