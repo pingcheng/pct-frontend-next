@@ -1,5 +1,5 @@
 import { render, fireEvent, act } from "@testing-library/react";
-import React, { useState } from "react";
+import React from "react";
 import PortfolioCard from "@/components/PortfolioCard/PortfolioCard";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 
