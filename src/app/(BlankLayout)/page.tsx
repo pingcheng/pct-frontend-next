@@ -2,7 +2,6 @@ import { profile, socialUrls } from "@/data/profile";
 import { URLS } from "@/constants/urls";
 import styles from "./style.module.css";
 import { FiGithub, FiSmile } from "react-icons/fi";
-import Link from "next/link";
 import { Avatar } from "@/components/Avatar";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { BsCollectionFill } from "react-icons/bs";

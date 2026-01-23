@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Portfolio } from "@/models/Portfolio/Portfolio";
 import { throttle } from "@/utils/throttle";
 import { calculateRotation } from "@/utils/calculateRotation";
@@ -8,7 +8,6 @@ import styles from "./style.module.css";
 
 type PortfolioCardProps = {
   portfolio: Portfolio;
-  priority?: boolean;
 };
 
 function PortfolioCardDetails({ portfolio }: { portfolio: Portfolio }) {
@@ -30,7 +29,6 @@ function PortfolioCardDetails({ portfolio }: { portfolio: Portfolio }) {
 
 export default function PortfolioCard({
   portfolio,
-  priority = false,
 }: PortfolioCardProps) {
   const [imageError, setImageError] = useState(false);
   const [transform, setTransform] = useState("rotateX(0deg) rotateY(0deg)");

@@ -66,7 +66,6 @@ export function CyclingTypewriterEffect({
 }: CyclingTypewriterEffectProps) {
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
-  const [isTyping, setIsTyping] = useState(true);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showCursor, setShowCursor] = useState(cursor);
   const [hasStarted, setHasStarted] = useState(false);

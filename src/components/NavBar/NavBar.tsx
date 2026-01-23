@@ -10,7 +10,7 @@ import { useMobileMenu } from "./hooks/useMobileMenu";
 import { MobileMenu } from "./components/MobileMenu";
 
 export function NavBar() {
-  const { menuItems, pathName, logoStyles, isActive } = useNavigation();
+  const { menuItems, logoStyles, isActive } = useNavigation();
   const {
     isMobileMenuVisible,
     mobileMenuRef,
