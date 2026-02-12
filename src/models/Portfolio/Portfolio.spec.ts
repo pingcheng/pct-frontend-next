@@ -17,6 +17,7 @@ describe("test Portfolio model", () => {
     ],
     members: ["John Doe", "Jane Smith"],
     screenshots: ["/images/screenshot1.jpg", "/images/screenshot2.jpg"],
+    year: "2023",
   };
 
   it("should create a portfolio with provided values", () => {
@@ -56,6 +57,7 @@ describe("test Portfolio model", () => {
       roleDescription: null,
       members: null,
       screenshots: null,
+      year: null,
     };
 
     const portfolio = createPortfolio("empty-portfolio", nullProps);

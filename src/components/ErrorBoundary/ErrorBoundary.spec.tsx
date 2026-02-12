@@ -11,12 +11,10 @@ const ThrowError = ({ shouldThrow }: { shouldThrow: boolean }) => {
 };
 
 describe('ErrorBoundary', () => {
-  const originalEnv = process.env.NODE_ENV;
   const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
 
   afterEach(() => {
     consoleSpy.mockClear();
-    process.env.NODE_ENV = originalEnv;
   });
 
   afterAll(() => {
@@ -60,8 +58,8 @@ describe('ErrorBoundary', () => {
   });
 
   it('should show error details in development mode', () => {
-    process.env.NODE_ENV = 'development';
-    
+    (process.env as Record<string, string>).NODE_ENV = 'development';
+
     render(
       <ErrorBoundary>
         <ThrowError shouldThrow={true} />

@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.pingchengtech.com"),
   title: process.env.NEXT_PUBLIC_APP_TITLE,
   description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
   keywords: "ping,cheng,software,developer,high,passionate",

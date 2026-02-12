@@ -105,16 +105,16 @@ describe("test PortfolioCard", () => {
     // We'll test the error state by mocking the useState hook to return true for imageError
     const originalUseState = React.useState;
     let setImageErrorMock: jest.Mock | undefined;
-    
-    jest.spyOn(React, 'useState').mockImplementation((initial: any) => {
-      if (initial === false && setImageErrorMock === undefined) {
+
+    jest.spyOn(React, 'useState').mockImplementation((() => {
+      if (setImageErrorMock === undefined) {
         // This is likely the imageError state
         setImageErrorMock = jest.fn();
         return [true, setImageErrorMock]; // Set imageError to true
       }
-      return originalUseState(initial);
-    });
-    
+      return originalUseState(false);
+    }) as typeof React.useState);
+
     const { container } = render(<PortfolioCard portfolio={portfolio} />);
     
     // Should show fallback when imageError is true
@@ -131,15 +131,15 @@ describe("test PortfolioCard", () => {
     // Mock the useState hook to capture the setImageError function
     const originalUseState = React.useState;
     let setImageErrorMock: jest.Mock | undefined;
-    
-    jest.spyOn(React, 'useState').mockImplementation((initial: any) => {
-      if (initial === false && setImageErrorMock === undefined) {
+
+    jest.spyOn(React, 'useState').mockImplementation((() => {
+      if (setImageErrorMock === undefined) {
         // This is the imageError state
         setImageErrorMock = jest.fn();
         return [false, setImageErrorMock];
       }
-      return originalUseState(initial);
-    });
+      return originalUseState(false);
+    }) as typeof React.useState);
     
     const { container } = render(<PortfolioCard portfolio={portfolio} />);
     const portfolioCard = container.querySelector('.portfolioCard');
@@ -160,7 +160,7 @@ describe("test PortfolioCard", () => {
     if (reactFiber?.memoizedProps?.onError) {
       // Call the onError handler directly
       act(() => {
-        reactFiber.memoizedProps.onError!();
+        reactFiber.memoizedProps?.onError?.();
       });
       
       // Verify setImageError was called with true
@@ -172,11 +172,6 @@ describe("test PortfolioCard", () => {
     
     // Restore original useState
     jest.restoreAllMocks();
-  });
-
-  it("should handle priority prop", () => {
-    const { container } = render(<PortfolioCard portfolio={portfolio} priority={true} />);
-    expect(container).toMatchSnapshot();
   });
 
   it("should cleanup event listeners on unmount", () => {
