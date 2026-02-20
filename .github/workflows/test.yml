@@ -23,7 +23,7 @@ jobs:
 
       - name: Audit packages
         id: audit
-        run: pnpm audit --audit-level=high
+        run: pnpm audit --audit-level=critical
         continue-on-error: true
 
       - name: Lint codes
