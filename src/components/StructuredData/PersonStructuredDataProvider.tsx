@@ -23,7 +23,7 @@ interface PersonStructuredDataProviderProps {
 export function PersonStructuredDataProvider({ 
   knowsAbout,
   includeEmail = false,
-  jobTitle = "Staff Engineer"
+  jobTitle = "Principal Engineer"
 }: PersonStructuredDataProviderProps) {
   // Default basic skills if none provided
   const defaultSkills = [

@@ -5,12 +5,12 @@ exports[`test home page ensure snapshot is correct 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["Node.js","TypeScript","JavaScript","PHP","Java","Linux","React","Vue.js","AWS","Docker","MySQL","Redis"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"}}
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Principal Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["Node.js","TypeScript","JavaScript","PHP","Java","Linux","React","Vue.js","AWS","Docker","MySQL","Redis"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"}}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"WebSite","name":"Ping Cheng Tech","url":"https://www.pingchengtech.com","description":"Personal website and portfolio of Ping Cheng, Staff Engineer and Software Engineer in Melbourne","author":{"@type":"Person","name":"Ping Cheng","url":"https://www.pingchengtech.com"}}
+    {"@context":"https://schema.org","@type":"WebSite","name":"Ping Cheng Tech","url":"https://www.pingchengtech.com","description":"Personal website of Ping Cheng, Principal Engineer at REA Group","author":{"@type":"Person","name":"Ping Cheng","url":"https://www.pingchengtech.com"}}
   </script>
   <main
     class="h-screen flex flex-col items-center justify-center mx-auto gap-8 page-container"
@@ -50,15 +50,9 @@ exports[`test home page ensure snapshot is correct 1`] = `
         <span
           class="text-primary"
         >
-          Staff Engineer
+          Principal Engineer
         </span>
-        , code lover, and always building something cool with the
-        <span
-          class="text-primary"
-        >
-           latest tech
-        </span>
-        .
+         at REA Group, building products and solving problems.
       </p>
       <p
         class="min-h-[1.5rem]"
@@ -75,7 +69,7 @@ exports[`test home page ensure snapshot is correct 1`] = `
         </span>
       </p>
       <p>
-        Into 
+        Working with 
         <span
           class="text-primary"
         >
@@ -93,23 +87,9 @@ exports[`test home page ensure snapshot is correct 1`] = `
         <span
           class="text-primary"
         >
-          PHP
-        </span>
-        ,
-         
-        <span
-          class="text-primary"
-        >
           Java
         </span>
-        ,
-         
-        <span
-          class="text-primary"
-        >
-          Linux
-        </span>
-        , and making things work better.
+        , and some other tools.
       </p>
     </section>
     <nav

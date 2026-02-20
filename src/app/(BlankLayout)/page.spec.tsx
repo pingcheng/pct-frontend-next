@@ -27,11 +27,11 @@ describe("test home page", () => {
   it("should display description text with correct styling", () => {
     render(<Home />);
     // Test for new description text content
-    expect(screen.getByText(/Staff Engineer/)).toBeInTheDocument();
-    expect(screen.getByText(/latest tech/)).toBeInTheDocument();
+    expect(screen.getByText(/Principal Engineer/)).toBeInTheDocument();
+    expect(screen.getByText(/REA Group/)).toBeInTheDocument();
 
     // Test that key technical skills are mentioned and highlighted
-    ["Node", "TypeScript", "PHP", "Java", "Linux"].forEach((skill) => {
+    ["Node", "TypeScript", "Java"].forEach((skill) => {
       const el = screen.getByText(skill, { exact: false });
       expect(el).toBeInTheDocument();
       expect(el).toHaveClass("text-primary");

@@ -39,10 +39,10 @@ const links: SocialLinkProps[] = [
 export const metadata = {
   title: "Ping Cheng",
   description:
-    "Ping Cheng is a Staff Engineer and software engineer in Melbourne, passionate about Node, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+    "Ping Cheng - Principal Engineer at REA Group. Software engineer in Melbourne working with Node, TypeScript, and Java.",
   keywords: [
     "Ping Cheng",
-    "Staff Engineer",
+    "Principal Engineer",
     "Software Engineer",
     "Melbourne",
     "Node",
@@ -58,7 +58,7 @@ export const metadata = {
   openGraph: {
     title: "Ping Cheng",
     description:
-      "Staff Engineer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux. Building modern digital solutions and enterprise products.",
+      "Principal Engineer at REA Group. Software engineer in Melbourne working with Node, TypeScript, and Java.",
     url: "https://www.pingchengtech.com",
     type: "profile",
     images: [
@@ -66,7 +66,7 @@ export const metadata = {
         url: "/apple-icon.png",
         width: 180,
         height: 180,
-        alt: "Ping Cheng - Staff Engineer",
+        alt: "Ping Cheng - Principal Engineer",
       },
     ],
   },
@@ -74,7 +74,7 @@ export const metadata = {
     card: "summary",
     title: "Ping Cheng",
     description:
-      "Staff Engineer and software engineer in Melbourne specializing in Node.js, TypeScript, PHP, Java, and Linux.",
+      "Principal Engineer at REA Group. Software engineer in Melbourne.",
     images: ["/apple-icon.png"],
   },
 };
@@ -86,7 +86,7 @@ export default function Home() {
       <WebsiteStructuredData
         name="Ping Cheng Tech"
         url={URLS.WEBSITE.BASE}
-        description="Personal website and portfolio of Ping Cheng, Staff Engineer and Software Engineer in Melbourne"
+        description="Personal website of Ping Cheng, Principal Engineer at REA Group"
         author={{
           name: profile.fullName,
           url: URLS.WEBSITE.BASE,
@@ -104,18 +104,17 @@ export default function Home() {
             Hey, I&apos;m <span className="text-primary">{profile.fullName}</span>.
           </h1>
           <p>
-            <span className="text-primary">Staff Engineer</span>, code lover, and
-            always building something cool with the
-            <span className="text-primary"> latest tech</span>.
+            <span className="text-primary">Principal Engineer</span> at REA Group,
+            building products and solving problems.
           </p>
           <p className="min-h-[1.5rem]">
             <CyclingTypewriterEffect
               texts={[
-                "Building scalable solutions 🚀",
-                "Turning ideas into reality ✨",
-                "Crafting elegant code 💻",
-                "Solving complex problems 🧩",
-                "Creating digital experiences 🎨"
+                "Working on PropTrack",
+                "Writing code",
+                "Solving problems",
+                "Learning new things",
+                "Just here to build"
               ]}
               typeSpeed={80}
               deleteSpeed={40}
@@ -125,12 +124,9 @@ export default function Home() {
             />
           </p>
           <p>
-            Into <span className="text-primary">Node</span>,{" "}
+            Working with <span className="text-primary">Node</span>,{" "}
             <span className="text-primary">TypeScript</span>,{" "}
-            <span className="text-primary">PHP</span>,{" "}
-            <span className="text-primary">Java</span>,{" "}
-            <span className="text-primary">Linux</span>, and making things work
-            better.
+            <span className="text-primary">Java</span>, and some other tools.
           </p>
         </section>
 

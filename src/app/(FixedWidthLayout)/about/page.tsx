@@ -6,10 +6,10 @@ import { AboutStructuredData } from "./components/AboutStructuredData";
 export const metadata = {
   title: "About Ping Cheng",
   description:
-    "Staff Engineer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
+    "Principal Engineer at REA Group with expertise in Node.js, TypeScript, PHP, Java, and Linux. Experienced in full-stack development, cloud solutions, and enterprise software. Learn about my professional journey and technical skills.",
   keywords: [
     "Ping Cheng",
-    "Staff Engineer",
+    "Principal Engineer",
     "Software Engineer",
     "Melbourne",
     "Full Stack Developer",
@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: "About Ping Cheng",
     description:
-      "Staff Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
+      "Principal Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development. Discover my professional journey and technical expertise.",
     url: "https://www.pingchengtech.com/about",
     type: "profile",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
         url: "/apple-icon.png",
         width: 180,
         height: 180,
-        alt: "Ping Cheng - Staff Engineer",
+        alt: "Ping Cheng - Principal Engineer",
       },
     ],
   },
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary",
     title: "About Ping Cheng",
     description:
-      "Staff Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
+      "Principal Engineer at REA Group specializing in modern web technologies, cloud solutions, and enterprise software development.",
     images: ["/apple-icon.png"],
   },
 };

@@ -5,7 +5,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Staff Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["TypeScript","Node.js","GraphQL","REST API","PostgreSQL","Redis","Java","PHP","Laravel","MySQL","Message Queue","TypeScript","React","Next.js","TailwindCSS","Vue.js","Vite","Redux","SASS","Webpack","AWS","Docker","GitHub Actions","Serverless","CI/CD","CloudWatch","ColdFusion","Moodle","jQuery"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
+    {"@context":"https://schema.org","@type":"Person","name":"Ping Cheng","jobTitle":"Principal Engineer","url":"https://www.pingchengtech.com","image":"https://www.pingchengtech.com/apple-icon.png","sameAs":["https://github.com/pingcheng","https://www.linkedin.com/in/ping-cheng-5a47b484"],"worksFor":{"@type":"Organization","name":"REA Group","url":"https://www.rea-group.com"},"knowsAbout":["TypeScript","Node.js","GraphQL","REST API","PostgreSQL","Redis","Java","PHP","Laravel","MySQL","Message Queue","TypeScript","React","Next.js","TailwindCSS","Vue.js","Vite","Redux","SASS","Webpack","AWS","Docker","GitHub Actions","Serverless","CI/CD","CloudWatch","ColdFusion","Moodle","jQuery"],"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"Victoria","addressCountry":"Australia"},"email":"ping.che@hotmail.com"}
   </script>
   <script
     type="application/ld+json"
@@ -69,7 +69,7 @@ exports[`test about page ensures snapshot is correct 1`] = `
             <h2
               class="text-lg font-medium text-gray-800 dark:text-gray-200 mb-4 animate-fade-in animate-delay-400"
             >
-              Staff Engineer at REA Group
+              Principal Engineer at REA Group
             </h2>
             <p
               class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 animate-fade-in animate-delay-500"
@@ -520,6 +520,22 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   <h4
                     class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
                   >
+                    Principal Engineer
+                  </h4>
+                  <div
+                    class="text-xs text-gray-500 dark:text-gray-400 mb-2"
+                  >
+                    Feb 2026
+                     - 
+                    Present
+                     · 
+                    6 months
+                  </div>
+                </div>
+                <div>
+                  <h4
+                    class="font-medium text-gray-800 dark:text-gray-200 text-sm mb-1"
+                  >
                     Staff Engineer
                   </h4>
                   <div
@@ -527,9 +543,9 @@ exports[`test about page ensures snapshot is correct 1`] = `
                   >
                     July 2025
                      - 
-                    Present
+                    Jan 2026
                      · 
-                    1 month
+                    6 months
                   </div>
                 </div>
                 <div>
